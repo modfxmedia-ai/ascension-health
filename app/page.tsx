@@ -447,7 +447,7 @@ function Services() {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
-                  href={`tel:${SITE.phoneRaw}`}
+                  href={SITE.phoneHref}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-brand-800 hover:text-brand-900"
                 >
                   <Phone className="h-4 w-4" />
