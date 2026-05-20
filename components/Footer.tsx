@@ -32,13 +32,23 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand + contact */}
           <div className="lg:col-span-4 space-y-5">
-            <Link href="/" className="inline-flex items-center">
-              <Image
-                src={logo}
-                alt="Ascension Health"
-                className="h-12 w-auto brightness-0 invert"
-                sizes="220px"
-              />
+            <Link
+              href="/"
+              className="inline-flex items-center gap-3"
+              aria-label="Ascension Health — Home"
+            >
+              <span className="relative block h-14 w-14 shrink-0 overflow-hidden">
+                <Image
+                  src={logo}
+                  alt=""
+                  quality={95}
+                  className="h-full w-auto max-w-none object-left object-contain"
+                  sizes="56px"
+                />
+              </span>
+              <span className="font-display text-2xl font-semibold tracking-tight text-white">
+                Ascension Health
+              </span>
             </Link>
 
             <p className="text-sm leading-relaxed text-brand-100/70 max-w-sm">
