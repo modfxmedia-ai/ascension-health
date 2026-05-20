@@ -715,7 +715,7 @@ function WhyChooseUs() {
               <div className="grid grid-cols-3 gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-md">
                 <div className="text-center">
                   <p className="font-display text-2xl font-semibold text-white">
-                    <Counter to={15} suffix="+" />
+                    <Counter to={9} />
                   </p>
                   <p className="mt-0.5 text-[10px] uppercase tracking-widest text-brand-200/70">
                     Years

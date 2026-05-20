@@ -179,6 +179,17 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+        <div className="mx-auto max-w-7xl px-6 pb-5 text-center text-xs text-brand-200/50">
+          Powered by{" "}
+          <a
+            href="https://modfxmedia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors underline-offset-2 hover:underline"
+          >
+            ModFXMedia.com
+          </a>
+        </div>
       </div>
     </footer>
   );
