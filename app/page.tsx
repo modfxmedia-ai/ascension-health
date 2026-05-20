@@ -31,7 +31,8 @@ import {
   ServiceCard,
   ServicesShowcase,
 } from "@/components/Motion";
-import AppointmentForm from "@/components/AppointmentForm";
+import ContactForm from "@/components/ContactForm";
+import { CityLinkGrid } from "@/components/pSEO/CityLinkGrid";
 import imgChiropracticCare from "@/images/chiropractic-care.jpg";
 import imgSpinalDecompression from "@/images/spinal-decompression.jpg";
 import imgPhysicalTherapy from "@/images/physical-therapy.jpg";
@@ -41,6 +42,7 @@ import imgNutritionalIvs from "@/images/nutritional-ivs.jpg";
 import imgBHRT from "@/images/bioidentical-hormone-replacement-therapy.jpg";
 import imgMedicalWeightLoss from "@/images/medical-weight-loss.jpg";
 import imgGainswave from "@/images/gainswave.jpg";
+import imgWhyChooseUs from "@/images/neck-pain.jpg";
 
 const services = NAVIGATION.find((n) => n.label === "Services")?.children ?? [];
 const conditions =
@@ -115,6 +117,10 @@ export default function Home() {
       <Conditions />
       <WhyChooseUs />
       <Appointment />
+      <CityLinkGrid
+        heading="Serving Nevada Communities"
+        intro="Local care, close to home — explore Ascension Health resources for your city. Same-week appointments and most major insurance accepted."
+      />
       <BottomCta />
       <LocalBusinessSchema />
     </>
@@ -645,13 +651,13 @@ function WhyChooseUs() {
       {/* Background image */}
       <div className="absolute inset-0 -z-20">
         <Image
-          src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1800&q=80"
+          src={imgWhyChooseUs}
           alt=""
           fill
           priority={false}
           sizes="100vw"
           className="object-cover"
-          unoptimized
+          placeholder="blur"
         />
       </div>
       {/* Dark overlay */}
@@ -926,7 +932,7 @@ function Appointment() {
                     </span>
                   </div>
                   <div className="mt-6">
-                    <AppointmentForm />
+                    <ContactForm />
                   </div>
                 </div>
               </div>

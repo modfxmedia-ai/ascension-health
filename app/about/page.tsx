@@ -19,6 +19,7 @@ import {
 } from "@/components/InteriorMotion";
 import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
+import skeletonImage from "@/images/Chiropractic-skeleton.jpg";
 
 export const metadata: Metadata = {
   title: "About | Ascension Health",
@@ -110,11 +111,11 @@ export default function AboutPage() {
 
               <div className="mt-12 lg:hidden">
                 <InteriorCollage
-                  primary="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?auto=format&fit=crop&w=900&q=80"
+                  primary="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=80"
                   primaryAlt="Compassionate chiropractic care at Ascension Health"
-                  secondary="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
-                  secondaryAlt="Therapeutic rehabilitation"
-                  tertiary="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80"
+                  secondary={skeletonImage.src}
+                  secondaryAlt="Spinal anatomy illustration"
+                  tertiary="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=600&q=80"
                   tertiaryAlt="Wellness consultation"
                   stat={{ value: "15+ yrs", label: "Caring for Fernley families" }}
                   badge={{ kicker: "Trusted", value: "4.9 \u2605" }}
@@ -131,11 +132,11 @@ export default function AboutPage() {
           <div className="grid grid-cols-12 gap-10 items-center">
             <div className="col-span-5">
               <InteriorCollage
-                primary="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?auto=format&fit=crop&w=900&q=80"
+                primary="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=80"
                 primaryAlt="Compassionate chiropractic care at Ascension Health"
-                secondary="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
-                secondaryAlt="Therapeutic rehabilitation"
-                tertiary="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80"
+                secondary={skeletonImage.src}
+                secondaryAlt="Spinal anatomy illustration"
+                tertiary="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=600&q=80"
                 tertiaryAlt="Wellness consultation"
                 stat={{ value: "15+ yrs", label: "Caring for Fernley families" }}
                 badge={{ kicker: "Trusted", value: "4.9 \u2605" }}

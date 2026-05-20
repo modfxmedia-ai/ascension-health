@@ -137,19 +137,27 @@ export function PageShell({
   );
 }
 
-export function BottomCTA() {
+export function BottomCTA({
+  kicker = "Get started today",
+  heading = "Ready to Feel Better?",
+  body = "Call our Fernley team and book your visit.",
+}: {
+  kicker?: string;
+  heading?: string;
+  body?: string;
+} = {}) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-brand-900 to-brand-800 text-white">
       <div aria-hidden className="absolute -top-20 right-10 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />
       <div aria-hidden className="absolute -bottom-24 -left-10 h-72 w-72 rounded-full bg-brand-500/30 blur-3xl" />
       <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-14 text-center sm:flex-row sm:text-left">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">Get started today</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">{kicker}</p>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl font-semibold leading-tight">
-            Ready to Feel Better?
+            {heading}
           </h2>
           <p className="mt-3 text-brand-100/80">
-            Call our Fernley team and book your visit.
+            {body}
           </p>
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-3">

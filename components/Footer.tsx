@@ -11,6 +11,7 @@ const QUICK_LINKS = [
   { label: "New Patients", href: "/new-patients/" },
   { label: "Online Forms", href: "/new-patients/online-forms/" },
   { label: "Appointments", href: "/appointments/" },
+  { label: "Areas We Serve", href: "/areas-we-serve/" },
   { label: "Contact", href: "/contact/" },
 ];
 

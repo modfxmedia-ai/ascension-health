@@ -124,11 +124,11 @@ export default function NewPatientsPage() {
 
               <div className="mt-12 lg:hidden">
                 <InteriorCollage
-                  primary="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?auto=format&fit=crop&w=900&q=80"
+                  primary="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=900&q=80"
                   primaryAlt="Friendly welcome at Ascension Health"
-                  secondary="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
+                  secondary="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
                   secondaryAlt="Modern reception area"
-                  tertiary="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80"
+                  tertiary="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=80"
                   tertiaryAlt="Patient paperwork"
                   stat={{ value: "Hassle-free", label: "Forms ready before you arrive" }}
                 />
@@ -144,11 +144,11 @@ export default function NewPatientsPage() {
           <div className="grid grid-cols-12 gap-10 items-center">
             <div className="col-span-5">
               <InteriorCollage
-                primary="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?auto=format&fit=crop&w=900&q=80"
+                primary="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=900&q=80"
                 primaryAlt="Friendly welcome at Ascension Health"
-                secondary="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
+                secondary="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
                 secondaryAlt="Modern reception area"
-                tertiary="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80"
+                tertiary="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=80"
                 tertiaryAlt="Patient paperwork"
                 stat={{ value: "Hassle-free", label: "Forms ready before you arrive" }}
               />

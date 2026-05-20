@@ -6,12 +6,12 @@ import {
   MapPin,
   Clock,
   CalendarCheck,
-  ShieldCheck,
 } from "lucide-react";
 import { PageHero, AppointmentSidebar, BottomCTA } from "@/components/InteriorPage";
 import { SectionEyebrow } from "@/components/InteriorMotion";
 import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Appointments | Ascension Health",
@@ -86,11 +86,8 @@ export default function AppointmentsPage() {
                 </a>
               </div>
 
-              <form
-                className="mt-10 rounded-3xl border border-slate-200 bg-white p-7 shadow-lg shadow-brand-900/5 space-y-6"
-                action={SITE.phoneHref}
-              >
-                <div className="flex items-center gap-3">
+              <div className="mt-10">
+                <div className="mb-6 flex items-center gap-3">
                   <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
                     <CalendarCheck className="h-5 w-5" />
                   </span>
@@ -103,67 +100,8 @@ export default function AppointmentsPage() {
                     </p>
                   </div>
                 </div>
-
-                <div className="grid gap-5 sm:grid-cols-2">
-                  <Field label="Full Name" name="name" required />
-                  <Field label="Phone" name="phone" type="tel" required />
-                  <Field label="Email" name="email" type="email" required />
-                  <Field label="Preferred Date" name="date" type="date" required />
-                  <div className="sm:col-span-2">
-                    <label
-                      htmlFor="time"
-                      className="block text-xs font-semibold uppercase tracking-widest text-slate-600"
-                    >
-                      Preferred Time
-                    </label>
-                    <select
-                      id="time"
-                      name="time"
-                      className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/20"
-                      defaultValue=""
-                    >
-                      <option value="" disabled>
-                        Select a time
-                      </option>
-                      <option>Morning</option>
-                      <option>Afternoon</option>
-                      <option>Evening</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="nature"
-                    className="block text-xs font-semibold uppercase tracking-widest text-slate-600"
-                  >
-                    Nature of Visit
-                  </label>
-                  <textarea
-                    id="nature"
-                    name="nature"
-                    rows={4}
-                    className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/20"
-                    placeholder="Briefly describe what you'd like help with"
-                  />
-                </div>
-
-                <div className="rounded-xl bg-slate-50 p-4 text-xs leading-relaxed text-slate-600 flex gap-3">
-                  <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand-700" />
-                  <p>
-                    Do NOT send personal health information through this form.
-                    Your appointment will be confirmed by phone by a member of
-                    our staff.
-                  </p>
-                </div>
-
-                <button
-                  type="submit"
-                  className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-brand-700 px-8 py-3.5 text-sm font-semibold text-white shadow-md hover:bg-brand-800 transition-colors"
-                >
-                  Submit Request
-                </button>
-              </form>
+                <ContactForm />
+              </div>
             </Reveal>
           </div>
           <div className="lg:col-span-4">
@@ -248,32 +186,4 @@ export default function AppointmentsPage() {
   );
 }
 
-function Field({
-  label,
-  name,
-  type = "text",
-  required,
-}: {
-  label: string;
-  name: string;
-  type?: string;
-  required?: boolean;
-}) {
-  return (
-    <div>
-      <label
-        htmlFor={name}
-        className="block text-xs font-semibold uppercase tracking-widest text-slate-600"
-      >
-        {label} {required && <span className="text-brand-700">*</span>}
-      </label>
-      <input
-        id={name}
-        name={name}
-        type={type}
-        required={required}
-        className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/20"
-      />
-    </div>
-  );
-}
+

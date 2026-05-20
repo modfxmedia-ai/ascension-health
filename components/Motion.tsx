@@ -2,6 +2,8 @@
 
 import * as React from "react";
 import Image, { type StaticImageData } from "next/image";
+import neckPainImage from "@/images/neck-pain.jpg";
+import ivTherapyImage from "@/images/clone/IV-Therapy.jpg";
 import {
   motion,
   useInView,
@@ -863,12 +865,12 @@ export function ServicesShowcase() {
           transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?auto=format&fit=crop&w=600&q=80"
-            alt="Wellness IV therapy"
+            src={ivTherapyImage}
+            alt="Nutritional IV therapy at Ascension Health"
             fill
             sizes="220px"
             className="object-cover"
-            unoptimized
+            placeholder="blur"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-950/30 to-transparent" />
         </motion.div>
@@ -947,12 +949,12 @@ export function ConditionsHero() {
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80"
+            src={neckPainImage}
             alt="Whole-body pain relief and recovery"
             fill
             sizes="(min-width: 1024px) 480px, 90vw"
             className="object-cover"
-            unoptimized
+            placeholder="blur"
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-t from-brand-950/65 via-brand-950/10 to-transparent" />

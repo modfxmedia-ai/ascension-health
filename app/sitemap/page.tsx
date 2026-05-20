@@ -2,16 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Home as HomeIcon,
-  Info,
   UserPlus,
   CalendarCheck,
   Stethoscope,
   Activity,
-  PhoneCall,
-  ShieldCheck,
+  FileText,
   Map as MapIcon,
+  MapPin,
+  ChevronRight,
 } from "lucide-react";
-import { NAVIGATION, SITE, type NavChild } from "@/lib/navigation";
+import { PageHero, BottomCTA } from "@/components/InteriorPage";
+import { Reveal } from "@/components/Motion";
+import { PSEO_TARGET_CITIES } from "@/lib/pSEO-routing";
 
 export const metadata: Metadata = {
   title: "Sitemap | Ascension Health",
@@ -20,239 +22,182 @@ export const metadata: Metadata = {
   alternates: { canonical: "/sitemap/" },
 };
 
-const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
-  Home: HomeIcon,
-  About: Info,
-  "New Patients": UserPlus,
-  Appointments: CalendarCheck,
-  Services: Stethoscope,
-  "Conditions Treated": Activity,
-  Contact: PhoneCall,
+type SitemapLink = { label: string; href: string };
+type SitemapGroup = {
+  title: string;
+  icon: React.ComponentType<{ className?: string }>;
+  links: SitemapLink[];
 };
 
-const UTILITY_LINKS: NavChild[] = [
-  { label: "Sitemap", href: "/sitemap/" },
-  { label: "Accessibility", href: "/accessibility/" },
+const GROUPS: SitemapGroup[] = [
+  {
+    title: "Main Pages",
+    icon: HomeIcon,
+    links: [
+      { label: "Home", href: "/" },
+      { label: "About", href: "/about/" },
+      { label: "Our Team", href: "/our-team/" },
+      { label: "Appointments", href: "/appointments/" },
+      { label: "Contact", href: "/contact/" },
+    ],
+  },
+  {
+    title: "New Patients",
+    icon: UserPlus,
+    links: [
+      { label: "New Patients", href: "/new-patients/" },
+      { label: "Online Forms", href: "/new-patients/online-forms/" },
+    ],
+  },
+  {
+    title: "Services",
+    icon: Stethoscope,
+    links: [
+      { label: "Services Overview", href: "/services/" },
+      { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
+      { label: "Spinal Decompression", href: "/services/spinal-decompression/" },
+      { label: "Physical Therapy", href: "/physical-therapy/" },
+      { label: "Joint Injections", href: "/joint-injections/" },
+      { label: "Trigger Point Injections", href: "/trigger-point-injections/" },
+      { label: "Nutritional IVs", href: "/nutritional-ivs/" },
+      {
+        label: "Bioidentical Hormone Replacement Therapy",
+        href: "/bioidentical-hormone-replacement-therapy/",
+      },
+      { label: "Medical Weight Loss", href: "/medical-weight-loss/" },
+      { label: "GAINSWave®", href: "/gainswave/" },
+    ],
+  },
+  {
+    title: "Conditions Treated",
+    icon: Activity,
+    links: [
+      { label: "Conditions Treated", href: "/conditions-treated/" },
+      { label: "Back Pain", href: "/conditions-treated/back-pain/" },
+      { label: "Carpal Tunnel", href: "/conditions-treated/carpal-tunnel/" },
+      { label: "Headaches / Migraines", href: "/conditions-treated/headaches-migraines/" },
+      { label: "Intersegmental Traction", href: "/conditions-treated/intersegmental-traction/" },
+      { label: "Myofascial Release", href: "/conditions-treated/myofascial-release/" },
+      { label: "Neck Pain", href: "/conditions-treated/neck-pain/" },
+      { label: "Sciatica", href: "/conditions-treated/sciatica/" },
+      { label: "Scoliosis", href: "/conditions-treated/scoliosis/" },
+      { label: "Shoulder Pain", href: "/conditions-treated/shoulder-pain/" },
+      { label: "Whiplash", href: "/conditions-treated/whiplash/" },
+      { label: "Work Injury", href: "/conditions-treated/work-injury/" },
+    ],
+  },
+  {
+    title: "Wellness & Recovery",
+    icon: CalendarCheck,
+    links: [
+      { label: "Pain Relief", href: "/pain-relief/" },
+      { label: "Joint Pain", href: "/joint-pain/" },
+      { label: "Knee Pain", href: "/knee-pain/" },
+      { label: "Neuropathy", href: "/neuropathy/" },
+      { label: "Hormonal Imbalance", href: "/hormonal-imbalance/" },
+      { label: "Sexual Dysfunction", href: "/sexual-dysfunction/" },
+      { label: "Sports Injuries", href: "/sports-injuries/" },
+      { label: "Spinal Decompression", href: "/spinal-decompression/" },
+    ],
+  },
+  {
+    title: "Resources",
+    icon: FileText,
+    links: [
+      { label: "Sitemap", href: "/sitemap/" },
+      { label: "Thank You", href: "/thank-you/" },
+    ],
+  },
+  {
+    title: "Areas We Serve",
+    icon: MapPin,
+    links: [
+      { label: "All Areas We Serve", href: "/areas-we-serve/" },
+      ...[...PSEO_TARGET_CITIES]
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((c) => ({ label: `${c.name}, NV`, href: `/${c.slug}-nv/` })),
+    ],
+  },
 ];
 
 export default function SitemapPage() {
-  const sections = NAVIGATION.filter((n) => n.children && n.children.length);
-  const standalone = NAVIGATION.filter((n) => !n.children || !n.children.length);
-
   return (
-    <main className="bg-slate-50">
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-brand-900 text-white">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage:
-              "radial-gradient(rgba(255,255,255,0.18) 1px, transparent 1px)",
-            backgroundSize: "22px 22px",
-          }}
-        />
-        <div
-          aria-hidden
-          className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-accent/25 blur-3xl"
-        />
-        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-24">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-100 backdrop-blur">
-            <MapIcon className="h-3.5 w-3.5" />
-            Sitemap
-          </div>
-          <h1 className="mt-5 font-display text-4xl sm:text-5xl font-semibold leading-tight">
-            Every page, in one place
-          </h1>
-          <p className="mt-4 max-w-2xl text-base sm:text-lg text-brand-100/80 leading-relaxed">
-            A complete overview of the Ascension Health website. Find services,
-            conditions we treat, patient resources, and ways to reach our
-            Fernley, NV team — all neatly organized below.
-          </p>
-        </div>
-      </section>
+    <>
+      <PageHero title="Sitemap" />
 
-      {/* Quick top-level grid */}
-      <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-10">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
-            Primary navigation
-          </h2>
-          <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {NAVIGATION.map((n) => {
-              const Icon = ICONS[n.label] ?? Stethoscope;
+      <section className="relative pb-20 sm:pb-24">
+        <div className="mx-auto max-w-7xl px-6 pt-16 sm:pt-20">
+          <Reveal>
+            <div className="max-w-2xl">
+              <span className="inline-flex items-center rounded-full bg-brand-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-700">
+                Find Your Way Around
+              </span>
+              <h2 className="mt-3 font-display text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
+                Every page on Ascension Health
+              </h2>
+              <p className="mt-4 text-base text-slate-600 leading-relaxed">
+                A complete index of services, conditions, and patient resources
+                — organized to help you find what you need quickly.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {GROUPS.map((group, i) => {
+              const Icon = group.icon;
               return (
-                <li key={n.href}>
-                  <Link
-                    href={n.href}
-                    className="group flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-md hover:shadow-brand-900/5"
-                  >
-                    <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-50 text-brand-700 transition-colors group-hover:bg-brand-700 group-hover:text-white">
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <span className="flex flex-col">
-                      <span className="font-medium text-slate-900">
-                        {n.label}
+                <Reveal key={group.title} delay={i * 0.05}>
+                  <div className="group relative h-full overflow-hidden rounded-2xl bg-white p-7 shadow-lg shadow-brand-900/5 ring-1 ring-slate-100 transition-all hover:shadow-xl hover:shadow-brand-900/10 hover:ring-brand-200">
+                    <span
+                      aria-hidden
+                      className="absolute -top-12 -right-12 h-32 w-32 rounded-full bg-gradient-to-br from-accent/10 to-brand-200/20 blur-2xl transition-transform group-hover:scale-125"
+                    />
+                    <div className="relative flex items-center gap-3">
+                      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-700 to-brand-900 text-white shadow-md">
+                        <Icon className="h-5 w-5" />
                       </span>
-                      <span className="text-xs text-slate-500">{n.href}</span>
-                    </span>
-                  </Link>
-                </li>
+                      <h3 className="font-display text-lg font-semibold text-slate-900">
+                        {group.title}
+                      </h3>
+                    </div>
+
+                    <ul className="relative mt-5 space-y-1.5">
+                      {group.links.map((link) => (
+                        <li key={link.href}>
+                          <Link
+                            href={link.href}
+                            className="group/item flex items-center justify-between gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-800 transition-colors"
+                          >
+                            <span>{link.label}</span>
+                            <ChevronRight className="h-3.5 w-3.5 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-brand-600" />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
               );
             })}
-          </ul>
-        </div>
-      </section>
-
-      {/* Sectioned tree */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-8 lg:grid-cols-2">
-          {sections.map((section) => {
-            const Icon = ICONS[section.label] ?? Stethoscope;
-            return (
-              <article
-                key={section.href}
-                className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
-              >
-                <span
-                  aria-hidden
-                  className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-600 via-accent to-brand-600"
-                />
-                <header className="flex items-start justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-700 text-white shadow-md">
-                      <Icon className="h-6 w-6" />
-                    </span>
-                    <div>
-                      <h2 className="font-display text-2xl font-semibold text-slate-900 leading-tight">
-                        {section.label}
-                      </h2>
-                      <Link
-                        href={section.href}
-                        className="text-xs font-medium text-brand-700 hover:text-brand-800"
-                      >
-                        {section.href}
-                      </Link>
-                    </div>
-                  </div>
-                  <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
-                    {section.children?.length ?? 0} pages
-                  </span>
-                </header>
-
-                <ul className="mt-6 grid gap-y-2 sm:grid-cols-2">
-                  {section.children?.map((child) => (
-                    <li key={child.href}>
-                      <Link
-                        href={child.href}
-                        className="group flex items-center gap-2 rounded-md py-1.5 text-sm text-slate-700 transition-colors hover:text-brand-700"
-                      >
-                        <span
-                          aria-hidden
-                          className="h-1.5 w-1.5 rounded-full bg-accent transition-transform group-hover:scale-150"
-                        />
-                        <span className="border-b border-transparent group-hover:border-brand-300">
-                          {child.label}
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            );
-          })}
-        </div>
-
-        {/* Standalone pages + utility */}
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
-            <h2 className="font-display text-xl font-semibold text-slate-900">
-              Main pages
-            </h2>
-            <ul className="mt-5 space-y-2 text-sm">
-              {standalone.map((n) => (
-                <li key={n.href}>
-                  <Link
-                    href={n.href}
-                    className="group inline-flex items-center gap-2 text-slate-700 hover:text-brand-700"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-                    <span className="border-b border-transparent group-hover:border-brand-300">
-                      {n.label}
-                    </span>
-                    <span className="text-xs text-slate-400">{n.href}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </article>
-
-          <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="h-5 w-5 text-brand-700" />
-              <h2 className="font-display text-xl font-semibold text-slate-900">
-                Site information
-              </h2>
-            </div>
-            <ul className="mt-5 space-y-2 text-sm">
-              {UTILITY_LINKS.map((u) => (
-                <li key={u.href}>
-                  <Link
-                    href={u.href}
-                    className="group inline-flex items-center gap-2 text-slate-700 hover:text-brand-700"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-                    <span className="border-b border-transparent group-hover:border-brand-300">
-                      {u.label}
-                    </span>
-                    <span className="text-xs text-slate-400">{u.href}</span>
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <a
-                  href={SITE.mapsHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 text-slate-700 hover:text-brand-700"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-                  <span className="border-b border-transparent group-hover:border-brand-300">
-                    Google Business Profile
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="border-t border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-6 py-12 sm:flex-row">
-          <div>
-            <p className="font-display text-2xl font-semibold text-slate-900">
-              Can&apos;t find what you&apos;re looking for?
-            </p>
-            <p className="mt-1 text-sm text-slate-600">
-              Our Fernley team is happy to help — call{" "}
-              <a
-                href={SITE.phoneHref}
-                className="font-semibold text-brand-700 hover:text-brand-800"
-              >
-                {SITE.phone}
-              </a>{" "}
-              or request a visit online.
-            </p>
           </div>
-          <Link
-            href={SITE.appointmentsHref}
-            className="inline-flex items-center rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-brand-800 transition-colors"
-          >
-            Request Appointment
-          </Link>
+
+          <Reveal delay={0.3}>
+            <div className="mt-12 flex items-center justify-center gap-2 text-sm text-slate-500">
+              <MapIcon className="h-4 w-4" />
+              <span>
+                Looking for an XML version?{" "}
+                <Link
+                  href="/sitemap.xml"
+                  className="font-semibold text-brand-700 hover:text-brand-900"
+                >
+                  /sitemap.xml
+                </Link>
+              </span>
+            </div>
+          </Reveal>
         </div>
       </section>
-    </main>
+
+      <BottomCTA />
+    </>
   );
 }
