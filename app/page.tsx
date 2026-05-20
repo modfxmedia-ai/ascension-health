@@ -498,10 +498,10 @@ function Services() {
                         {s.step}
                       </span>
                       <div className="min-w-0">
-                        <p className="text-sm font-semibold text-slate-900">
+                        <p className="text-base font-semibold text-slate-900">
                           {s.title}
                         </p>
-                        <p className="mt-1 text-xs text-slate-600 leading-snug">
+                        <p className="mt-1.5 text-sm text-slate-600 leading-relaxed">
                           {s.body}
                         </p>
                       </div>
