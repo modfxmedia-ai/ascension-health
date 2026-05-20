@@ -11,12 +11,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/football.jpg";
 
 export const metadata: Metadata = {
-  title: "Sports Injuries | Ascension Health",
+  title: "Sports Injuries in Fernley, NV | Ascension Health",
   description:
     "Sports injury care in Fernley, NV. Ascension Health helps athletes recover from recent and lingering injuries with chiropractic care, physical therapy and injections.",
   alternates: { canonical: "/sports-injuries/" },
   openGraph: {
-    title: "Sports Injuries | Ascension Health",
+    title: "Sports Injuries in Fernley, NV | Ascension Health",
     description:
       "Sports injury recovery for athletes of every level in Fernley, NV.",
     url: "https://ascensionhealthnv.com/sports-injuries/",

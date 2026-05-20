@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Myofascial Release | Ascension Health",
+  title: "Myofascial Release in Fernley, NV | Ascension Health",
   description:
     "Myofascial release therapy in Fernley, NV. Ascension Health uses myofascial release to relieve pain caused by fascia muscle restriction and chronic tension.",
   alternates: { canonical: "/conditions-treated/myofascial-release/" },

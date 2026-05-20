@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Sciatica | Ascension Health",
+  title: "Sciatica in Fernley, NV | Ascension Health",
   description:
     "Sciatica treatment in Fernley, NV. Ascension Health treats sciatic nerve pain that radiates from the lower back down the legs with non-surgical care.",
   alternates: { canonical: "/conditions-treated/sciatica/" },

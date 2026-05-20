@@ -16,7 +16,7 @@ import { Reveal } from "@/components/Motion";
 import { PSEO_TARGET_CITIES } from "@/lib/pSEO-routing";
 
 export const metadata: Metadata = {
-  title: "Sitemap | Ascension Health",
+  title: "Sitemap in Fernley, NV | Ascension Health",
   description:
     "Browse every page on the Ascension Health website — services, conditions treated, patient resources and contact information for our Fernley, NV practice.",
   alternates: { canonical: "/sitemap/" },

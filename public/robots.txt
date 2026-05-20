@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
-
+X-Robots-Tag: max-image-preview:large
+X-Robots-Tag: max-snippet:-1
+X-Robots-Tag: max-video-preview:-1
 Sitemap: https://ascensionhealthnv.com/sitemap.xml

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Scoliosis | Ascension Health",
+  title: "Scoliosis in Fernley, NV | Ascension Health",
   description:
     "Scoliosis care in Fernley, NV. Ascension Health offers non-surgical chiropractic care for scoliosis and related postural conditions.",
   alternates: { canonical: "/conditions-treated/scoliosis/" },

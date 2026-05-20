@@ -19,12 +19,14 @@ import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
 
 export const metadata: Metadata = {
-  title: "Our Team | Ascension Health",
-  description: "Our Team -",
+  title: "Our Team in Fernley, NV | Ascension Health",
+  description:
+    "Meet the chiropractic and wellness team at Ascension Health in Fernley, NV — patient-first care, education and a family atmosphere on every visit.",
   alternates: { canonical: "/our-team/" },
   openGraph: {
-    title: "Our Team | Ascension Health",
-    description: "Our Team -",
+    title: "Our Team in Fernley, NV | Ascension Health",
+    description:
+      "Meet the Ascension Health team in Fernley, NV — compassionate, education-first chiropractic and wellness care.",
     url: "https://ascensionhealthnv.com/our-team/",
     type: "article",
     siteName: "Ascension Health",

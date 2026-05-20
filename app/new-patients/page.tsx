@@ -20,12 +20,14 @@ import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
 
 export const metadata: Metadata = {
-  title: "New Patients | Ascension Health",
-  description: "New Patients -",
+  title: "New Patients in Fernley, NV | Ascension Health",
+  description:
+    "New patient information for Ascension Health in Fernley, NV. Print intake forms, learn what to expect on your first visit and request an appointment online.",
   alternates: { canonical: "/new-patients/" },
   openGraph: {
-    title: "New Patients | Ascension Health",
-    description: "New Patients -",
+    title: "New Patients in Fernley, NV | Ascension Health",
+    description:
+      "What to expect on your first visit to Ascension Health in Fernley, NV — forms, evaluation and personalized care plan.",
     url: "https://ascensionhealthnv.com/new-patients/",
     type: "article",
     siteName: "Ascension Health",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Intersegmental Traction | Ascension Health",
+  title: "Intersegmental Traction in Fernley, NV | Ascension Health",
   description:
     "Intersegmental traction therapy in Fernley, NV. Ascension Health uses intersegmental traction to speed recovery from back injuries and chronic back pain.",
   alternates: { canonical: "/conditions-treated/intersegmental-traction/" },

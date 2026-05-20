@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Work Injury | Ascension Health",
+  title: "Work Injury in Fernley, NV | Ascension Health",
   description:
     "Work-injury care in Fernley, NV. Ascension Health treats both acute workplace injuries and the chronic repetitive-strain conditions caused by long-term physical demands.",
   alternates: { canonical: "/conditions-treated/work-injury/" },

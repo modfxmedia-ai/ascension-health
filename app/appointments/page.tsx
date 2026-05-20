@@ -14,12 +14,14 @@ import { SITE } from "@/lib/navigation";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Appointments | Ascension Health",
-  description: "Appointments -",
+  title: "Appointments in Fernley, NV | Ascension Health",
+  description:
+    "Request an appointment with Ascension Health in Fernley, NV. Call (775) 575-9922 or use our online form to schedule chiropractic care, physical therapy or wellness services.",
   alternates: { canonical: "/appointments/" },
   openGraph: {
-    title: "Appointments | Ascension Health",
-    description: "Appointments -",
+    title: "Appointments in Fernley, NV | Ascension Health",
+    description:
+      "Request an appointment with Ascension Health in Fernley, NV — chiropractic, physical therapy and wellness services.",
     url: "https://ascensionhealthnv.com/appointments/",
     type: "article",
     siteName: "Ascension Health",

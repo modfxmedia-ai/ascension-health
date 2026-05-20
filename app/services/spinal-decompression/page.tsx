@@ -18,12 +18,12 @@ import { SITE } from "@/lib/navigation";
 import spineImage from "@/images/spine-skeleton.jpg";
 
 export const metadata: Metadata = {
-  title: "Spinal Decompression | Ascension Health",
+  title: "Spinal Decompression in Fernley, NV | Ascension Health",
   description:
     "Non-surgical spinal decompression in Fernley, NV. Gentle mechanical traction relieves pressure on bulging or herniated discs and pinched spinal nerves.",
   alternates: { canonical: "/services/spinal-decompression/" },
   openGraph: {
-    title: "Spinal Decompression | Ascension Health",
+    title: "Spinal Decompression in Fernley, NV | Ascension Health",
     description:
       "A safe, non-invasive alternative to drugs and surgery for chronic back pain.",
     url: "https://ascensionhealthnv.com/services/spinal-decompression/",

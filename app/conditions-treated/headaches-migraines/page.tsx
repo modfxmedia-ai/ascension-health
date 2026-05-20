@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Headaches/Migraines | Ascension Health",
+  title: "Headaches & Migraines in Fernley, NV | Ascension Health",
   description:
     "Headache and migraine treatment in Fernley, NV. Ascension Health helps the nine out of ten Americans who deal with headaches find lasting relief.",
   alternates: { canonical: "/conditions-treated/headaches-migraines/" },

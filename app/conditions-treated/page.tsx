@@ -10,12 +10,12 @@ import { ConditionsSidebar } from "@/components/ConditionsSidebar";
 import { ClientPill } from "@/components/ConditionPill";
 
 export const metadata: Metadata = {
-  title: "Conditions Treated | Ascension Health",
+  title: "Conditions Treated in Fernley, NV | Ascension Health",
   description:
-    'Conditions Treated - Ascension Health specializes in pain management. According to the American Academy of Pain Medicine (AAPM), "Chronic pain affects more Americans than"',
+    "Ascension Health in Fernley, NV specializes in pain management — back pain, neck pain, sciatica, headaches, joint pain, sports injuries and more.",
   alternates: { canonical: "/conditions-treated/" },
   openGraph: {
-    title: "Conditions Treated | Ascension Health",
+    title: "Conditions Treated in Fernley, NV | Ascension Health",
     description:
       "Pain management in Fernley, NV — back, neck, joint, knee, sciatica, whiplash and more.",
     url: "https://ascensionhealthnv.com/conditions-treated/",

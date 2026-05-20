@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Shoulder Pain | Ascension Health",
+  title: "Shoulder Pain in Fernley, NV | Ascension Health",
   description:
     "Shoulder pain treatment in Fernley, NV. Shoulder pain affects nearly half of Americans — Ascension Health offers non-surgical options that work.",
   alternates: { canonical: "/conditions-treated/shoulder-pain/" },

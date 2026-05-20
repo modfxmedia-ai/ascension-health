@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Carpal Tunnel | Ascension Health",
+  title: "Carpal Tunnel in Fernley, NV | Ascension Health",
   description:
     "Carpal tunnel syndrome care in Fernley, NV. Ascension Health offers non-surgical chiropractic care for carpal tunnel and other repetitive-strain conditions.",
   alternates: { canonical: "/conditions-treated/carpal-tunnel/" },

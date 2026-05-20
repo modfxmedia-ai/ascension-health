@@ -18,12 +18,12 @@ import { SITE } from "@/lib/navigation";
 import ptImage from "@/images/physical-therapy.jpg";
 
 export const metadata: Metadata = {
-  title: "Physical Therapy | Ascension Health",
+  title: "Physical Therapy in Fernley, NV | Ascension Health",
   description:
     "Physical therapy in Fernley, NV. Personalized rehabilitation after personal injury, auto accident or fall — therapeutic exercises that restore strength, mobility and balance.",
   alternates: { canonical: "/physical-therapy/" },
   openGraph: {
-    title: "Physical Therapy | Ascension Health",
+    title: "Physical Therapy in Fernley, NV | Ascension Health",
     description:
       "Personalized physical therapy and therapeutic exercise in Fernley, NV.",
     url: "https://ascensionhealthnv.com/physical-therapy/",

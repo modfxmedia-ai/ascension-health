@@ -19,12 +19,12 @@ import heroImage from "@/images/Chiropractic-Treament-Back.jpg";
 import inlineImage from "@/images/chiropractic-care.jpg";
 
 export const metadata: Metadata = {
-  title: "Chiropractic Care | Ascension Health",
+  title: "Chiropractic Care in Fernley, NV | Ascension Health",
   description:
     "Chiropractic care in Fernley, NV. Gentle adjustments to relieve back pain, neck pain, headaches and joint pain — a safe, drug-free alternative to medication.",
   alternates: { canonical: "/services/chiropractic-care/" },
   openGraph: {
-    title: "Chiropractic Care | Ascension Health",
+    title: "Chiropractic Care in Fernley, NV | Ascension Health",
     description:
       "Gentle, natural chiropractic care for back pain, neck pain and headaches in Fernley, NV.",
     url: "https://ascensionhealthnv.com/services/chiropractic-care/",
