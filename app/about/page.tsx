@@ -117,7 +117,7 @@ export default function AboutPage() {
                   secondaryAlt="Spinal anatomy illustration"
                   tertiary="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=600&q=80"
                   tertiaryAlt="Wellness consultation"
-                  stat={{ value: "15+ yrs", label: "Caring for Fernley families" }}
+                  stat={{ value: "9 yrs", label: "Caring for Fernley families" }}
                   badge={{ kicker: "Trusted", value: "4.9 \u2605" }}
                 />
               </div>
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 secondaryAlt="Spinal anatomy illustration"
                 tertiary="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=600&q=80"
                 tertiaryAlt="Wellness consultation"
-                stat={{ value: "15+ yrs", label: "Caring for Fernley families" }}
+                stat={{ value: "9 yrs", label: "Caring for Fernley families" }}
                 badge={{ kicker: "Trusted", value: "4.9 \u2605" }}
               />
             </div>

@@ -240,7 +240,7 @@ function Hero() {
             {/* Stats */}
             <Reveal delay={0.4}>
               <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-white/15 pt-8 max-w-lg">
-                <Stat value={15} suffix="+" label="Years caring for Fernley" />
+                <Stat value={9} label="Years caring for Fernley" />
                 <Stat
                   value={1000}
                   suffix="+"

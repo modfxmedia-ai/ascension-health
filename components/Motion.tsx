@@ -519,7 +519,7 @@ export function HeroVisual() {
       >
         <div className="rounded-2xl bg-brand-950/90 backdrop-blur-xl border border-brand-700/50 shadow-2xl shadow-brand-950/40 px-4 py-3">
           <div className="text-[11px] uppercase tracking-wider text-accent font-semibold">
-            15+ Years
+            9 Years
           </div>
           <div className="text-sm font-semibold text-white leading-tight">
             Caring for Fernley
@@ -709,7 +709,7 @@ export function MissionCollage() {
             </motion.span>
             <div>
               <p className="font-display text-2xl font-semibold text-slate-900 leading-none">
-                <Counter to={15} suffix="+" /> yrs
+                <Counter to={9} /> yrs
               </p>
               <p className="mt-1 text-xs text-slate-500 leading-tight">
                 Caring for Fernley families
