@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
 import { NAVIGATION, SITE } from "@/lib/navigation";
 import logo from "@/images/logo.png";
 
@@ -76,15 +76,6 @@ export default function Footer() {
                 >
                   <Phone className="h-4 w-4 text-brand-400 shrink-0" />
                   <span>{SITE.phone}</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href={SITE.smsHref}
-                  className="flex items-center gap-3 text-brand-100/80 hover:text-white transition-colors"
-                >
-                  <Mail className="h-4 w-4 text-brand-400 shrink-0" />
-                  <span>Text us: {SITE.sms}</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-brand-100/80">

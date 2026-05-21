@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Phone, MapPin, Clock, MessageSquare, Mail, ArrowRight } from "lucide-react";
+import { Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 import { PageHero, BottomCTA } from "@/components/InteriorPage";
 import { Reveal } from "@/components/Motion";
 import ContactForm from "@/components/ContactForm";
@@ -28,9 +28,9 @@ const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${MAPS_QUERY}
 const INFO_CARDS = [
   {
     icon: Phone,
-    eyebrow: "Call or Text",
+    eyebrow: "Call",
     title: SITE.phone,
-    subtitle: `Text: ${SITE.sms}`,
+    subtitle: "Speak with our Fernley team",
     href: SITE.phoneHref,
     cta: "Tap to call",
   },
@@ -187,18 +187,6 @@ export default function ContactPage() {
                       <span className="flex flex-col leading-tight">
                         <span className="text-[10px] uppercase tracking-widest text-brand-100/70">Call</span>
                         <span className="font-semibold">{SITE.phone}</span>
-                      </span>
-                    </a>
-                    <a
-                      href={SITE.smsHref}
-                      className="flex items-center gap-3 rounded-xl bg-white/5 p-3.5 ring-1 ring-white/10 hover:bg-white/10 transition-colors"
-                    >
-                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 text-accent">
-                        <MessageSquare className="h-4 w-4" />
-                      </span>
-                      <span className="flex flex-col leading-tight">
-                        <span className="text-[10px] uppercase tracking-widest text-brand-100/70">Text</span>
-                        <span className="font-semibold">{SITE.sms}</span>
                       </span>
                     </a>
                   </div>

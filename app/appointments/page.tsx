@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Phone,
-  MessageSquare,
   MapPin,
   Clock,
   CalendarCheck,
@@ -53,7 +52,7 @@ export default function AppointmentsPage() {
                 by phone by a member of our staff. Thank you!
               </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="mt-8">
                 <a
                   href={SITE.phoneHref}
                   className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
@@ -67,22 +66,6 @@ export default function AppointmentsPage() {
                     </p>
                     <p className="font-display text-lg font-semibold text-slate-900 group-hover:text-brand-700">
                       {SITE.phone}
-                    </p>
-                  </div>
-                </a>
-                <a
-                  href={SITE.smsHref}
-                  className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
-                >
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-brand-950">
-                    <MessageSquare className="h-5 w-5" />
-                  </span>
-                  <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-widest text-brand-700">
-                      Text us
-                    </p>
-                    <p className="font-display text-lg font-semibold text-slate-900 group-hover:text-brand-700">
-                      {SITE.sms}
                     </p>
                   </div>
                 </a>

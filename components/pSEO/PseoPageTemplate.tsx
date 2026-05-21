@@ -7,7 +7,6 @@ import {
   Clock,
   HeartHandshake,
   MapPin,
-  MessageSquare,
   Navigation,
   Phone,
   ShieldCheck,
@@ -667,10 +666,6 @@ function LocalAreaSection({
                 <a href={SITE.phoneHref} className="flex items-center gap-3 text-sm">
                   <Phone className="h-4 w-4 text-accent" />
                   <span>{SITE.phone}</span>
-                </a>
-                <a href={SITE.smsHref} className="flex items-center gap-3 text-sm">
-                  <MessageSquare className="h-4 w-4 text-accent" />
-                  <span>Text {SITE.sms}</span>
                 </a>
                 <span className="flex items-center gap-3 text-sm">
                   <Clock className="h-4 w-4 text-accent" />

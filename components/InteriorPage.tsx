@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronRight, Phone, MapPin, Clock, MessageSquare } from "lucide-react";
+import { ChevronRight, Phone, MapPin, Clock } from "lucide-react";
 import { SITE } from "@/lib/navigation";
 import { Reveal } from "@/components/Motion";
 
@@ -63,19 +63,6 @@ export function AppointmentSidebar() {
           <span className="flex flex-col">
             <span className="text-[11px] uppercase tracking-widest text-brand-100/70">Call us</span>
             <span className="font-display text-xl font-semibold">{SITE.phone}</span>
-          </span>
-        </a>
-
-        <a
-          href={SITE.smsHref}
-          className="mt-3 flex items-center gap-3 rounded-xl bg-white/5 p-4 ring-1 ring-white/10 transition-colors hover:bg-white/10"
-        >
-          <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-accent">
-            <MessageSquare className="h-5 w-5" />
-          </span>
-          <span className="flex flex-col">
-            <span className="text-[11px] uppercase tracking-widest text-brand-100/70">Text us</span>
-            <span className="text-base font-semibold">{SITE.sms}</span>
           </span>
         </a>
 

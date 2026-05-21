@@ -852,11 +852,6 @@ function Appointment() {
                       {SITE.phone}
                     </a>
                   </ContactRow>
-                  <ContactRow Icon={Calendar} title="Text us">
-                    <a href={SITE.smsHref} className="hover:text-brand-700">
-                      {SITE.sms}
-                    </a>
-                  </ContactRow>
                   <ContactRow Icon={Clock} title="Hours">
                     {SITE.hours}
                   </ContactRow>

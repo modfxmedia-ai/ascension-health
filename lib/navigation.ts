@@ -8,8 +8,6 @@ export type NavItem = {
 export const SITE = {
   phone: "(775) 575-9922",
   phoneHref: "tel:+17755759922",
-  sms: "(775) 204-4640",
-  smsHref: "sms:+17752044640",
   address: "415 HWY 95A Suite 503, Fernley, NV 89408",
   mapsHref: "https://g.page/FernleyChiropractor?share",
   appointmentsHref: "/appointments/",
