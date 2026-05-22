@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -66,6 +67,16 @@ const relatedConditions = [
 export default function ServicesSpinalDecompressionPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="Spinal Decompression"
+        description="Non-surgical spinal decompression — gentle mechanical traction that relieves pressure on bulging or herniated discs and pinched spinal nerves."
+        pagePath="/services/spinal-decompression/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "Spinal Decompression", url: "/services/spinal-decompression/" },
+        ]}
+      />
       <PageHero
         title="Spinal Decompression"
         parent={{ label: "Services", href: "/services/" }}

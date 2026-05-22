@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -65,6 +66,16 @@ const relatedConditions = [
 export default function SpinalDecompressionPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="Spinal Decompression"
+        description="Non-surgical spinal decompression — a gentle treatment that relieves pressure on spinal discs and pinched nerves."
+        pagePath="/spinal-decompression/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "Spinal Decompression", url: "/spinal-decompression/" },
+        ]}
+      />
       <PageHero title="Spinal Decompression" />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import { HeartPulse, ShieldCheck, Sparkles, Activity, Phone, ArrowRight } from "lucide-react";
@@ -42,6 +43,17 @@ const related = [
 export default function PainReliefPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        kind="condition"
+        name="Pain Relief"
+        description="Comprehensive pain relief in Fernley, NV — chiropractic care, injections, IV therapy and BHRT that treat the underlying cause, not just the symptoms."
+        pagePath="/pain-relief/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Conditions Treated", url: "/conditions-treated/" },
+          { name: "Pain Relief", url: "/pain-relief/" },
+        ]}
+      />
       <PageHero title="Pain Relief" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">

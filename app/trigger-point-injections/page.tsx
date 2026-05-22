@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -65,6 +66,16 @@ const related = [
 export default function TriggerPointInjectionsPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="Trigger Point Injections"
+        description="Quick in-office injections that release knotted muscle bands and calm myofascial pain, tension headaches and fibromyalgia symptoms."
+        pagePath="/trigger-point-injections/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "Trigger Point Injections", url: "/trigger-point-injections/" },
+        ]}
+      />
       <PageHero
         title="Trigger Point Injections"
         parent={{ label: "Services", href: "/services/" }}

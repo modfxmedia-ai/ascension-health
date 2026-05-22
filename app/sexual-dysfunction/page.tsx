@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import { HeartPulse, ShieldCheck, Sparkles, Activity, Phone, ArrowRight } from "lucide-react";
@@ -42,6 +43,17 @@ const related = [
 export default function SexualDysfunctionPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        kind="condition"
+        name="Sexual Dysfunction"
+        description="GAINSWave, BHRT and other non-surgical options for erectile dysfunction and low libido."
+        pagePath="/sexual-dysfunction/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Conditions Treated", url: "/conditions-treated/" },
+          { name: "Sexual Dysfunction", url: "/sexual-dysfunction/" },
+        ]}
+      />
       <PageHero title="Sexual Dysfunction" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">

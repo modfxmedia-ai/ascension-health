@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -67,6 +68,16 @@ const relatedConditions = [
 export default function PhysicalTherapyPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="Physical Therapy"
+        description="Personalized rehabilitation and therapeutic exercise that restores strength, mobility and balance after injury, surgery or chronic pain."
+        pagePath="/physical-therapy/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "Physical Therapy", url: "/physical-therapy/" },
+        ]}
+      />
       <PageHero title="Physical Therapy" />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">

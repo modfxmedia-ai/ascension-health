@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import { Activity, ShieldCheck, HeartPulse, Sparkles, Phone, ArrowRight } from "lucide-react";
@@ -42,6 +43,17 @@ const related = [
 export default function JointPainPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        kind="condition"
+        name="Joint Pain"
+        description="Joint pain treatment for hip, shoulder, spine and other joints — chiropractic care, joint injections and physical therapy."
+        pagePath="/joint-pain/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Conditions Treated", url: "/conditions-treated/" },
+          { name: "Joint Pain", url: "/joint-pain/" },
+        ]}
+      />
       <PageHero title="Joint Pain" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import { Zap, Activity, ShieldCheck, Sparkles, Phone, ArrowRight } from "lucide-react";
@@ -42,6 +43,17 @@ const related = [
 export default function NeuropathyPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        kind="condition"
+        name="Neuropathy"
+        description="Non-surgical, drug-free care for peripheral neuropathy, numbness, tingling and burning nerve pain."
+        pagePath="/neuropathy/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Conditions Treated", url: "/conditions-treated/" },
+          { name: "Neuropathy", url: "/neuropathy/" },
+        ]}
+      />
       <PageHero title="Neuropathy" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">

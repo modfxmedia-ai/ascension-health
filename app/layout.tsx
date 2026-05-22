@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import { SiteSchema } from "@/components/seo/SiteSchema";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -33,6 +34,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     siteName: "Ascension Health",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
@@ -61,6 +63,7 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900 font-sans">
+        <SiteSchema />
         <ScrollToTop />
         <Header />
         <main className="flex-1">{children}</main>

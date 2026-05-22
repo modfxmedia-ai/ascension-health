@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -68,6 +69,16 @@ const relatedConditions = [
 export default function ChiropracticCarePage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="Chiropractic Care"
+        description="Gentle chiropractic adjustments that relieve back pain, neck pain, headaches and joint pain — a safe, drug-free alternative to medication."
+        pagePath="/services/chiropractic-care/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "Chiropractic Care", url: "/services/chiropractic-care/" },
+        ]}
+      />
       <PageHero
         title="Chiropractic Care"
         parent={{ label: "Services", href: "/services/" }}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -83,6 +84,16 @@ const related = [
 export default function BHRTPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="Bioidentical Hormone Replacement Therapy"
+        description="BHRT for men and women to address fatigue, mood, sleep, libido and metabolic concerns caused by hormone imbalances."
+        pagePath="/bioidentical-hormone-replacement-therapy/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "Bioidentical Hormone Replacement Therapy", url: "/bioidentical-hormone-replacement-therapy/" },
+        ]}
+      />
       <PageHero
         title="Bioidentical Hormone Replacement Therapy"
         parent={{ label: "Services", href: "/services/" }}

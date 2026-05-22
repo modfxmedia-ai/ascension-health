@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import { Activity, ShieldCheck, Sparkles, HeartPulse, Phone, ArrowRight } from "lucide-react";
@@ -42,6 +43,17 @@ const related = [
 export default function SportsInjuriesPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        kind="condition"
+        name="Sports Injuries"
+        description="Recovery from recent and lingering sports injuries with chiropractic care, physical therapy and injections."
+        pagePath="/sports-injuries/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Conditions Treated", url: "/conditions-treated/" },
+          { name: "Sports Injuries", url: "/sports-injuries/" },
+        ]}
+      />
       <PageHero title="Sports Injuries" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">

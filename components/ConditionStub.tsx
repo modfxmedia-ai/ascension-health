@@ -7,6 +7,12 @@ import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
 import { getCondition, getService } from "@/lib/pSEO-routing";
 
+const ORIGIN = "https://ascensionhealthnv.com";
+
+function ldJson(payload: unknown): string {
+  return JSON.stringify(payload).replace(/</g, "\\u003c");
+}
+
 // Maps the on-page slug (used in URLs like /conditions-treated/headaches-migraines/)
 // to a pSEO data entry so the CityLinkGrid links to the correct silo. A few
 // "conditions-treated" pages are actually service descriptions (e.g.
@@ -45,8 +51,52 @@ export function ConditionStub({
   intro: string;
 }) {
   const topic = resolveTopic(slug, title);
+  const pageUrl = `${ORIGIN}/conditions-treated/${slug}/`;
+  const isService = topic.kind === "service";
+  const topicSchema = isService
+    ? {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        name: title,
+        description: intro,
+        procedureType: "TherapeuticProcedure",
+        bodyLocation: "Musculoskeletal system",
+        performer: { "@id": `${ORIGIN}/#localbusiness` },
+        url: pageUrl,
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "MedicalCondition",
+        name: title,
+        description: intro,
+        associatedAnatomy: { "@type": "AnatomicalSystem", name: "Musculoskeletal system" },
+        possibleTreatment: { "@type": "MedicalTherapy", name: "Chiropractic care" },
+        url: pageUrl,
+      };
+  const breadcrumbList = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${ORIGIN}/` },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Conditions Treated",
+        item: `${ORIGIN}/conditions-treated/`,
+      },
+      { "@type": "ListItem", position: 3, name: title, item: pageUrl },
+    ],
+  };
   return (
     <main className="bg-slate-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: ldJson(topicSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: ldJson(breadcrumbList) }}
+      />
       <PageHero
         title={title}
         parent={{ label: "Conditions Treated", href: "/conditions-treated/" }}

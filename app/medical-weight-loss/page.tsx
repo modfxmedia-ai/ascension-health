@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -65,6 +66,16 @@ const related = [
 export default function MedicalWeightLossPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="Medical Weight Loss"
+        description="Physician-guided weight management combining nutrition, accountability and medical support for sustainable results."
+        pagePath="/medical-weight-loss/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "Medical Weight Loss", url: "/medical-weight-loss/" },
+        ]}
+      />
       <PageHero
         title="Medical Weight Loss"
         parent={{ label: "Services", href: "/services/" }}

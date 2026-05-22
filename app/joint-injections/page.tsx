@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -65,6 +66,16 @@ const related = [
 export default function JointInjectionsPage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="Joint Injections"
+        description="Image-guided injections that reduce inflammation and restore comfortable movement in the knee, hip, shoulder and other joints."
+        pagePath="/joint-injections/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "Joint Injections", url: "/joint-injections/" },
+        ]}
+      />
       <PageHero title="Joint Injections" parent={{ label: "Services", href: "/services/" }} />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">

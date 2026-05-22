@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -65,6 +66,16 @@ const related = [
 export default function GainsWavePage() {
   return (
     <main className="bg-slate-50">
+      <ServiceSchema
+        name="GAINSWave"
+        description="Acoustic wave therapy for men that improves blood flow and supports sexual health — a drug-free alternative to medication."
+        pagePath="/gainswave/"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: "GAINSWave", url: "/gainswave/" },
+        ]}
+      />
       <PageHero title="GAINSWave®" parent={{ label: "Services", href: "/services/" }} />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">
