@@ -10,7 +10,7 @@ import { PageHero, AppointmentSidebar, BottomCTA } from "@/components/InteriorPa
 import { SectionEyebrow } from "@/components/InteriorMotion";
 import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
-import ContactForm from "@/components/ContactForm";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Appointments in Fernley, NV | Ascension Health",
@@ -85,7 +85,40 @@ export default function AppointmentsPage() {
                     </p>
                   </div>
                 </div>
-                <ContactForm />
+                
+                {/* Embedded Form */}
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white via-white to-slate-50/30 shadow-2xl shadow-brand-900/10 ring-1 ring-slate-200/60 transition-all duration-300 hover:shadow-3xl hover:shadow-brand-900/15">
+                  {/* Decorative gradient border effect */}
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-brand-600/10 via-transparent to-accent/10 pointer-events-none" />
+                  
+                  <div className="relative p-1">
+                    <div className="relative overflow-hidden rounded-3xl bg-white">
+                      <div className="relative" style={{ minHeight: '808px' }}>
+                        <iframe
+                          src="https://api.leadconnectorhq.com/widget/form/LNDeeKsvO3hsDU3zIbLQ"
+                          style={{ width: '100%', height: '100%', border: 'none', minHeight: '808px' }}
+                          id="inline-LNDeeKsvO3hsDU3zIbLQ"
+                          data-layout='{"id":"INLINE"}'
+                          data-trigger-type="alwaysShow"
+                          data-trigger-value=""
+                          data-activation-type="alwaysActivated"
+                          data-activation-value=""
+                          data-deactivation-type="neverDeactivate"
+                          data-deactivation-value=""
+                          data-form-name=" 🟢 Ascension Health website form"
+                          data-height="808"
+                          data-layout-iframe-id="inline-LNDeeKsvO3hsDU3zIbLQ"
+                          data-form-id="LNDeeKsvO3hsDU3zIbLQ"
+                          title=" 🟢 Ascension Health website form"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <Script
+                  src="https://link.msgsndr.com/js/form_embed.js"
+                  strategy="lazyOnload"
+                />
               </div>
             </Reveal>
           </div>
