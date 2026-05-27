@@ -69,6 +69,7 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center -my-1"
             aria-label="Ascension Health — Home"
           >
@@ -96,6 +97,7 @@ export default function Header() {
             </a>
             <Link
               href={SITE.appointmentsHref}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="group relative hidden lg:inline-flex items-center gap-1.5 overflow-hidden rounded-full bg-gradient-to-br from-brand-600 to-brand-800 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-brand-900/20 hover:shadow-lg hover:shadow-brand-900/30 hover:-translate-y-0.5 transition-all whitespace-nowrap"
             >
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
@@ -133,6 +135,7 @@ function DesktopNav() {
             <li key={item.label}>
               <Link
                 href={item.href}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="inline-flex items-center whitespace-nowrap rounded-md px-1.5 py-1.5 text-[13px] font-medium text-slate-700 hover:text-brand-700"
               >
                 {item.label}
@@ -180,6 +183,7 @@ function DesktopMenuWithChildren({ item }: { item: NavItem }) {
     >
       <Link
         href={item.href}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className={cn(
           "group inline-flex items-center gap-1 whitespace-nowrap rounded-md px-1.5 py-1.5 text-[13px] font-medium",
           "text-slate-700 hover:text-brand-700 outline-none",
@@ -201,6 +205,7 @@ function DesktopMenuWithChildren({ item }: { item: NavItem }) {
             <div className="grid grid-cols-2 gap-x-6 gap-y-1">
               <Link
                 href={item.href}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="col-span-2 mb-2 flex items-center justify-between rounded-lg bg-brand-50/60 px-4 py-3 text-sm font-semibold text-brand-800 hover:bg-brand-50"
               >
                 <span>All {item.label}</span>
@@ -210,6 +215,7 @@ function DesktopMenuWithChildren({ item }: { item: NavItem }) {
                 <Link
                   key={child.href}
                   href={child.href}
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brand-700"
                   role="menuitem"
                 >
@@ -297,7 +303,10 @@ function MobileDrawer({
               </a>
               <Link
                 href={SITE.appointmentsHref}
-                onClick={onClose}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  onClose();
+                }}
                 className="flex w-full items-center justify-center rounded-full bg-brand-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-800"
               >
                 Request Appointment
@@ -323,7 +332,10 @@ function MobileItem({
     return (
       <Link
         href={item.href}
-        onClick={onNavigate}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          onNavigate();
+        }}
         className="block rounded-md px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50 hover:text-brand-700"
       >
         {item.label}
@@ -359,7 +371,10 @@ function MobileItem({
             <div className="pb-2 pl-3">
               <Link
                 href={item.href}
-                onClick={onNavigate}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  onNavigate();
+                }}
                 className="block rounded-md px-3 py-2 text-sm font-semibold text-brand-700 hover:bg-brand-50"
               >
                 All {item.label} →
@@ -368,7 +383,10 @@ function MobileItem({
                 <Link
                   key={child.href}
                   href={child.href}
-                  onClick={onNavigate}
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    onNavigate();
+                  }}
                   className="block rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-brand-700"
                 >
                   {child.label}

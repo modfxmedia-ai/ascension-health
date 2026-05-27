@@ -54,6 +54,7 @@ export function ConditionsSidebar({ currentSlug }: { currentSlug?: string }) {
 
         <Link
           href={SITE.appointmentsHref}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-brand-950 hover:bg-accent-soft transition-colors"
         >
           Request Appointment Online
@@ -75,6 +76,7 @@ export function ConditionsSidebar({ currentSlug }: { currentSlug?: string }) {
             <li key={c.slug}>
               <Link
                 href={c.href}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="group flex items-center justify-between gap-3 py-3 text-sm font-medium text-slate-700 transition-colors hover:text-brand-800"
               >
                 <span>{c.title}</span>
@@ -85,6 +87,7 @@ export function ConditionsSidebar({ currentSlug }: { currentSlug?: string }) {
         </ul>
         <Link
           href="/conditions-treated/"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800"
         >
           View all conditions <ArrowUpRight className="h-4 w-4" />

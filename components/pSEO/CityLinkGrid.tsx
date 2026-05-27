@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { Reveal } from "@/components/Motion";
@@ -65,6 +67,7 @@ export function CityLinkGrid({ heading, intro, topic }: CityLinkGridProps) {
               <li key={it.href}>
                 <Link
                   href={it.href}
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="group flex items-center gap-3 rounded-xl bg-slate-50 px-4 py-3 ring-1 ring-slate-200/70 hover:bg-brand-50 hover:ring-brand-200 transition-colors"
                 >
                   <span className="grid h-8 w-8 place-items-center rounded-lg bg-white text-brand-700 ring-1 ring-brand-100">

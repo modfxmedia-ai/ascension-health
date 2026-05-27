@@ -31,7 +31,7 @@ import {
   ServiceCard,
   ServicesShowcase,
 } from "@/components/Motion";
-import ContactForm from "@/components/ContactForm";
+import Script from "next/script";
 import { CityLinkGrid } from "@/components/pSEO/CityLinkGrid";
 import imgChiropracticCare from "@/images/chiropractic-care.jpg";
 import imgSpinalDecompression from "@/images/spinal-decompression.jpg";
@@ -927,7 +927,32 @@ function Appointment() {
                     </span>
                   </div>
                   <div className="mt-6">
-                    <ContactForm />
+                    {/* Embedded Form */}
+                    <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg">
+                      <div className="relative" style={{ minHeight: '808px' }}>
+                        <iframe
+                          src="https://api.leadconnectorhq.com/widget/form/LNDeeKsvO3hsDU3zIbLQ"
+                          style={{ width: '100%', height: '100%', border: 'none', minHeight: '808px' }}
+                          id="inline-LNDeeKsvO3hsDU3zIbLQ-home"
+                          data-layout='{"id":"INLINE"}'
+                          data-trigger-type="alwaysShow"
+                          data-trigger-value=""
+                          data-activation-type="alwaysActivated"
+                          data-activation-value=""
+                          data-deactivation-type="neverDeactivate"
+                          data-deactivation-value=""
+                          data-form-name=" 🟢 Ascension Health website form"
+                          data-height="808"
+                          data-layout-iframe-id="inline-LNDeeKsvO3hsDU3zIbLQ-home"
+                          data-form-id="LNDeeKsvO3hsDU3zIbLQ"
+                          title=" 🟢 Ascension Health website form"
+                        />
+                      </div>
+                    </div>
+                    <Script
+                      src="https://link.msgsndr.com/js/form_embed.js"
+                      strategy="lazyOnload"
+                    />
                   </div>
                 </div>
               </div>

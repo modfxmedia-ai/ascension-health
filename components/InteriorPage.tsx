@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { ChevronRight, Phone, MapPin, Clock } from "lucide-react";
 import { SITE } from "@/lib/navigation";
@@ -21,13 +23,25 @@ export function PageHero({ title, parent }: { title: string; parent?: { label: s
         <nav aria-label="Breadcrumb" className="mb-5">
           <ol className="flex items-center gap-2 text-xs sm:text-sm text-brand-100/80">
             <li>
-              <Link href="/" className="hover:text-white transition-colors">Home</Link>
+              <Link
+                href="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="hover:text-white transition-colors"
+              >
+                Home
+              </Link>
             </li>
             {parent && (
               <>
                 <li aria-hidden><ChevronRight className="h-3.5 w-3.5 text-brand-200/60" /></li>
                 <li>
-                  <Link href={parent.href} className="hover:text-white transition-colors">{parent.label}</Link>
+                  <Link
+                    href={parent.href}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="hover:text-white transition-colors"
+                  >
+                    {parent.label}
+                  </Link>
                 </li>
               </>
             )}
@@ -65,13 +79,6 @@ export function AppointmentSidebar() {
             <span className="font-display text-xl font-semibold">{SITE.phone}</span>
           </span>
         </a>
-
-        <Link
-          href={SITE.appointmentsHref}
-          className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-brand-950 hover:bg-accent-soft transition-colors"
-        >
-          Request Appointment Online
-        </Link>
       </div>
 
       <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -156,6 +163,7 @@ export function BottomCTA({
           </a>
           <Link
             href={SITE.appointmentsHref}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="inline-flex items-center rounded-full border border-white/30 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
           >
             Request Appointment

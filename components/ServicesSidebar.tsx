@@ -54,6 +54,7 @@ export function ServicesSidebar({ currentSlug }: { currentSlug?: string }) {
 
         <Link
           href={SITE.appointmentsHref}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-brand-950 hover:bg-accent-soft transition-colors"
         >
           Request Appointment Online
@@ -75,6 +76,7 @@ export function ServicesSidebar({ currentSlug }: { currentSlug?: string }) {
             <li key={s.slug}>
               <Link
                 href={s.href}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="group flex items-center justify-between gap-3 py-3 text-sm font-medium text-slate-700 transition-colors hover:text-brand-800"
               >
                 <span>{s.title}</span>

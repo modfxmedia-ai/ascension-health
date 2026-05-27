@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Phone, Clock } from "lucide-react";
@@ -34,6 +36,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-5">
             <Link
               href="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="inline-flex items-center gap-3"
               aria-label="Ascension Health — Home"
             >
@@ -149,6 +152,7 @@ export default function Footer() {
           </div>
           <Link
             href={SITE.appointmentsHref}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-brand-950 hover:bg-accent-soft transition-colors shadow"
           >
             Request Appointment
@@ -163,17 +167,23 @@ export default function Footer() {
             © {year} Ascension Health. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
-            <Link href="/sitemap/" className="hover:text-white transition-colors">
+            <Link
+              href="/sitemap/"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="hover:text-white transition-colors"
+            >
               Sitemap
             </Link>
             <Link
               href="/accessibility/"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="hover:text-white transition-colors"
             >
               Accessibility
             </Link>
             <Link
               href="/contact/"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="hover:text-white transition-colors"
             >
               Contact
@@ -230,6 +240,7 @@ function FooterLink({
     <li>
       <Link
         href={href}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className={
           highlight
             ? "inline-flex items-center font-semibold text-white hover:text-brand-300 transition-colors"
