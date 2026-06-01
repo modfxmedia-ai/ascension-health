@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 import { PageHero, BottomCTA } from "@/components/InteriorPage";
 import { Reveal } from "@/components/Motion";
-import Script from "next/script";
+import LeadForm from "@/components/LeadForm";
 import { SITE } from "@/lib/navigation";
 
 export const metadata: Metadata = {
@@ -119,43 +119,9 @@ export default function ContactPage() {
               </Reveal>
 
               <Reveal delay={0.1}>
-                <div className="mt-8 relative">
-                  {/* Gradient glow effect behind form */}
-                  <div className="absolute -inset-1 rounded-[28px] bg-gradient-to-r from-brand-600/20 via-accent/20 to-brand-800/20 blur-xl opacity-75" />
-                  
-                  <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white via-white to-slate-50/30 shadow-2xl shadow-brand-900/15 ring-1 ring-slate-200/60 transition-all duration-300 hover:shadow-3xl hover:shadow-brand-900/20">
-                    {/* Decorative gradient border overlay */}
-                    <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-brand-700/10 via-transparent to-accent/10 pointer-events-none" />
-                    
-                    <div className="relative p-1">
-                      <div className="relative overflow-hidden rounded-3xl bg-white">
-                        <div className="relative" style={{ minHeight: '808px' }}>
-                          <iframe
-                            src="https://api.leadconnectorhq.com/widget/form/LNDeeKsvO3hsDU3zIbLQ"
-                            style={{ width: '100%', height: '100%', border: 'none', minHeight: '808px' }}
-                            id="inline-LNDeeKsvO3hsDU3zIbLQ-contact"
-                            data-layout='{"id":"INLINE"}'
-                            data-trigger-type="alwaysShow"
-                            data-trigger-value=""
-                            data-activation-type="alwaysActivated"
-                            data-activation-value=""
-                            data-deactivation-type="neverDeactivate"
-                            data-deactivation-value=""
-                            data-form-name=" 🟢 Ascension Health website form"
-                            data-height="808"
-                            data-layout-iframe-id="inline-LNDeeKsvO3hsDU3zIbLQ-contact"
-                            data-form-id="LNDeeKsvO3hsDU3zIbLQ"
-                            title=" 🟢 Ascension Health website form"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="mt-8">
+                  <LeadForm instanceId="contact" />
                 </div>
-                <Script
-                  src="https://link.msgsndr.com/js/form_embed.js"
-                  strategy="lazyOnload"
-                />
               </Reveal>
             </div>
 

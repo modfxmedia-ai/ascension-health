@@ -31,7 +31,7 @@ import {
   ServiceCard,
   ServicesShowcase,
 } from "@/components/Motion";
-import Script from "next/script";
+import LeadForm from "@/components/LeadForm";
 import { CityLinkGrid } from "@/components/pSEO/CityLinkGrid";
 import imgChiropracticCare from "@/images/chiropractic-care.jpg";
 import imgSpinalDecompression from "@/images/spinal-decompression.jpg";
@@ -894,68 +894,7 @@ function Appointment() {
           {/* Right: Form */}
           <div className="lg:col-span-7">
             <Reveal delay={0.2} y={32}>
-              <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-1 shadow-xl shadow-brand-900/10">
-                {/* Top brand bar */}
-                <div
-                  aria-hidden
-                  className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-brand-700 via-accent to-brand-700"
-                />
-                {/* Decorative dotted corner */}
-                <div
-                  aria-hidden
-                  className="pointer-events-none absolute -bottom-6 -right-6 h-32 w-32 rounded-xl opacity-50"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(rgba(67,86,39,0.35) 1px, transparent 1px)",
-                    backgroundSize: "10px 10px",
-                  }}
-                />
-                <div className="relative rounded-[1.4rem] bg-gradient-to-br from-white to-brand-50/40 p-8">
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <h3 className="font-display text-2xl font-semibold text-slate-900">
-                        Book your visit
-                      </h3>
-                      <p className="mt-1 text-sm text-slate-500">
-                        Required fields are marked{" "}
-                        <span className="text-brand-700">*</span>
-                      </p>
-                    </div>
-                    <span className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-brand-700">
-                      <Sparkles className="h-3.5 w-3.5" />
-                      Quick reply
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    {/* Embedded Form */}
-                    <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg">
-                      <div className="relative" style={{ minHeight: '808px' }}>
-                        <iframe
-                          src="https://api.leadconnectorhq.com/widget/form/LNDeeKsvO3hsDU3zIbLQ"
-                          style={{ width: '100%', height: '100%', border: 'none', minHeight: '808px' }}
-                          id="inline-LNDeeKsvO3hsDU3zIbLQ-home"
-                          data-layout='{"id":"INLINE"}'
-                          data-trigger-type="alwaysShow"
-                          data-trigger-value=""
-                          data-activation-type="alwaysActivated"
-                          data-activation-value=""
-                          data-deactivation-type="neverDeactivate"
-                          data-deactivation-value=""
-                          data-form-name=" 🟢 Ascension Health website form"
-                          data-height="808"
-                          data-layout-iframe-id="inline-LNDeeKsvO3hsDU3zIbLQ-home"
-                          data-form-id="LNDeeKsvO3hsDU3zIbLQ"
-                          title=" 🟢 Ascension Health website form"
-                        />
-                      </div>
-                    </div>
-                    <Script
-                      src="https://link.msgsndr.com/js/form_embed.js"
-                      strategy="lazyOnload"
-                    />
-                  </div>
-                </div>
-              </div>
+              <LeadForm instanceId="home" title="Book your visit" />
             </Reveal>
           </div>
         </div>
