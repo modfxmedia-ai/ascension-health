@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Appointments in Fernley, NV | Ascension Health",
+    description:
+      "Request an appointment with Ascension Health in Fernley, NV — chiropractic, physical therapy and wellness services.",
+  },
 };
 
 export default function AppointmentsPage() {

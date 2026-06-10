@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Accessibility in Fernley, NV | Ascension Health",
+    description:
+      "Ascension Health is committed to making our website accessible to everyone.",
+  },
 };
 
 const ssaTips = [

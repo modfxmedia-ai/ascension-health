@@ -5,10 +5,10 @@ import Link from "next/link";
 import {
   Phone,
   ArrowRight,
-  Target,
-  Activity,
+  Scale,
+  Salad,
+  HeartPulse,
   ShieldCheck,
-  CheckCircle2,
 } from "lucide-react";
 import { PageHero, BottomCTA } from "@/components/InteriorPage";
 import { CityLinkGrid } from "@/components/pSEO/CityLinkGrid";
@@ -16,67 +16,75 @@ import { ServicesSidebar } from "@/components/ServicesSidebar";
 import { SectionEyebrow, ValueCard, RelatedChips } from "@/components/InteriorMotion";
 import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
-import heroImage from "@/images/clone/man-running.jpg";
+import heroImage from "@/images/clone/weightloss_img.jpg";
 
 export const metadata: Metadata = {
-  title: "Joint Injections in Fernley, NV | Ascension Health",
+  title: "Medical Weight Loss in Fernley, NV | Ascension Health",
   description:
-    "Joint Injections - Joint Injections At Ascension Health, we offer joint injections to those patients struggling with joint pain. Joint pain can occur in any joint of the",
-  alternates: { canonical: "/joint-injections/" },
+    "Medical Weight Loss - Weight Loss is a process that is definitely easier said than done. So often people hear from their medical providers,\u201dYou should probably lose a little",
+  alternates: { canonical: "/services/medical-weight-loss/" },
   openGraph: {
-    title: "Joint Injections in Fernley, NV | Ascension Health",
+    title: "Medical Weight Loss in Fernley, NV | Ascension Health",
     description:
-      "Non-surgical joint injections for knee, hip, shoulder and wrist pain in Fernley, NV.",
-    url: "https://ascensionhealthnv.com/joint-injections/",
+      "Physician-guided medical weight loss in Fernley, NV — a real plan, not just advice to eat less and move more.",
+    url: "https://ascensionhealthnv.com/services/medical-weight-loss/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Medical Weight Loss in Fernley, NV | Ascension Health",
+    description:
+      "Physician-guided medical weight loss in Fernley, NV — a real plan, not just advice to eat less and move more.",
   },
 };
 
 const benefits = [
   {
-    icon: <Target className="h-5 w-5" />,
-    title: "Targeted Pain Relief",
-    body: "Injections delivered straight to inflamed joints for fast, focused results.",
+    icon: <Scale className="h-5 w-5" />,
+    title: "A Real Plan, Not Advice",
+    body: "Every plan is built around your body, your goals and your daily life.",
   },
   {
-    icon: <Activity className="h-5 w-5" />,
-    title: "Improved Range of Motion",
-    body: "Many patients regain comfortable movement after just one or two treatments.",
+    icon: <Salad className="h-5 w-5" />,
+    title: "Nutrition That Makes Sense",
+    body: "Clear, sustainable guidance — no fads, no overwhelming conflicting rules.",
   },
   {
-    icon: <CheckCircle2 className="h-5 w-5" />,
-    title: "Supports Physical Therapy",
-    body: "Less pain makes rehab and therapeutic exercise more effective and tolerable.",
+    icon: <HeartPulse className="h-5 w-5" />,
+    title: "Movement You Can Do",
+    body: "Activity recommendations that work even with joint pain or low fitness.",
   },
   {
     icon: <ShieldCheck className="h-5 w-5" />,
-    title: "Non-Surgical Option",
-    body: "A conservative alternative when medications and PT alone aren't enough.",
+    title: "Physician Supervised",
+    body: "Medical oversight keeps your plan safe, sustainable and effective.",
   },
 ];
 
 const related = [
-  { label: "Trigger Point Injections", href: "/trigger-point-injections/" },
-  { label: "Physical Therapy", href: "/physical-therapy/" },
+  { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },
+  { label: "Bioidentical Hormones", href: "/services/bioidentical-hormone-replacement-therapy/" },
   { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
-  { label: "Spinal Decompression", href: "/services/spinal-decompression/" },
+  { label: "Physical Therapy", href: "/services/physical-therapy/" },
 ];
 
-export default function JointInjectionsPage() {
+export default function MedicalWeightLossPage() {
   return (
     <main className="bg-slate-50">
       <ServiceSchema
-        name="Joint Injections"
-        description="Image-guided injections that reduce inflammation and restore comfortable movement in the knee, hip, shoulder and other joints."
-        pagePath="/joint-injections/"
+        name="Medical Weight Loss"
+        description="Physician-guided weight management combining nutrition, accountability and medical support for sustainable results."
+        pagePath="/services/medical-weight-loss/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Services", url: "/services/" },
-          { name: "Joint Injections", url: "/joint-injections/" },
+          { name: "Medical Weight Loss", url: "/services/medical-weight-loss/" },
         ]}
       />
-      <PageHero title="Joint Injections" parent={{ label: "Services", href: "/services/" }} />
+      <PageHero
+        title="Medical Weight Loss"
+        parent={{ label: "Services", href: "/services/" }}
+      />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
@@ -85,7 +93,7 @@ export default function JointInjectionsPage() {
               <div className="relative aspect-[16/9] overflow-hidden rounded-3xl ring-1 ring-slate-200 shadow-xl shadow-brand-900/10">
                 <Image
                   src={heroImage}
-                  alt="Active patient after joint injection therapy at Ascension Health"
+                  alt="Medical weight loss program at Ascension Health"
                   fill
                   sizes="(min-width: 1024px) 720px, 100vw"
                   className="object-cover"
@@ -98,33 +106,32 @@ export default function JointInjectionsPage() {
 
             <Reveal delay={0.05}>
               <p className="mt-8 text-[16px] leading-relaxed text-slate-700">
-                At Ascension Health, we offer joint injections to those
-                patients struggling with joint pain. Joint pain can occur in
-                any joint of the body, but most patients who experience joint
-                pain tend to feel it in the wrists, knees, hips, or shoulders.
-                Acute joint pain is typically the result of an injury or direct
-                trauma, while chronic joint pain can be caused by rheumatoid
-                arthritis or osteoarthritis.
+                Weight loss is a process that is definitely easier said than
+                done. So often people hear from their medical providers, &quot;You
+                should probably lose a little weight, it will be good for
+                you.&quot; Their advice is correct — however there usually isn&apos;t
+                a plan that comes with it.
               </p>
             </Reveal>
 
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Persistent and/or severe pain that prohibits your ability to
-                complete everyday tasks should be evaluated by a doctor. If you
-                notice redness, joint deformity, swelling, or reduced range of
-                motion, it&apos;s time to schedule an appointment.
+                Diet and exercise is the usual recommendation. That can be
+                challenging — some people have so much weight to lose that
+                they cannot exercise for very long, or they have joint pain
+                that prohibits them from exercising. Diet can be very
+                confusing too: there is so much information out there it can
+                leave a person feeling overwhelmed.
               </p>
             </Reveal>
 
             <Reveal delay={0.15}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                If over-the-counter medications and physical therapy prove
-                unable to relieve your pain, we may proceed with another method
-                of treatment such as joint injections. This non-surgical
-                treatment option can not only help you experience pain relief,
-                but also provide increased range of motion — which can make
-                physical therapy more comfortable.
+                At Ascension Health, our medical weight loss program is
+                designed to give you the structure that&apos;s usually missing.
+                We combine clinical evaluation, sustainable nutrition coaching,
+                realistic movement guidance and the right medical support, so
+                you have a clear path forward instead of guesswork.
               </p>
             </Reveal>
 
@@ -132,7 +139,7 @@ export default function JointInjectionsPage() {
               <Reveal>
                 <SectionEyebrow
                   kicker="Why it works"
-                  title="Benefits patients notice quickly."
+                  title="A real, supported plan — built for your life."
                   align="left"
                 />
               </Reveal>
@@ -156,11 +163,12 @@ export default function JointInjectionsPage() {
 
             <Reveal delay={0.2}>
               <p className="mt-10 text-[15px] leading-relaxed text-slate-700">
-                Ready to get moving again? Call{" "}
+                Ready to start a plan that actually fits your life? Call our
+                Fernley office at{" "}
                 <a href={SITE.phoneHref} className="font-semibold text-brand-700 hover:text-brand-800">
                   {SITE.phone}
-                </a>{" "}
-                today.
+                </a>
+                .
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
@@ -181,21 +189,21 @@ export default function JointInjectionsPage() {
           </div>
 
           <div className="lg:col-span-4">
-            <ServicesSidebar currentSlug="joint-injections" />
+            <ServicesSidebar currentSlug="medical-weight-loss" />
           </div>
         </div>
       </section>
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="In-office joint injections at Ascension Health in Fernley — knee, shoulder, hip, and more for patients across northern and southern Nevada."
-        topic={{ slug: "joint-injections", name: "Joint Injections", kind: "service" }}
+        intro="Physician-led medical weight loss with GLP-1 options, real labs, and accountability — from Fernley for patients across Nevada."
+        topic={{ slug: "medical-weight-loss", name: "Medical Weight Loss", kind: "service" }}
       />
 
       <BottomCTA
         kicker="Questions?"
         heading={`Call ${SITE.phone}`}
-        body="Our Fernley team is here to help you find relief from joint pain."
+        body="Our Fernley team will help you build a weight-loss plan you can actually stick with."
       />
     </main>
   );

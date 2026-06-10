@@ -61,20 +61,30 @@ export function Counter({
 }) {
   const ref = React.useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
-  const mv = useMotionValue(0);
+  const mv = useMotionValue(to);
   const rounded = useTransform(mv, (v) =>
     decimals ? v.toFixed(decimals) : Math.round(v).toLocaleString()
   );
+  const [mounted, setMounted] = React.useState(false);
+
+  const finalText = decimals
+    ? to.toFixed(decimals)
+    : Math.round(to).toLocaleString();
 
   React.useEffect(() => {
-    if (!inView) return;
+    setMounted(true);
+    mv.set(0);
+  }, [mv]);
+
+  React.useEffect(() => {
+    if (!mounted || !inView) return;
     const controls = animate(mv, to, { duration, ease: [0.22, 1, 0.36, 1] });
     return () => controls.stop();
-  }, [inView, to, duration, mv]);
+  }, [mounted, inView, to, duration, mv]);
 
   return (
     <span ref={ref} className="inline-flex items-baseline">
-      <motion.span>{rounded}</motion.span>
+      <motion.span>{mounted ? rounded : finalText}</motion.span>
       {suffix && <span>{suffix}</span>}
     </span>
   );
@@ -641,6 +651,7 @@ export function MissionCollage() {
             animate={{ scale: [1, 1.06, 1] }}
             transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
           >
+            {/* TODO: replace stock Unsplash URL with real clinic photography. */}
             <Image
               src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
               alt="Compassionate chiropractic care at Ascension Health"
@@ -661,6 +672,7 @@ export function MissionCollage() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
         >
+          {/* TODO: replace stock Unsplash URL with real clinic photography. */}
           <Image
             src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80"
             alt="Physical therapy and recovery"
@@ -679,6 +691,7 @@ export function MissionCollage() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
         >
+          {/* TODO: replace stock Unsplash URL with real clinic photography. */}
           <Image
             src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
             alt="Wellness and personalized treatment"
@@ -807,6 +820,7 @@ export function ServicesShowcase() {
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
           >
+            {/* TODO: replace stock Unsplash URL with real clinic photography. */}
             <Image
               src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?auto=format&fit=crop&w=900&q=80"
               alt="Specialized chiropractic and pain relief services"
@@ -950,7 +964,7 @@ export function ConditionsHero() {
         >
           <Image
             src={neckPainImage}
-            alt="Whole-body pain relief and recovery"
+            alt="Neck pain treatment at Ascension Health in Fernley, NV"
             fill
             sizes="(min-width: 1024px) 480px, 90vw"
             className="object-cover"
@@ -1080,14 +1094,19 @@ const CONDITION_TONE: Record<string, string> = {
 
 type ConditionItem = { label: string; href: string };
 
-function ConditionCard({ item }: { item: ConditionItem }) {
+function ConditionCard({
+  item,
+  asLink = true,
+}: {
+  item: ConditionItem;
+  asLink?: boolean;
+}) {
   const Icon = CONDITION_ICON_MAP[item.label] ?? HeartPulse;
   const tone = CONDITION_TONE[item.label] ?? "from-brand-600/15 to-brand-50";
-  return (
-    <a
-      href={item.href}
-      className="group/card relative flex w-[260px] shrink-0 flex-col gap-4 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-brand-600 hover:shadow-xl hover:shadow-brand-900/10"
-    >
+  const className =
+    "group/card relative flex w-[260px] shrink-0 flex-col gap-4 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-brand-600 hover:shadow-xl hover:shadow-brand-900/10";
+  const inner = (
+    <>
       <div
         aria-hidden
         className={`absolute inset-x-0 top-0 h-16 rounded-t-2xl bg-gradient-to-b ${tone}`}
@@ -1101,9 +1120,15 @@ function ConditionCard({ item }: { item: ConditionItem }) {
         </span>
       </div>
       <div className="relative">
-        <h3 className="font-display text-lg font-semibold text-slate-900 leading-tight">
-          {item.label}
-        </h3>
+        {asLink ? (
+          <h3 className="font-display text-lg font-semibold text-slate-900 leading-tight">
+            {item.label}
+          </h3>
+        ) : (
+          <p className="font-display text-lg font-semibold text-slate-900 leading-tight">
+            {item.label}
+          </p>
+        )}
         <p className="mt-1.5 text-sm text-slate-600 leading-relaxed">
           Targeted, evidence-based relief from {item.label.toLowerCase()}.
         </p>
@@ -1114,6 +1139,19 @@ function ConditionCard({ item }: { item: ConditionItem }) {
           <path d="M5 12h14M13 5l7 7-7 7" />
         </svg>
       </div>
+    </>
+  );
+
+  if (!asLink) {
+    return (
+      <div tabIndex={-1} className={className}>
+        {inner}
+      </div>
+    );
+  }
+  return (
+    <a href={item.href} className={className}>
+      {inner}
     </a>
   );
 }
@@ -1128,7 +1166,6 @@ export function ConditionsMarquee({ items }: { items: ConditionItem[] }) {
     direction: "left" | "right",
     duration: number
   ) => {
-    const sequence = [...rowItems, ...rowItems];
     const animate =
       direction === "left" ? { x: ["0%", "-50%"] } : { x: ["-50%", "0%"] };
     return (
@@ -1152,9 +1189,18 @@ export function ConditionsMarquee({ items }: { items: ConditionItem[] }) {
           }}
           whileHover={{ transition: { duration: duration * 4 } }}
         >
-          {sequence.map((item, i) => (
-            <ConditionCard key={`${item.href}-${i}`} item={item} />
+          {rowItems.map((item, i) => (
+            <ConditionCard key={`primary-${item.href}-${i}`} item={item} />
           ))}
+          <div aria-hidden="true" className="contents">
+            {rowItems.map((item, i) => (
+              <ConditionCard
+                key={`clone-${item.href}-${i}`}
+                item={item}
+                asLink={false}
+              />
+            ))}
+          </div>
         </motion.div>
       </div>
     );

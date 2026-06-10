@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Our Team in Fernley, NV | Ascension Health",
+    description:
+      "Meet the Ascension Health team in Fernley, NV — compassionate, education-first chiropractic and wellness care.",
+  },
 };
 
 const values = [

@@ -121,18 +121,18 @@ export function getTreatmentPage(slug: string): TreatmentPage | undefined {
 const SERVICE_HUB_OVERRIDES: Record<string, string> = {
   "chiropractic-care": "/services/chiropractic-care/",
   "spinal-decompression": "/services/spinal-decompression/",
-  "physical-therapy": "/physical-therapy/",
-  "joint-injections": "/joint-injections/",
-  "trigger-point-injections": "/trigger-point-injections/",
-  "medical-weight-loss": "/medical-weight-loss/",
-  "nutritional-iv-therapy": "/nutritional-ivs/",
+  "physical-therapy": "/services/physical-therapy/",
+  "joint-injections": "/services/joint-injections/",
+  "trigger-point-injections": "/services/trigger-point-injections/",
+  "medical-weight-loss": "/services/medical-weight-loss/",
+  "nutritional-iv-therapy": "/services/nutritional-ivs/",
   "bioidentical-hormone-replacement-therapy":
-    "/bioidentical-hormone-replacement-therapy/",
-  "gainswave-therapy": "/gainswave/",
-  "neuropathy-treatment": "/neuropathy/",
-  "pain-management": "/pain-relief/",
+    "/services/bioidentical-hormone-replacement-therapy/",
+  "gainswave-therapy": "/services/gainswave/",
+  "neuropathy-treatment": "/conditions-treated/neuropathy/",
+  "pain-management": "/conditions-treated/pain-relief/",
   "sports-injury-care": "/sports-injuries/",
-  "sexual-wellness-treatment": "/sexual-dysfunction/",
+  "sexual-wellness-treatment": "/conditions-treated/sexual-dysfunction/",
 };
 
 const CONDITION_HUB_OVERRIDES: Record<string, string> = {
@@ -145,10 +145,10 @@ const CONDITION_HUB_OVERRIDES: Record<string, string> = {
   "carpal-tunnel": "/conditions-treated/carpal-tunnel/",
   "headaches": "/conditions-treated/headaches-migraines/",
   "migraines": "/conditions-treated/headaches-migraines/",
-  "knee-pain": "/knee-pain/",
-  "joint-pain": "/joint-pain/",
-  "neuropathy": "/neuropathy/",
-  "hormonal-imbalance": "/hormonal-imbalance/",
+  "knee-pain": "/conditions-treated/knee-pain/",
+  "joint-pain": "/conditions-treated/joint-pain/",
+  "neuropathy": "/conditions-treated/neuropathy/",
+  "hormonal-imbalance": "/conditions-treated/hormonal-imbalance/",
   "work-injuries": "/conditions-treated/work-injury/",
   "sports-injuries": "/sports-injuries/",
 };
@@ -167,7 +167,7 @@ export function getConditionHubHref(slug: string): string {
 // Shared metadata helper
 // ──────────────────────────────────────────────────────────────────────────
 
-export const SITE_URL = "https://ascensionhealthnv.com";
+export const SITE_URL = "https://www.ascensionhealthnv.com";
 
 export function buildPageMetadata(args: {
   title: string;

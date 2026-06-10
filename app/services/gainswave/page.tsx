@@ -5,10 +5,10 @@ import Link from "next/link";
 import {
   Phone,
   ArrowRight,
-  Zap,
   Activity,
+  Waves,
   ShieldCheck,
-  CheckCircle2,
+  Sparkles,
 } from "lucide-react";
 import { PageHero, BottomCTA } from "@/components/InteriorPage";
 import { CityLinkGrid } from "@/components/pSEO/CityLinkGrid";
@@ -16,70 +16,72 @@ import { ServicesSidebar } from "@/components/ServicesSidebar";
 import { SectionEyebrow, ValueCard, RelatedChips } from "@/components/InteriorMotion";
 import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
-import heroImage from "@/images/clone/knee-pain-1-2.jpg";
+import heroImage from "@/images/clone/menshealth_img.jpg";
 
 export const metadata: Metadata = {
-  title: "Trigger Point Injections in Fernley, NV | Ascension Health",
+  title: "GAINSWave® in Fernley, NV | Ascension Health",
   description:
-    "Trigger Point Injections - Here at Ascension Health, we are proud to offer trigger point injections for patients struggling with fibromyalgia, tension headaches, myofascial pain,",
-  alternates: { canonical: "/trigger-point-injections/" },
+    "GAINSWave® - Here at Ascension Health, we are proud to provide GAINSWave® services to our male patients struggling with sexual dysfunction. This treatment uses",
+  alternates: { canonical: "/services/gainswave/" },
   openGraph: {
-    title: "Trigger Point Injections in Fernley, NV | Ascension Health",
+    title: "GAINSWave® in Fernley, NV | Ascension Health",
     description:
-      "Trigger point injections for fibromyalgia, tension headaches and chronic muscle pain in Fernley, NV.",
-    url: "https://ascensionhealthnv.com/trigger-point-injections/",
+      "Acoustic wave therapy for men in Fernley, NV — improve blood flow, sensitivity and sexual function without medication.",
+    url: "https://ascensionhealthnv.com/services/gainswave/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "GAINSWave® in Fernley, NV | Ascension Health",
+    description:
+      "Acoustic wave therapy for men in Fernley, NV — improve blood flow, sensitivity and sexual function without medication.",
   },
 };
 
 const benefits = [
   {
-    icon: <Zap className="h-5 w-5" />,
-    title: "Fast Symptom Relief",
-    body: "Small amounts of anesthetic calm the trigger point and ease referred pain.",
+    icon: <Waves className="h-5 w-5" />,
+    title: "Low-Intensity Sound Waves",
+    body: "Targeted acoustic-wave therapy stimulates new blood-vessel growth and breaks up plaque.",
   },
   {
     icon: <Activity className="h-5 w-5" />,
-    title: "Return to Activity",
-    body: "Use your muscles right after treatment — just avoid strenuous activity for a few days.",
+    title: "Improved Blood Flow",
+    body: "Better circulation supports harder, more sustainable erections naturally.",
   },
   {
-    icon: <CheckCircle2 className="h-5 w-5" />,
-    title: "Treats Many Conditions",
-    body: "Helpful for fibromyalgia, tension headaches and myofascial pain syndromes.",
+    icon: <Sparkles className="h-5 w-5" />,
+    title: "Quick In-Office Sessions",
+    body: "Each session takes just 15 to 20 minutes — most patients need 6 to 12 visits.",
   },
   {
     icon: <ShieldCheck className="h-5 w-5" />,
-    title: "Safe & Low-Risk",
-    body: "A well-tolerated procedure with a very low risk of complications.",
+    title: "Drug-Free & Non-Invasive",
+    body: "A safe alternative for ED and Peyronie's disease — no medication or surgery.",
   },
 ];
 
 const related = [
-  { label: "Joint Injections", href: "/joint-injections/" },
-  { label: "Physical Therapy", href: "/physical-therapy/" },
-  { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
-  { label: "Spinal Decompression", href: "/services/spinal-decompression/" },
+  { label: "Bioidentical Hormones", href: "/services/bioidentical-hormone-replacement-therapy/" },
+  { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },
+  { label: "Medical Weight Loss", href: "/services/medical-weight-loss/" },
+  { label: "All Services", href: "/services/" },
 ];
 
-export default function TriggerPointInjectionsPage() {
+export default function GainsWavePage() {
   return (
     <main className="bg-slate-50">
       <ServiceSchema
-        name="Trigger Point Injections"
-        description="Quick in-office injections that release knotted muscle bands and calm myofascial pain, tension headaches and fibromyalgia symptoms."
-        pagePath="/trigger-point-injections/"
+        name="GAINSWave"
+        description="Acoustic wave therapy for men that improves blood flow and supports sexual health — a drug-free alternative to medication."
+        pagePath="/services/gainswave/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Services", url: "/services/" },
-          { name: "Trigger Point Injections", url: "/trigger-point-injections/" },
+          { name: "GAINSWave", url: "/services/gainswave/" },
         ]}
       />
-      <PageHero
-        title="Trigger Point Injections"
-        parent={{ label: "Services", href: "/services/" }}
-      />
+      <PageHero title="GAINSWave®" parent={{ label: "Services", href: "/services/" }} />
 
       <section className="mx-auto max-w-7xl px-6 py-14 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
@@ -88,7 +90,7 @@ export default function TriggerPointInjectionsPage() {
               <div className="relative aspect-[16/9] overflow-hidden rounded-3xl ring-1 ring-slate-200 shadow-xl shadow-brand-900/10">
                 <Image
                   src={heroImage}
-                  alt="Patient with muscle pain — trigger point injections at Ascension Health"
+                  alt="GAINSWave® acoustic wave therapy at Ascension Health"
                   fill
                   sizes="(min-width: 1024px) 720px, 100vw"
                   className="object-cover"
@@ -101,28 +103,27 @@ export default function TriggerPointInjectionsPage() {
 
             <Reveal delay={0.05}>
               <p className="mt-8 text-[16px] leading-relaxed text-slate-700">
-                Here at Ascension Health, we are proud to offer trigger point
-                injections for patients struggling with fibromyalgia, tension
-                headaches, myofascial pain, and muscle pain in the arms, legs,
-                lower back and neck.
+                Here at Ascension Health, we are proud to provide GAINSWave®
+                services to our male patients struggling with sexual
+                dysfunction. This treatment uses low-intensity sound waves —
+                also known as acoustic wave therapy — to help deliver increased
+                blood flow to the penis and improve sexual function with
+                harder, more sustainable erections. This procedure has even
+                proven helpful for men who have erectile dysfunction and
+                Peyronie&apos;s disease.
               </p>
             </Reveal>
 
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                During your appointment, we&apos;ll locate the area where
-                you&apos;re experiencing pain and inject small amounts of
-                anesthetic to help alleviate your symptoms.
-              </p>
-            </Reveal>
-
-            <Reveal delay={0.15}>
-              <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                This procedure is safe and the risk of possible complications
-                is very low. You may experience soreness or numbness at the
-                injection site for a temporary period of time. While you should
-                avoid strenuous activity for a few days, you should be able to
-                actively use your muscles immediately following treatment.
+                While treatment times vary depending on your specific
+                condition, most patients need 6 to 12 sessions for the
+                treatment to be most effective. In each 15 to 20 minute
+                session, we&apos;ll break up plaque that has formed in existing
+                blood vessels, stimulate the generation of new blood vessels,
+                and activate dormant stem cells that help with cell production.
+                The process increases blood flow and allows for enhanced
+                sensitivity.
               </p>
             </Reveal>
 
@@ -130,7 +131,7 @@ export default function TriggerPointInjectionsPage() {
               <Reveal>
                 <SectionEyebrow
                   kicker="Why it works"
-                  title="A simple, in-office way to break the pain cycle."
+                  title="What GAINSWave® can do for you."
                   align="left"
                 />
               </Reveal>
@@ -154,8 +155,7 @@ export default function TriggerPointInjectionsPage() {
 
             <Reveal delay={0.2}>
               <p className="mt-10 text-[15px] leading-relaxed text-slate-700">
-                For more information or to request an appointment, contact us
-                today at{" "}
+                To learn more or book a confidential consultation, call{" "}
                 <a href={SITE.phoneHref} className="font-semibold text-brand-700 hover:text-brand-800">
                   {SITE.phone}
                 </a>
@@ -180,21 +180,21 @@ export default function TriggerPointInjectionsPage() {
           </div>
 
           <div className="lg:col-span-4">
-            <ServicesSidebar currentSlug="trigger-point-injections" />
+            <ServicesSidebar currentSlug="gainswave" />
           </div>
         </div>
       </section>
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Trigger point injections for stubborn muscle knots, tension headaches, and myofascial pain — from our Fernley clinic serving Nevada cities."
-        topic={{ slug: "trigger-point-injections", name: "Trigger Point Injections", kind: "service" }}
+        intro="GAINSWave shockwave therapy for ED and male sexual wellness — discreet treatment from our Fernley clinic for patients across Nevada."
+        topic={{ slug: "gainswave-therapy", name: "GAINSWave Therapy", kind: "service" }}
       />
 
       <BottomCTA
         kicker="Questions?"
         heading={`Call ${SITE.phone}`}
-        body="Our Fernley team will help you find lasting relief from chronic muscle pain."
+        body="Our Fernley team is here to answer any questions you have about GAINSWave®."
       />
     </main>
   );

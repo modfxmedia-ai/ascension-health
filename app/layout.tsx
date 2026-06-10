@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { SiteSchema } from "@/components/seo/SiteSchema";
+import StructuredData from "./components/StructuredData";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -18,27 +19,32 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const SITE_URL = "https://ascensionhealthnv.com";
-const TITLE = "Medical Center in Fernley, NV | Ascension Health";
+const SITE_URL = "https://www.ascensionhealthnv.com";
+const TITLE_DEFAULT =
+  "Chiropractor & Wellness Clinic in Fernley, NV | Ascension Health";
+const TITLE_TEMPLATE = "%s | Ascension Health";
 const DESCRIPTION =
-  "Medical Center in Fernley, NV - Visit our skilled Medical Center in Fernley, NV. Accepting new appointments. Call today or request an appointment online.";
+  "Chiropractic care, physical therapy, joint injections and medical weight loss in Fernley, NV. Same-week appointments, insurance accepted. Book online today.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: TITLE,
+  metadataBase: new URL("https://www.ascensionhealthnv.com"),
+  title: {
+    default: TITLE_DEFAULT,
+    template: TITLE_TEMPLATE,
+  },
   description: DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: TITLE,
+    title: TITLE_DEFAULT,
     description: DESCRIPTION,
     siteName: "Ascension Health",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: TITLE,
+    title: TITLE_DEFAULT,
     description: DESCRIPTION,
   },
   robots: {
@@ -64,6 +70,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900 font-sans">
         <SiteSchema />
+        <StructuredData />
         <ScrollToTop />
         <Header />
         <main className="flex-1">{children}</main>

@@ -9,7 +9,7 @@ export type Service = {
 export const SERVICES: Service[] = [
   {
     slug: "joint-injections",
-    href: "/joint-injections/",
+    href: "/services/joint-injections/",
     title: "Joint Injections",
     tagline: "Targeted relief for painful, inflamed joints.",
     summary:
@@ -17,7 +17,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "trigger-point-injections",
-    href: "/trigger-point-injections/",
+    href: "/services/trigger-point-injections/",
     title: "Trigger Point Injections",
     tagline: "Release knots that cause referred muscle pain.",
     summary:
@@ -25,7 +25,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "physical-therapy",
-    href: "/physical-therapy/",
+    href: "/services/physical-therapy/",
     title: "Physical Therapy",
     tagline: "Recover strength, mobility and confidence.",
     summary:
@@ -41,7 +41,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "nutritional-ivs",
-    href: "/nutritional-ivs/",
+    href: "/services/nutritional-ivs/",
     title: "Nutritional IVs",
     tagline: "Vitamins and minerals delivered directly to your cells.",
     summary:
@@ -49,7 +49,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "bioidentical-hormone-replacement-therapy",
-    href: "/bioidentical-hormone-replacement-therapy/",
+    href: "/services/bioidentical-hormone-replacement-therapy/",
     title: "Bioidentical Hormones",
     tagline: "Rebalance hormones, feel like yourself again.",
     summary:
@@ -65,7 +65,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "gainswave",
-    href: "/gainswave/",
+    href: "/services/gainswave/",
     title: "GAINSWave™",
     tagline: "Drug-free wave therapy for men's wellness.",
     summary:
@@ -73,7 +73,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "medical-weight-loss",
-    href: "/medical-weight-loss/",
+    href: "/services/medical-weight-loss/",
     title: "Medical Weight Loss",
     tagline: "Physician-guided weight management that lasts.",
     summary:

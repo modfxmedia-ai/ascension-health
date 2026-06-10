@@ -22,14 +22,19 @@ export const metadata: Metadata = {
   title: "Nutritional IVs in Fernley, NV | Ascension Health",
   description:
     "Nutritional IVs - We specialize in correcting your body's misalignments. Our goal is to ensure that your spine and the rest of your body are working harmoniously. To",
-  alternates: { canonical: "/nutritional-ivs/" },
+  alternates: { canonical: "/services/nutritional-ivs/" },
   openGraph: {
     title: "Nutritional IVs in Fernley, NV | Ascension Health",
     description:
       "IV vitamin and nutrient therapy in Fernley, NV — hydration, energy, immunity and recovery on your lunch break.",
-    url: "https://ascensionhealthnv.com/nutritional-ivs/",
+    url: "https://ascensionhealthnv.com/services/nutritional-ivs/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Nutritional IVs in Fernley, NV | Ascension Health",
+    description:
+      "IV vitamin and nutrient therapy in Fernley, NV — hydration, energy, immunity and recovery on your lunch break.",
   },
 };
 
@@ -67,10 +72,10 @@ const benefits = [
 ];
 
 const related = [
-  { label: "Bioidentical Hormones", href: "/bioidentical-hormone-replacement-therapy/" },
-  { label: "Medical Weight Loss", href: "/medical-weight-loss/" },
+  { label: "Bioidentical Hormones", href: "/services/bioidentical-hormone-replacement-therapy/" },
+  { label: "Medical Weight Loss", href: "/services/medical-weight-loss/" },
   { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
-  { label: "GAINSWave®", href: "/gainswave/" },
+  { label: "GAINSWave®", href: "/services/gainswave/" },
 ];
 
 export default function NutritionalIVsPage() {
@@ -79,11 +84,11 @@ export default function NutritionalIVsPage() {
       <ServiceSchema
         name="Nutritional IVs"
         description="IV vitamin and mineral therapy that supports energy, immunity and recovery when oral supplements aren't enough."
-        pagePath="/nutritional-ivs/"
+        pagePath="/services/nutritional-ivs/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Services", url: "/services/" },
-          { name: "Nutritional IVs", url: "/nutritional-ivs/" },
+          { name: "Nutritional IVs", url: "/services/nutritional-ivs/" },
         ]}
       />
       <PageHero title="Nutritional IVs" parent={{ label: "Services", href: "/services/" }} />

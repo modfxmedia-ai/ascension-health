@@ -22,7 +22,7 @@ import { SITE } from "@/lib/navigation";
 export const metadata: Metadata = {
   title: "Services in Fernley, NV | Ascension Health",
   description:
-    "Ascension Health in Fernley, NV offers chiropractic care, spinal decompression, physical therapy, joint and trigger point injections, nutritional IVs, bioidentical hormones, GAINSWave and medical weight loss.",
+    "Ascension Health in Fernley, NV offers chiropractic care, spinal decompression, physical therapy, injections, IV therapy, hormones and medical weight loss.",
   alternates: { canonical: "/services/" },
   openGraph: {
     title: "Services in Fernley, NV | Ascension Health",
@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     url: "https://ascensionhealthnv.com/services/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Services in Fernley, NV | Ascension Health",
+    description:
+      "Chiropractic care, spinal decompression, physical therapy, injections, IV therapy, hormones, GAINSWave and medical weight loss in Fernley, NV.",
   },
 };
 

@@ -66,37 +66,37 @@ const SERVICE_META: Record<
     tag: "Disc Therapy",
     image: imgSpinalDecompression,
   },
-  "/physical-therapy/": {
+  "/services/physical-therapy/": {
     icon: Dumbbell,
     tag: "Rehab & Recovery",
     image: imgPhysicalTherapy,
   },
-  "/joint-injections/": {
+  "/services/joint-injections/": {
     icon: Syringe,
     tag: "Targeted Relief",
     image: imgJointInjections,
   },
-  "/trigger-point-injections/": {
+  "/services/trigger-point-injections/": {
     icon: Zap,
     tag: "Muscle Pain",
     image: imgTriggerPointInjections,
   },
-  "/nutritional-ivs/": {
+  "/services/nutritional-ivs/": {
     icon: Droplet,
     tag: "Wellness Drips",
     image: imgNutritionalIvs,
   },
-  "/bioidentical-hormone-replacement-therapy/": {
+  "/services/bioidentical-hormone-replacement-therapy/": {
     icon: HeartPulse,
     tag: "Hormone Balance",
     image: imgBHRT,
   },
-  "/medical-weight-loss/": {
+  "/services/medical-weight-loss/": {
     icon: Scale,
     tag: "Sustainable Results",
     image: imgMedicalWeightLoss,
   },
-  "/gainswave/": {
+  "/services/gainswave/": {
     icon: Sparkles,
     tag: "Men's Wellness",
     image: imgGainswave,
@@ -174,18 +174,16 @@ function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-24 lg:pt-32 lg:pb-32">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <Reveal>
-              <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-semibold tracking-[0.18em] text-white uppercase backdrop-blur-md ring-1 ring-white/25">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-                </span>
-                Medical Center · Fernley, NV
-              </span>
-            </Reveal>
-
             <Reveal delay={0.1}>
               <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-[4.25rem] font-semibold leading-[1.02] text-white tracking-tight">
+                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-semibold tracking-[0.18em] text-white uppercase backdrop-blur-md ring-1 ring-white/25">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                  </span>
+                  Chiropractic & Wellness Care in Fernley, NV
+                </span>
+                <br />
                 Personalized care to{" "}
                 <span className="relative inline-block">
                   <span className="text-shimmer">live pain-free</span>
@@ -652,7 +650,7 @@ function WhyChooseUs() {
       <div className="absolute inset-0 -z-20">
         <Image
           src={imgWhyChooseUs}
-          alt=""
+          alt="Neck pain treatment at Ascension Health in Fernley, NV"
           fill
           priority={false}
           sizes="100vw"

@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Chiropractic Care in Fernley, NV | Ascension Health",
+    description:
+      "Gentle, natural chiropractic care for back pain, neck pain and headaches in Fernley, NV.",
+  },
 };
 
 const benefits = [

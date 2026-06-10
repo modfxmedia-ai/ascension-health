@@ -15,14 +15,19 @@ export const metadata: Metadata = {
   title: "Pain Relief in Fernley, NV | Ascension Health",
   description:
     "Pain relief in Fernley, NV. Ascension Health treats the underlying cause of your pain — not just the symptoms — with chiropractic, injections, IV therapy and BHRT.",
-  alternates: { canonical: "/pain-relief/" },
+  alternates: { canonical: "/conditions-treated/pain-relief/" },
   openGraph: {
     title: "Pain Relief in Fernley, NV | Ascension Health",
     description:
       "Whole-person pain relief in Fernley, NV — treating the cause, not just the symptoms.",
-    url: "https://ascensionhealthnv.com/pain-relief/",
+    url: "https://ascensionhealthnv.com/conditions-treated/pain-relief/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Pain Relief in Fernley, NV | Ascension Health",
+    description:
+      "Whole-person pain relief in Fernley, NV — treating the cause, not just the symptoms.",
   },
 };
 
@@ -34,9 +39,9 @@ const benefits = [
 ];
 
 const related = [
-  { label: "Joint Pain", href: "/joint-pain/" },
-  { label: "Neuropathy", href: "/neuropathy/" },
-  { label: "Trigger Point Injections", href: "/trigger-point-injections/" },
+  { label: "Joint Pain", href: "/conditions-treated/joint-pain/" },
+  { label: "Neuropathy", href: "/conditions-treated/neuropathy/" },
+  { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
   { label: "Spinal Decompression", href: "/spinal-decompression/" },
 ];
 
@@ -47,11 +52,11 @@ export default function PainReliefPage() {
         kind="condition"
         name="Pain Relief"
         description="Comprehensive pain relief in Fernley, NV — chiropractic care, injections, IV therapy and BHRT that treat the underlying cause, not just the symptoms."
-        pagePath="/pain-relief/"
+        pagePath="/conditions-treated/pain-relief/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Conditions Treated", url: "/conditions-treated/" },
-          { name: "Pain Relief", url: "/pain-relief/" },
+          { name: "Pain Relief", url: "/conditions-treated/pain-relief/" },
         ]}
       />
       <PageHero title="Pain Relief" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />

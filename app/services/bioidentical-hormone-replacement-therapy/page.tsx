@@ -22,14 +22,19 @@ export const metadata: Metadata = {
   title: "Bioidentical Hormone Replacement Therapy in Fernley, NV | Ascension Health",
   description:
     "Bioidentical Hormone Replacement Therapy - Bioidentical Hormone Replacement Therapy (BHRT) is used to treat both men and women experiencing imbalances or drops in their naturally-occurring",
-  alternates: { canonical: "/bioidentical-hormone-replacement-therapy/" },
+  alternates: { canonical: "/services/bioidentical-hormone-replacement-therapy/" },
   openGraph: {
     title: "Bioidentical Hormone Replacement Therapy in Fernley, NV | Ascension Health",
     description:
       "BHRT for men and women in Fernley, NV — relief for menopause, andropause, fatigue, low libido and more.",
-    url: "https://ascensionhealthnv.com/bioidentical-hormone-replacement-therapy/",
+    url: "https://ascensionhealthnv.com/services/bioidentical-hormone-replacement-therapy/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Bioidentical Hormone Replacement Therapy in Fernley, NV | Ascension Health",
+    description:
+      "BHRT for men and women in Fernley, NV — relief for menopause, andropause, fatigue, low libido and more.",
   },
 };
 
@@ -75,9 +80,9 @@ const benefits = [
 ];
 
 const related = [
-  { label: "Nutritional IVs", href: "/nutritional-ivs/" },
-  { label: "Medical Weight Loss", href: "/medical-weight-loss/" },
-  { label: "GAINSWave®", href: "/gainswave/" },
+  { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },
+  { label: "Medical Weight Loss", href: "/services/medical-weight-loss/" },
+  { label: "GAINSWave®", href: "/services/gainswave/" },
   { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
 ];
 
@@ -87,11 +92,11 @@ export default function BHRTPage() {
       <ServiceSchema
         name="Bioidentical Hormone Replacement Therapy"
         description="BHRT for men and women to address fatigue, mood, sleep, libido and metabolic concerns caused by hormone imbalances."
-        pagePath="/bioidentical-hormone-replacement-therapy/"
+        pagePath="/services/bioidentical-hormone-replacement-therapy/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Services", url: "/services/" },
-          { name: "Bioidentical Hormone Replacement Therapy", url: "/bioidentical-hormone-replacement-therapy/" },
+          { name: "Bioidentical Hormone Replacement Therapy", url: "/services/bioidentical-hormone-replacement-therapy/" },
         ]}
       />
       <PageHero

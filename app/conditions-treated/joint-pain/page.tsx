@@ -15,14 +15,19 @@ export const metadata: Metadata = {
   title: "Joint Pain in Fernley, NV | Ascension Health",
   description:
     "Joint pain treatment in Fernley, NV. Ascension Health treats hip, shoulder, spine and other joint pain with chiropractic care, joint injections and physical therapy.",
-  alternates: { canonical: "/joint-pain/" },
+  alternates: { canonical: "/conditions-treated/joint-pain/" },
   openGraph: {
     title: "Joint Pain in Fernley, NV | Ascension Health",
     description:
       "Non-surgical joint pain care in Fernley, NV — chiropractic, injections and physical therapy.",
-    url: "https://ascensionhealthnv.com/joint-pain/",
+    url: "https://ascensionhealthnv.com/conditions-treated/joint-pain/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Joint Pain in Fernley, NV | Ascension Health",
+    description:
+      "Non-surgical joint pain care in Fernley, NV — chiropractic, injections and physical therapy.",
   },
 };
 
@@ -34,10 +39,10 @@ const benefits = [
 ];
 
 const related = [
-  { label: "Knee Pain", href: "/knee-pain/" },
-  { label: "Joint Injections", href: "/joint-injections/" },
-  { label: "Trigger Point Injections", href: "/trigger-point-injections/" },
-  { label: "Physical Therapy", href: "/physical-therapy/" },
+  { label: "Knee Pain", href: "/conditions-treated/knee-pain/" },
+  { label: "Joint Injections", href: "/services/joint-injections/" },
+  { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
+  { label: "Physical Therapy", href: "/services/physical-therapy/" },
 ];
 
 export default function JointPainPage() {
@@ -47,11 +52,11 @@ export default function JointPainPage() {
         kind="condition"
         name="Joint Pain"
         description="Joint pain treatment for hip, shoulder, spine and other joints — chiropractic care, joint injections and physical therapy."
-        pagePath="/joint-pain/"
+        pagePath="/conditions-treated/joint-pain/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Conditions Treated", url: "/conditions-treated/" },
-          { name: "Joint Pain", url: "/joint-pain/" },
+          { name: "Joint Pain", url: "/conditions-treated/joint-pain/" },
         ]}
       />
       <PageHero title="Joint Pain" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />

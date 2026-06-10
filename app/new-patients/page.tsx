@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "New Patients in Fernley, NV | Ascension Health",
+    description:
+      "What to expect on your first visit to Ascension Health in Fernley, NV — forms, evaluation and personalized care plan.",
+  },
 };
 
 const steps = [

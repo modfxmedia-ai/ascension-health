@@ -15,14 +15,19 @@ export const metadata: Metadata = {
   title: "Hormonal Imbalance in Fernley, NV | Ascension Health",
   description:
     "Hormonal imbalance care in Fernley, NV. Ascension Health offers bioidentical hormone replacement therapy (BHRT) for fatigue, weight gain, low libido, mood changes and more.",
-  alternates: { canonical: "/hormonal-imbalance/" },
+  alternates: { canonical: "/conditions-treated/hormonal-imbalance/" },
   openGraph: {
     title: "Hormonal Imbalance in Fernley, NV | Ascension Health",
     description:
       "Bioidentical hormone replacement therapy and hormonal balance care in Fernley, NV.",
-    url: "https://ascensionhealthnv.com/hormonal-imbalance/",
+    url: "https://ascensionhealthnv.com/conditions-treated/hormonal-imbalance/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Hormonal Imbalance in Fernley, NV | Ascension Health",
+    description:
+      "Bioidentical hormone replacement therapy and hormonal balance care in Fernley, NV.",
   },
 };
 
@@ -34,10 +39,10 @@ const benefits = [
 ];
 
 const related = [
-  { label: "Sexual Dysfunction", href: "/sexual-dysfunction/" },
-  { label: "Bioidentical HRT", href: "/bioidentical-hormone-replacement-therapy/" },
-  { label: "Medical Weight Loss", href: "/medical-weight-loss/" },
-  { label: "Nutritional IVs", href: "/nutritional-ivs/" },
+  { label: "Sexual Dysfunction", href: "/conditions-treated/sexual-dysfunction/" },
+  { label: "Bioidentical HRT", href: "/services/bioidentical-hormone-replacement-therapy/" },
+  { label: "Medical Weight Loss", href: "/services/medical-weight-loss/" },
+  { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },
 ];
 
 export default function HormonalImbalancePage() {
@@ -47,11 +52,11 @@ export default function HormonalImbalancePage() {
         kind="condition"
         name="Hormonal Imbalance"
         description="Bioidentical hormone replacement therapy for fatigue, weight gain, low libido, mood changes and other hormone imbalance symptoms."
-        pagePath="/hormonal-imbalance/"
+        pagePath="/conditions-treated/hormonal-imbalance/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Conditions Treated", url: "/conditions-treated/" },
-          { name: "Hormonal Imbalance", url: "/hormonal-imbalance/" },
+          { name: "Hormonal Imbalance", url: "/conditions-treated/hormonal-imbalance/" },
         ]}
       />
       <PageHero title="Hormonal Imbalance" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />

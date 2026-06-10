@@ -15,14 +15,19 @@ export const metadata: Metadata = {
   title: "Sexual Dysfunction in Fernley, NV | Ascension Health",
   description:
     "Treatment for sexual dysfunction in Fernley, NV. Ascension Health offers GAINSWave, BHRT and other non-surgical options for erectile dysfunction and low libido.",
-  alternates: { canonical: "/sexual-dysfunction/" },
+  alternates: { canonical: "/conditions-treated/sexual-dysfunction/" },
   openGraph: {
     title: "Sexual Dysfunction in Fernley, NV | Ascension Health",
     description:
       "Confidential, non-surgical care for sexual dysfunction in Fernley, NV.",
-    url: "https://ascensionhealthnv.com/sexual-dysfunction/",
+    url: "https://ascensionhealthnv.com/conditions-treated/sexual-dysfunction/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Sexual Dysfunction in Fernley, NV | Ascension Health",
+    description:
+      "Confidential, non-surgical care for sexual dysfunction in Fernley, NV.",
   },
 };
 
@@ -34,10 +39,10 @@ const benefits = [
 ];
 
 const related = [
-  { label: "GAINSWave", href: "/gainswave/" },
-  { label: "Hormonal Imbalance", href: "/hormonal-imbalance/" },
-  { label: "Bioidentical HRT", href: "/bioidentical-hormone-replacement-therapy/" },
-  { label: "Pain Relief", href: "/pain-relief/" },
+  { label: "GAINSWave", href: "/services/gainswave/" },
+  { label: "Hormonal Imbalance", href: "/conditions-treated/hormonal-imbalance/" },
+  { label: "Bioidentical HRT", href: "/services/bioidentical-hormone-replacement-therapy/" },
+  { label: "Pain Relief", href: "/conditions-treated/pain-relief/" },
 ];
 
 export default function SexualDysfunctionPage() {
@@ -47,11 +52,11 @@ export default function SexualDysfunctionPage() {
         kind="condition"
         name="Sexual Dysfunction"
         description="GAINSWave, BHRT and other non-surgical options for erectile dysfunction and low libido."
-        pagePath="/sexual-dysfunction/"
+        pagePath="/conditions-treated/sexual-dysfunction/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Conditions Treated", url: "/conditions-treated/" },
-          { name: "Sexual Dysfunction", url: "/sexual-dysfunction/" },
+          { name: "Sexual Dysfunction", url: "/conditions-treated/sexual-dysfunction/" },
         ]}
       />
       <PageHero title="Sexual Dysfunction" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />

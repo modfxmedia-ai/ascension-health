@@ -35,6 +35,10 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "About Ascension Health in Fernley, NV | Ascension Health",
+    description: ABOUT_DESCRIPTION,
+  },
 };
 
 const approach = [
@@ -209,11 +213,11 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
-              { label: "Physical Therapy", href: "/physical-therapy/" },
+              { label: "Physical Therapy", href: "/services/physical-therapy/" },
               { label: "Spinal Decompression", href: "/services/spinal-decompression/" },
-              { label: "Joint Injections", href: "/joint-injections/" },
-              { label: "Trigger Point Injections", href: "/trigger-point-injections/" },
-              { label: "Nutritional IVs", href: "/nutritional-ivs/" },
+              { label: "Joint Injections", href: "/services/joint-injections/" },
+              { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
+              { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },
             ].map((s, i) => (
               <Reveal key={s.href} delay={i * 0.04}>
                 <Link
@@ -278,9 +282,9 @@ export default function AboutPage() {
                 { label: "Shoulder Pain", href: "/conditions-treated/shoulder-pain/" },
                 { label: "Sciatica", href: "/conditions-treated/sciatica/" },
                 { label: "Headaches & Migraines", href: "/conditions-treated/headaches-migraines/" },
-                { label: "Joint Pain", href: "/joint-pain/" },
-                { label: "Knee Pain", href: "/knee-pain/" },
-                { label: "Neuropathy", href: "/neuropathy/" },
+                { label: "Joint Pain", href: "/conditions-treated/joint-pain/" },
+                { label: "Knee Pain", href: "/conditions-treated/knee-pain/" },
+                { label: "Neuropathy", href: "/conditions-treated/neuropathy/" },
               ]}
             />
           </div>

@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Spinal Decompression in Fernley, NV | Ascension Health",
+    description:
+      "Non-invasive spinal decompression for chronic back and neck pain in Fernley, NV.",
+  },
 };
 
 const benefits = [
@@ -60,7 +65,7 @@ const relatedConditions = [
   { label: "Back Pain", href: "/conditions-treated/back-pain/" },
   { label: "Neck Pain", href: "/conditions-treated/neck-pain/" },
   { label: "Sciatica", href: "/conditions-treated/sciatica/" },
-  { label: "Pain Relief", href: "/pain-relief/" },
+  { label: "Pain Relief", href: "/conditions-treated/pain-relief/" },
 ];
 
 export default function SpinalDecompressionPage() {

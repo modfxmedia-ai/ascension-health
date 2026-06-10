@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Online Forms in Fernley, NV | Ascension Health",
+    description:
+      "Complete your new patient paperwork online before your visit to Ascension Health in Fernley, NV.",
+  },
 };
 
 const INTAKE_URL = "https://intake.helloinnate.com/";

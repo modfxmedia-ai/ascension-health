@@ -15,14 +15,19 @@ export const metadata: Metadata = {
   title: "Neuropathy in Fernley, NV | Ascension Health",
   description:
     "Neuropathy treatment in Fernley, NV. Ascension Health offers non-surgical, drug-free care for peripheral neuropathy, numbness, tingling and burning nerve pain.",
-  alternates: { canonical: "/neuropathy/" },
+  alternates: { canonical: "/conditions-treated/neuropathy/" },
   openGraph: {
     title: "Neuropathy in Fernley, NV | Ascension Health",
     description:
       "Non-surgical, drug-free care for peripheral neuropathy in Fernley, NV.",
-    url: "https://ascensionhealthnv.com/neuropathy/",
+    url: "https://ascensionhealthnv.com/conditions-treated/neuropathy/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Neuropathy in Fernley, NV | Ascension Health",
+    description:
+      "Non-surgical, drug-free care for peripheral neuropathy in Fernley, NV.",
   },
 };
 
@@ -34,9 +39,9 @@ const benefits = [
 ];
 
 const related = [
-  { label: "Pain Relief", href: "/pain-relief/" },
-  { label: "Joint Pain", href: "/joint-pain/" },
-  { label: "Knee Pain", href: "/knee-pain/" },
+  { label: "Pain Relief", href: "/conditions-treated/pain-relief/" },
+  { label: "Joint Pain", href: "/conditions-treated/joint-pain/" },
+  { label: "Knee Pain", href: "/conditions-treated/knee-pain/" },
   { label: "Back Pain", href: "/conditions-treated/back-pain/" },
 ];
 
@@ -47,11 +52,11 @@ export default function NeuropathyPage() {
         kind="condition"
         name="Neuropathy"
         description="Non-surgical, drug-free care for peripheral neuropathy, numbness, tingling and burning nerve pain."
-        pagePath="/neuropathy/"
+        pagePath="/conditions-treated/neuropathy/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Conditions Treated", url: "/conditions-treated/" },
-          { name: "Neuropathy", url: "/neuropathy/" },
+          { name: "Neuropathy", url: "/conditions-treated/neuropathy/" },
         ]}
       />
       <PageHero title="Neuropathy" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />

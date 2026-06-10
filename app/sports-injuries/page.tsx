@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Sports Injuries in Fernley, NV | Ascension Health",
+    description:
+      "Sports injury recovery for athletes of every level in Fernley, NV.",
+  },
 };
 
 const benefits = [
@@ -34,10 +39,10 @@ const benefits = [
 ];
 
 const related = [
-  { label: "Joint Pain", href: "/joint-pain/" },
-  { label: "Knee Pain", href: "/knee-pain/" },
-  { label: "Trigger Point Injections", href: "/trigger-point-injections/" },
-  { label: "Physical Therapy", href: "/physical-therapy/" },
+  { label: "Joint Pain", href: "/conditions-treated/joint-pain/" },
+  { label: "Knee Pain", href: "/conditions-treated/knee-pain/" },
+  { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
+  { label: "Physical Therapy", href: "/services/physical-therapy/" },
 ];
 
 export default function SportsInjuriesPage() {

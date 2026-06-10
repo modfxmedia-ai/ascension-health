@@ -22,14 +22,19 @@ export const metadata: Metadata = {
   title: "Physical Therapy in Fernley, NV | Ascension Health",
   description:
     "Physical therapy in Fernley, NV. Personalized rehabilitation after personal injury, auto accident or fall — therapeutic exercises that restore strength, mobility and balance.",
-  alternates: { canonical: "/physical-therapy/" },
+  alternates: { canonical: "/services/physical-therapy/" },
   openGraph: {
     title: "Physical Therapy in Fernley, NV | Ascension Health",
     description:
       "Personalized physical therapy and therapeutic exercise in Fernley, NV.",
-    url: "https://ascensionhealthnv.com/physical-therapy/",
+    url: "https://ascensionhealthnv.com/services/physical-therapy/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Physical Therapy in Fernley, NV | Ascension Health",
+    description:
+      "Personalized physical therapy and therapeutic exercise in Fernley, NV.",
   },
 };
 
@@ -61,8 +66,8 @@ const relatedConditions = [
   { label: "Neck Pain", href: "/conditions-treated/neck-pain/" },
   { label: "Shoulder Pain", href: "/conditions-treated/shoulder-pain/" },
   { label: "Sciatica", href: "/conditions-treated/sciatica/" },
-  { label: "Knee Pain", href: "/knee-pain/" },
-  { label: "Joint Pain", href: "/joint-pain/" },
+  { label: "Knee Pain", href: "/conditions-treated/knee-pain/" },
+  { label: "Joint Pain", href: "/conditions-treated/joint-pain/" },
 ];
 
 export default function PhysicalTherapyPage() {
@@ -71,11 +76,11 @@ export default function PhysicalTherapyPage() {
       <ServiceSchema
         name="Physical Therapy"
         description="Personalized rehabilitation and therapeutic exercise that restores strength, mobility and balance after injury, surgery or chronic pain."
-        pagePath="/physical-therapy/"
+        pagePath="/services/physical-therapy/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Services", url: "/services/" },
-          { name: "Physical Therapy", url: "/physical-therapy/" },
+          { name: "Physical Therapy", url: "/services/physical-therapy/" },
         ]}
       />
       <PageHero title="Physical Therapy" />

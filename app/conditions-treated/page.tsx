@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Conditions Treated in Fernley, NV | Ascension Health",
+    description:
+      "Pain management in Fernley, NV — back, neck, joint, knee, sciatica, whiplash and more.",
+  },
 };
 
 export default function ConditionsTreatedPage() {

@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Chiropractor Near Me - Contact Us | Ascension Health",
+    description:
+      "Get in touch with Ascension Health — chiropractic care and wellness in Fernley, NV.",
+  },
 };
 
 const MAPS_QUERY = encodeURIComponent("415 HWY 95A Suite 503, Fernley, NV 89408");

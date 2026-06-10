@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Ascension Health",
   },
+  twitter: {
+    title: "Spinal Decompression in Fernley, NV | Ascension Health",
+    description:
+      "A safe, non-invasive alternative to drugs and surgery for chronic back pain.",
+  },
 };
 
 const why = [

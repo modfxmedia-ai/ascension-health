@@ -15,14 +15,19 @@ export const metadata: Metadata = {
   title: "Knee Pain in Fernley, NV | Ascension Health",
   description:
     "Knee pain treatment in Fernley, NV. Ascension Health offers non-surgical care for osteoarthritis, meniscus injuries, runner's knee and post-injury rehab.",
-  alternates: { canonical: "/knee-pain/" },
+  alternates: { canonical: "/conditions-treated/knee-pain/" },
   openGraph: {
     title: "Knee Pain in Fernley, NV | Ascension Health",
     description:
       "Non-surgical knee pain care in Fernley, NV — chiropractic, joint injections and physical therapy.",
-    url: "https://ascensionhealthnv.com/knee-pain/",
+    url: "https://ascensionhealthnv.com/conditions-treated/knee-pain/",
     type: "article",
     siteName: "Ascension Health",
+  },
+  twitter: {
+    title: "Knee Pain in Fernley, NV | Ascension Health",
+    description:
+      "Non-surgical knee pain care in Fernley, NV — chiropractic, joint injections and physical therapy.",
   },
 };
 
@@ -34,10 +39,10 @@ const benefits = [
 ];
 
 const related = [
-  { label: "Joint Pain", href: "/joint-pain/" },
-  { label: "Joint Injections", href: "/joint-injections/" },
+  { label: "Joint Pain", href: "/conditions-treated/joint-pain/" },
+  { label: "Joint Injections", href: "/services/joint-injections/" },
   { label: "Sports Injuries", href: "/sports-injuries/" },
-  { label: "Physical Therapy", href: "/physical-therapy/" },
+  { label: "Physical Therapy", href: "/services/physical-therapy/" },
 ];
 
 export default function KneePainPage() {
@@ -47,11 +52,11 @@ export default function KneePainPage() {
         kind="condition"
         name="Knee Pain"
         description="Non-surgical care for osteoarthritis, meniscus injuries, runner's knee and post-injury knee rehab."
-        pagePath="/knee-pain/"
+        pagePath="/conditions-treated/knee-pain/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Conditions Treated", url: "/conditions-treated/" },
-          { name: "Knee Pain", url: "/knee-pain/" },
+          { name: "Knee Pain", url: "/conditions-treated/knee-pain/" },
         ]}
       />
       <PageHero title="Knee Pain" parent={{ label: "Conditions Treated", href: "/conditions-treated/" }} />
