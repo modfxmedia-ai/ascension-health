@@ -118,7 +118,7 @@ export default function Home() {
       <WhyChooseUs />
       <Appointment />
       <CityLinkGrid
-        heading="Serving Nevada Communities"
+        heading="Local Care Across the West"
         intro="Local care, close to home — explore Ascension Health resources for your city. Same-week appointments and most major insurance accepted."
       />
       <BottomCta />

@@ -24,6 +24,7 @@ const CORE_ENTRIES: Entry[] = [
   { path: "/new-patients/online-forms/", priority: 0.6, changeFrequency: "yearly" },
   { path: "/conditions-treated/", priority: 1.0, changeFrequency: "monthly" },
   { path: "/areas-we-serve/", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/eugene-or/", priority: 0.9, changeFrequency: "monthly" },
   { path: "/sitemap/", priority: 0.3, changeFrequency: "yearly" },
   { path: "/accessibility/", priority: 0.3, changeFrequency: "yearly" },
 ];

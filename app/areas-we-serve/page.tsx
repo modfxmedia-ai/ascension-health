@@ -73,20 +73,21 @@ export default function AreasWeServePage() {
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent ring-1 ring-white/15">
               <MapPin className="h-3.5 w-3.5" />
-              {CITIES.length} Nevada Cities
+              {CITIES.length + 1} Cities Served
             </span>
           </Reveal>
 
           <Reveal delay={0.05}>
             <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight max-w-4xl">
-              Areas We Serve Across Nevada
+              Areas We Serve Across the West
             </h1>
           </Reveal>
 
           <Reveal delay={0.12}>
             <p className="mt-5 max-w-2xl text-lg text-brand-100/90 leading-relaxed">
               Ascension Health serves patients from {CITIES.length} Nevada
-              cities at our Fernley clinic. Choose your city for chiropractic
+              cities at our Fernley clinic, plus auto accident injury care in
+              Eugene, OR. Choose your city for chiropractic
               care, physical therapy, injections, medical weight loss,
               hormone therapy and more — with same-week appointments and
               most major insurance accepted.
@@ -176,6 +177,25 @@ export default function AreasWeServePage() {
                   </Link>
                 </li>
               ))}
+              <li key="eugene-or">
+                <Link
+                  href="/eugene-or/"
+                  className="group flex h-full items-start gap-3 rounded-2xl bg-gradient-to-br from-slate-50 to-white p-5 ring-1 ring-slate-200/70 hover:from-brand-50 hover:to-white hover:ring-brand-200 transition-all"
+                >
+                  <span className="mt-0.5 grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-brand-700 to-brand-900 text-white shadow-md">
+                    <MapPin className="h-4 w-4" />
+                  </span>
+                  <span className="flex-1">
+                    <span className="block font-display text-base font-semibold text-brand-950 leading-tight">
+                      Eugene, OR
+                    </span>
+                    <span className="mt-1 block text-xs text-slate-600">
+                      Auto Accident Injury Care
+                    </span>
+                  </span>
+                  <ArrowRight className="mt-1 h-4 w-4 text-brand-600 transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              </li>
             </ul>
           </Reveal>
         </div>

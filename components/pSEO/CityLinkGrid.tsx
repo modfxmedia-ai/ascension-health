@@ -46,12 +46,19 @@ export function CityLinkGrid({ heading, intro, topic }: CityLinkGridProps) {
     return { href, label, city: c };
   });
 
+  // Eugene, OR is served by a standalone landing page outside the Nevada
+  // pSEO silo, so it is appended only on the city-hub variant (no topic).
+  const extraItems = topic
+    ? []
+    : [{ href: "/eugene-or/", label: "Eugene, OR", city: null }];
+  const allItems = [...items, ...extraItems];
+
   return (
     <section className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
-            Local Care Across Nevada
+            Local Care Across the West
           </p>
           <h2 className="mt-2 font-display text-3xl sm:text-4xl font-semibold text-brand-950">
             {heading}
@@ -63,7 +70,7 @@ export function CityLinkGrid({ heading, intro, topic }: CityLinkGridProps) {
 
         <Reveal delay={0.08}>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {items.map((it) => (
+            {allItems.map((it) => (
               <li key={it.href}>
                 <Link
                   href={it.href}

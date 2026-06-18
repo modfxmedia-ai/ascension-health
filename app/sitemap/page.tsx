@@ -116,6 +116,7 @@ const GROUPS: SitemapGroup[] = [
       ...[...PSEO_TARGET_CITIES]
         .sort((a, b) => a.name.localeCompare(b.name))
         .map((c) => ({ label: `${c.name}, NV`, href: `/${c.slug}-nv/` })),
+      { label: "Eugene, OR", href: "/eugene-or/" },
     ],
   },
 ];
