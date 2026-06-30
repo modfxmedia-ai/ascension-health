@@ -27,6 +27,7 @@ const CORE_ENTRIES: Entry[] = [
   { path: "/eugene-or/", priority: 0.9, changeFrequency: "monthly" },
   { path: "/sitemap/", priority: 0.3, changeFrequency: "yearly" },
   { path: "/accessibility/", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/what-can-we-improve/", priority: 0.3, changeFrequency: "yearly" },
 ];
 
 const SERVICE_ENTRIES: Entry[] = [

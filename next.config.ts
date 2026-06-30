@@ -17,6 +17,7 @@ const CONDITION_REDIRECTS = [
   "pain-relief",
   "sexual-dysfunction",
   "hormonal-imbalance",
+  "neck-pain",
 ];
 
 const nextConfig: NextConfig = {

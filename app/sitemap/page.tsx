@@ -105,6 +105,7 @@ const GROUPS: SitemapGroup[] = [
     icon: FileText,
     links: [
       { label: "Sitemap", href: "/sitemap/" },
+      { label: "What Can We Improve?", href: "/what-can-we-improve/" },
       { label: "Thank You", href: "/thank-you/" },
     ],
   },
