@@ -23,7 +23,7 @@ import { PSEO_TARGET_CITIES, buildPageMetadata } from "@/lib/pSEO-routing";
  */
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Areas We Serve in Fernley, NV | Ascension Health",
+  title: "Areas We Serve in Fernley, NV",
   description:
     "Browse every Nevada city Ascension Health serves — chiropractic, physical therapy, joint injections, medical weight loss, hormone therapy and more from our Fernley clinic.",
   path: "/areas-we-serve/",

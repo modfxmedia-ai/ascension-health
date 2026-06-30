@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
 
 export const metadata: Metadata = {
-  title: "Thank You in Fernley, NV | Ascension Health",
+  title: "Thank You in Fernley, NV",
   description:
     "Thank you for contacting Ascension Health. Our team will reach out within 24 hours to confirm your appointment.",
   alternates: { canonical: "/thank-you/" },

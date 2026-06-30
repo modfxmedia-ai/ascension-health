@@ -19,12 +19,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/weightloss_img.jpg";
 
 export const metadata: Metadata = {
-  title: "Medical Weight Loss in Fernley, NV | Ascension Health",
+  title: "Medical Weight Loss in Fernley, NV",
   description:
     "Medical Weight Loss - Weight Loss is a process that is definitely easier said than done. So often people hear from their medical providers,\u201dYou should probably lose a little",
   alternates: { canonical: "/services/medical-weight-loss/" },
   openGraph: {
-    title: "Medical Weight Loss in Fernley, NV | Ascension Health",
+    title: "Medical Weight Loss in Fernley, NV",
     description:
       "Physician-guided medical weight loss in Fernley, NV — a real plan, not just advice to eat less and move more.",
     url: "https://ascensionhealthnv.com/services/medical-weight-loss/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Medical Weight Loss in Fernley, NV | Ascension Health",
+    title: "Medical Weight Loss in Fernley, NV",
     description:
       "Physician-guided medical weight loss in Fernley, NV — a real plan, not just advice to eat less and move more.",
   },

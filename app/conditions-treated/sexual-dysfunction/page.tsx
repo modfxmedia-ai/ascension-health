@@ -12,12 +12,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/man.jpg";
 
 export const metadata: Metadata = {
-  title: "Sexual Dysfunction in Fernley, NV | Ascension Health",
+  title: "Sexual Dysfunction in Fernley, NV",
   description:
     "Treatment for sexual dysfunction in Fernley, NV. Ascension Health offers GAINSWave, BHRT and other non-surgical options for erectile dysfunction and low libido.",
   alternates: { canonical: "/conditions-treated/sexual-dysfunction/" },
   openGraph: {
-    title: "Sexual Dysfunction in Fernley, NV | Ascension Health",
+    title: "Sexual Dysfunction in Fernley, NV",
     description:
       "Confidential, non-surgical care for sexual dysfunction in Fernley, NV.",
     url: "https://ascensionhealthnv.com/conditions-treated/sexual-dysfunction/",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Sexual Dysfunction in Fernley, NV | Ascension Health",
+    title: "Sexual Dysfunction in Fernley, NV",
     description:
       "Confidential, non-surgical care for sexual dysfunction in Fernley, NV.",
   },

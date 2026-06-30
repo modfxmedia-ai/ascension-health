@@ -12,12 +12,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/BMS12-scaled-1.jpg";
 
 export const metadata: Metadata = {
-  title: "Hormonal Imbalance in Fernley, NV | Ascension Health",
+  title: "Hormonal Imbalance in Fernley, NV",
   description:
     "Hormonal imbalance care in Fernley, NV. Ascension Health offers bioidentical hormone replacement therapy (BHRT) for fatigue, weight gain, low libido, mood changes and more.",
   alternates: { canonical: "/conditions-treated/hormonal-imbalance/" },
   openGraph: {
-    title: "Hormonal Imbalance in Fernley, NV | Ascension Health",
+    title: "Hormonal Imbalance in Fernley, NV",
     description:
       "Bioidentical hormone replacement therapy and hormonal balance care in Fernley, NV.",
     url: "https://ascensionhealthnv.com/conditions-treated/hormonal-imbalance/",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Hormonal Imbalance in Fernley, NV | Ascension Health",
+    title: "Hormonal Imbalance in Fernley, NV",
     description:
       "Bioidentical hormone replacement therapy and hormonal balance care in Fernley, NV.",
   },

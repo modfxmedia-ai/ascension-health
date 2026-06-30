@@ -25,18 +25,18 @@ const ABOUT_DESCRIPTION =
   "Our mission at Ascension Health is to provide excellent chiropractic care in Fernley, NV. We assess the patient as a whole and lead you into a lifestyle of being pain free. Call (775) 575-9922.";
 
 export const metadata: Metadata = {
-  title: "About Ascension Health in Fernley, NV | Ascension Health",
+  title: "About Ascension Health in Fernley, NV",
   description: ABOUT_DESCRIPTION,
   alternates: { canonical: "/about/" },
   openGraph: {
-    title: "About Ascension Health in Fernley, NV | Ascension Health",
+    title: "About Ascension Health in Fernley, NV",
     description: ABOUT_DESCRIPTION,
     url: "https://ascensionhealthnv.com/about/",
     type: "article",
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "About Ascension Health in Fernley, NV | Ascension Health",
+    title: "About Ascension Health in Fernley, NV",
     description: ABOUT_DESCRIPTION,
   },
 };

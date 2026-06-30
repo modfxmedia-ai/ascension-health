@@ -19,12 +19,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/knee-pain-1-2.jpg";
 
 export const metadata: Metadata = {
-  title: "Trigger Point Injections in Fernley, NV | Ascension Health",
+  title: "Trigger Point Injections in Fernley, NV",
   description:
     "Trigger Point Injections - Here at Ascension Health, we are proud to offer trigger point injections for patients struggling with fibromyalgia, tension headaches, myofascial pain,",
   alternates: { canonical: "/services/trigger-point-injections/" },
   openGraph: {
-    title: "Trigger Point Injections in Fernley, NV | Ascension Health",
+    title: "Trigger Point Injections in Fernley, NV",
     description:
       "Trigger point injections for fibromyalgia, tension headaches and chronic muscle pain in Fernley, NV.",
     url: "https://ascensionhealthnv.com/services/trigger-point-injections/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Trigger Point Injections in Fernley, NV | Ascension Health",
+    title: "Trigger Point Injections in Fernley, NV",
     description:
       "Trigger point injections for fibromyalgia, tension headaches and chronic muscle pain in Fernley, NV.",
   },

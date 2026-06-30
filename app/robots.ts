@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://www.ascensionhealthnv.com/sitemap.xml",
+    sitemap: "https://ascensionhealthnv.com/sitemap.xml",
   };
 }

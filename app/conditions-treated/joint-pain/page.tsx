@@ -12,12 +12,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/jointpain_img.jpg";
 
 export const metadata: Metadata = {
-  title: "Joint Pain in Fernley, NV | Ascension Health",
+  title: "Joint Pain in Fernley, NV",
   description:
     "Joint pain treatment in Fernley, NV. Ascension Health treats hip, shoulder, spine and other joint pain with chiropractic care, joint injections and physical therapy.",
   alternates: { canonical: "/conditions-treated/joint-pain/" },
   openGraph: {
-    title: "Joint Pain in Fernley, NV | Ascension Health",
+    title: "Joint Pain in Fernley, NV",
     description:
       "Non-surgical joint pain care in Fernley, NV — chiropractic, injections and physical therapy.",
     url: "https://ascensionhealthnv.com/conditions-treated/joint-pain/",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Joint Pain in Fernley, NV | Ascension Health",
+    title: "Joint Pain in Fernley, NV",
     description:
       "Non-surgical joint pain care in Fernley, NV — chiropractic, injections and physical therapy.",
   },

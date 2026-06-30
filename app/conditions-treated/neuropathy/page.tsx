@@ -12,12 +12,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/neuropathy_img.jpg";
 
 export const metadata: Metadata = {
-  title: "Neuropathy in Fernley, NV | Ascension Health",
+  title: "Neuropathy in Fernley, NV",
   description:
     "Neuropathy treatment in Fernley, NV. Ascension Health offers non-surgical, drug-free care for peripheral neuropathy, numbness, tingling and burning nerve pain.",
   alternates: { canonical: "/conditions-treated/neuropathy/" },
   openGraph: {
-    title: "Neuropathy in Fernley, NV | Ascension Health",
+    title: "Neuropathy in Fernley, NV",
     description:
       "Non-surgical, drug-free care for peripheral neuropathy in Fernley, NV.",
     url: "https://ascensionhealthnv.com/conditions-treated/neuropathy/",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Neuropathy in Fernley, NV | Ascension Health",
+    title: "Neuropathy in Fernley, NV",
     description:
       "Non-surgical, drug-free care for peripheral neuropathy in Fernley, NV.",
   },

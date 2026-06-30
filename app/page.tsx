@@ -122,7 +122,6 @@ export default function Home() {
         intro="Local care, close to home — explore Ascension Health resources for your city. Same-week appointments and most major insurance accepted."
       />
       <BottomCta />
-      <LocalBusinessSchema />
     </>
   );
 }
@@ -969,37 +968,3 @@ function BottomCta() {
   );
 }
 
-/* =========================== SCHEMA =========================== */
-
-function LocalBusinessSchema() {
-  const data = {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    name: "Ascension Health",
-    url: "https://ascensionhealthnv.com/",
-    telephone: SITE.phone,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "415 HWY 95A Suite 503",
-      addressLocality: "Fernley",
-      addressRegion: "NV",
-      postalCode: "89408",
-      addressCountry: "US",
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-        opens: "09:00",
-        closes: "18:00",
-      },
-    ],
-    sameAs: [SITE.social.facebook, SITE.social.twitter, SITE.social.google],
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
-  );
-}

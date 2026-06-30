@@ -167,7 +167,7 @@ export function getConditionHubHref(slug: string): string {
 // Shared metadata helper
 // ──────────────────────────────────────────────────────────────────────────
 
-export const SITE_URL = "https://www.ascensionhealthnv.com";
+export const SITE_URL = "https://ascensionhealthnv.com";
 
 export function buildPageMetadata(args: {
   title: string;

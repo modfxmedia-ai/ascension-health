@@ -19,12 +19,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/menshealth_img.jpg";
 
 export const metadata: Metadata = {
-  title: "GAINSWave® in Fernley, NV | Ascension Health",
+  title: "GAINSWave® in Fernley, NV",
   description:
     "GAINSWave® - Here at Ascension Health, we are proud to provide GAINSWave® services to our male patients struggling with sexual dysfunction. This treatment uses",
   alternates: { canonical: "/services/gainswave/" },
   openGraph: {
-    title: "GAINSWave® in Fernley, NV | Ascension Health",
+    title: "GAINSWave® in Fernley, NV",
     description:
       "Acoustic wave therapy for men in Fernley, NV — improve blood flow, sensitivity and sexual function without medication.",
     url: "https://ascensionhealthnv.com/services/gainswave/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "GAINSWave® in Fernley, NV | Ascension Health",
+    title: "GAINSWave® in Fernley, NV",
     description:
       "Acoustic wave therapy for men in Fernley, NV — improve blood flow, sensitivity and sexual function without medication.",
   },

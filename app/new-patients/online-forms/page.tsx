@@ -12,12 +12,12 @@ import { Reveal } from "@/components/Motion";
 import { SITE } from "@/lib/navigation";
 
 export const metadata: Metadata = {
-  title: "Online Forms in Fernley, NV | Ascension Health",
+  title: "Online Forms in Fernley, NV",
   description:
     "Complete your new patient paperwork online before your visit to Ascension Health in Fernley, NV. A passcode from our office is required to match your chart.",
   alternates: { canonical: "/new-patients/online-forms/" },
   openGraph: {
-    title: "Online Forms in Fernley, NV | Ascension Health",
+    title: "Online Forms in Fernley, NV",
     description:
       "Complete your new patient paperwork online before your visit to Ascension Health in Fernley, NV.",
     url: "https://ascensionhealthnv.com/new-patients/online-forms/",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Online Forms in Fernley, NV | Ascension Health",
+    title: "Online Forms in Fernley, NV",
     description:
       "Complete your new patient paperwork online before your visit to Ascension Health in Fernley, NV.",
   },

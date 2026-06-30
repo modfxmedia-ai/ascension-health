@@ -115,19 +115,19 @@ export async function generateMetadata({
   switch (r.kind) {
     case "service-city":
       return buildPageMetadata({
-        title: `${r.service.name} in ${r.city.name}, NV | Ascension Health`,
+        title: `${r.service.name} in ${r.city.name}, NV`,
         description: `${r.service.name} for ${r.city.name}, NV patients — ${r.service.benefit}. Same-week appointments at our Fernley clinic, serving ${r.city.region}.`,
         path,
       });
     case "condition-city":
       return buildPageMetadata({
-        title: `${r.condition.name} Treatment in ${r.city.name}, NV | Ascension Health`,
+        title: `${r.condition.name} Treatment in ${r.city.name}, NV`,
         description: `Help for ${r.condition.symptomPhrase} in ${r.city.name}, NV. Conservative, drug-free ${r.condition.name.toLowerCase()} care from the Ascension Health team.`,
         path,
       });
     case "service-near-city":
       return buildPageMetadata({
-        title: `${r.service.name} Near ${r.city.name}, NV | Ascension Health`,
+        title: `${r.service.name} Near ${r.city.name}, NV`,
         description: `Looking for ${r.service.name.toLowerCase()} near ${r.city.name}? Ascension Health serves ${r.city.region} from our Fernley clinic — ${r.service.benefit}.`,
         path,
       });

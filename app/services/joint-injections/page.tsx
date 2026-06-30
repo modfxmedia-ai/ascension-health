@@ -19,12 +19,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/man-running.jpg";
 
 export const metadata: Metadata = {
-  title: "Joint Injections in Fernley, NV | Ascension Health",
+  title: "Joint Injections in Fernley, NV",
   description:
     "Joint Injections - Joint Injections At Ascension Health, we offer joint injections to those patients struggling with joint pain. Joint pain can occur in any joint of the",
   alternates: { canonical: "/services/joint-injections/" },
   openGraph: {
-    title: "Joint Injections in Fernley, NV | Ascension Health",
+    title: "Joint Injections in Fernley, NV",
     description:
       "Non-surgical joint injections for knee, hip, shoulder and wrist pain in Fernley, NV.",
     url: "https://ascensionhealthnv.com/services/joint-injections/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Joint Injections in Fernley, NV | Ascension Health",
+    title: "Joint Injections in Fernley, NV",
     description:
       "Non-surgical joint injections for knee, hip, shoulder and wrist pain in Fernley, NV.",
   },

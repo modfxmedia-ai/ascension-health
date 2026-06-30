@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConditionStub } from "@/components/ConditionStub";
 
 export const metadata: Metadata = {
-  title: "Whiplash in Fernley, NV | Ascension Health",
+  title: "Whiplash in Fernley, NV",
   description:
     "Whiplash treatment in Fernley, NV. Ascension Health offers non-surgical care for whiplash and other auto-injury-related neck pain.",
   alternates: { canonical: "/conditions-treated/whiplash/" },

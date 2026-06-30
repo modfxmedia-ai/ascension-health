@@ -12,12 +12,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/people-3.jpg";
 
 export const metadata: Metadata = {
-  title: "Pain Relief in Fernley, NV | Ascension Health",
+  title: "Pain Relief in Fernley, NV",
   description:
     "Pain relief in Fernley, NV. Ascension Health treats the underlying cause of your pain — not just the symptoms — with chiropractic, injections, IV therapy and BHRT.",
   alternates: { canonical: "/conditions-treated/pain-relief/" },
   openGraph: {
-    title: "Pain Relief in Fernley, NV | Ascension Health",
+    title: "Pain Relief in Fernley, NV",
     description:
       "Whole-person pain relief in Fernley, NV — treating the cause, not just the symptoms.",
     url: "https://ascensionhealthnv.com/conditions-treated/pain-relief/",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Pain Relief in Fernley, NV | Ascension Health",
+    title: "Pain Relief in Fernley, NV",
     description:
       "Whole-person pain relief in Fernley, NV — treating the cause, not just the symptoms.",
   },

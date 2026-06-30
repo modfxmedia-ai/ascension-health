@@ -20,12 +20,12 @@ import { SERVICES } from "@/lib/services";
 import { SITE } from "@/lib/navigation";
 
 export const metadata: Metadata = {
-  title: "Services in Fernley, NV | Ascension Health",
+  title: "Services in Fernley, NV",
   description:
     "Ascension Health in Fernley, NV offers chiropractic care, spinal decompression, physical therapy, injections, IV therapy, hormones and medical weight loss.",
   alternates: { canonical: "/services/" },
   openGraph: {
-    title: "Services in Fernley, NV | Ascension Health",
+    title: "Services in Fernley, NV",
     description:
       "Chiropractic care, spinal decompression, physical therapy, injections, IV therapy, hormones, GAINSWave and medical weight loss in Fernley, NV.",
     url: "https://ascensionhealthnv.com/services/",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Services in Fernley, NV | Ascension Health",
+    title: "Services in Fernley, NV",
     description:
       "Chiropractic care, spinal decompression, physical therapy, injections, IV therapy, hormones, GAINSWave and medical weight loss in Fernley, NV.",
   },

@@ -7,12 +7,12 @@ import LeadForm from "@/components/LeadForm";
 import { SITE } from "@/lib/navigation";
 
 export const metadata: Metadata = {
-  title: "Chiropractor Near Me - Contact Us | Ascension Health",
+  title: "Chiropractor Near Me - Contact Us",
   description:
     "Contact Ascension Health in Fernley, NV. Call (775) 575-9922, text (775) 204-4640, or request an appointment online. 415 HWY 95A Suite 503, Fernley, NV 89408.",
   alternates: { canonical: "/contact/" },
   openGraph: {
-    title: "Chiropractor Near Me - Contact Us | Ascension Health",
+    title: "Chiropractor Near Me - Contact Us",
     description:
       "Get in touch with Ascension Health — chiropractic care and wellness in Fernley, NV.",
     url: "https://ascensionhealthnv.com/contact/",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Chiropractor Near Me - Contact Us | Ascension Health",
+    title: "Chiropractor Near Me - Contact Us",
     description:
       "Get in touch with Ascension Health — chiropractic care and wellness in Fernley, NV.",
   },

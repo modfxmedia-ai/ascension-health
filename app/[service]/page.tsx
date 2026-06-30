@@ -50,7 +50,7 @@ export async function generateMetadata({
   const cityObj = parseCityNvSlug(service);
   if (!cityObj) return {};
   return buildPageMetadata({
-    title: `Chiropractic & Medical Services in ${cityObj.name}, NV | Ascension Health`,
+    title: `Chiropractic & Medical Services in ${cityObj.name}, NV`,
     description: `Find chiropractic care, physical therapy, joint injections, medical weight loss and more in ${cityObj.name}, NV. Same-week appointments at Ascension Health serving ${cityObj.region}.`,
     path: `/${service}/`,
   });

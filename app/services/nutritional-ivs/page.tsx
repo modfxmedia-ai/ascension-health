@@ -19,12 +19,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/IV-Therapy.jpg";
 
 export const metadata: Metadata = {
-  title: "Nutritional IVs in Fernley, NV | Ascension Health",
+  title: "Nutritional IVs in Fernley, NV",
   description:
     "Nutritional IVs - We specialize in correcting your body's misalignments. Our goal is to ensure that your spine and the rest of your body are working harmoniously. To",
   alternates: { canonical: "/services/nutritional-ivs/" },
   openGraph: {
-    title: "Nutritional IVs in Fernley, NV | Ascension Health",
+    title: "Nutritional IVs in Fernley, NV",
     description:
       "IV vitamin and nutrient therapy in Fernley, NV — hydration, energy, immunity and recovery on your lunch break.",
     url: "https://ascensionhealthnv.com/services/nutritional-ivs/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Nutritional IVs in Fernley, NV | Ascension Health",
+    title: "Nutritional IVs in Fernley, NV",
     description:
       "IV vitamin and nutrient therapy in Fernley, NV — hydration, energy, immunity and recovery on your lunch break.",
   },

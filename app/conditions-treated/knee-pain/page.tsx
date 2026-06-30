@@ -12,12 +12,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/kneepain_img.jpg";
 
 export const metadata: Metadata = {
-  title: "Knee Pain in Fernley, NV | Ascension Health",
+  title: "Knee Pain in Fernley, NV",
   description:
     "Knee pain treatment in Fernley, NV. Ascension Health offers non-surgical care for osteoarthritis, meniscus injuries, runner's knee and post-injury rehab.",
   alternates: { canonical: "/conditions-treated/knee-pain/" },
   openGraph: {
-    title: "Knee Pain in Fernley, NV | Ascension Health",
+    title: "Knee Pain in Fernley, NV",
     description:
       "Non-surgical knee pain care in Fernley, NV — chiropractic, joint injections and physical therapy.",
     url: "https://ascensionhealthnv.com/conditions-treated/knee-pain/",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Knee Pain in Fernley, NV | Ascension Health",
+    title: "Knee Pain in Fernley, NV",
     description:
       "Non-surgical knee pain care in Fernley, NV — chiropractic, joint injections and physical therapy.",
   },

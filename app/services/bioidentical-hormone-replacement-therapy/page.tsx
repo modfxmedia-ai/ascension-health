@@ -19,12 +19,12 @@ import { SITE } from "@/lib/navigation";
 import heroImage from "@/images/clone/Smiles-10.jpg";
 
 export const metadata: Metadata = {
-  title: "Bioidentical Hormone Replacement Therapy in Fernley, NV | Ascension Health",
+  title: "Bioidentical Hormone Replacement Therapy in Fernley, NV",
   description:
     "Bioidentical Hormone Replacement Therapy - Bioidentical Hormone Replacement Therapy (BHRT) is used to treat both men and women experiencing imbalances or drops in their naturally-occurring",
   alternates: { canonical: "/services/bioidentical-hormone-replacement-therapy/" },
   openGraph: {
-    title: "Bioidentical Hormone Replacement Therapy in Fernley, NV | Ascension Health",
+    title: "Bioidentical Hormone Replacement Therapy in Fernley, NV",
     description:
       "BHRT for men and women in Fernley, NV — relief for menopause, andropause, fatigue, low libido and more.",
     url: "https://ascensionhealthnv.com/services/bioidentical-hormone-replacement-therapy/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Bioidentical Hormone Replacement Therapy in Fernley, NV | Ascension Health",
+    title: "Bioidentical Hormone Replacement Therapy in Fernley, NV",
     description:
       "BHRT for men and women in Fernley, NV — relief for menopause, andropause, fatigue, low libido and more.",
   },

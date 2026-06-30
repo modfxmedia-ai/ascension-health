@@ -27,7 +27,7 @@ import { buildPageMetadata } from "@/lib/pSEO-routing";
 const CITY = "Eugene, OR";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Auto Accident Chiropractor in Eugene, OR | Ascension Health",
+  title: "Auto Accident Chiropractor in Eugene, OR",
   description:
     "Injured in a car accident in Eugene, OR? Ascension Health provides expert chiropractic care, physical therapy, and pain relief for auto accident injuries. Same-week appointments. Most insurance accepted.",
   path: "/eugene-or/",
@@ -102,7 +102,7 @@ const FAQS: { question: string; answer: string }[] = [
   },
 ];
 
-const PAGE_URL = "https://www.ascensionhealthnv.com/eugene-or/";
+const PAGE_URL = "https://ascensionhealthnv.com/eugene-or/";
 
 const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
@@ -110,7 +110,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   name: "Ascension Health",
   url: PAGE_URL,
   telephone: "(775) 575-9922",
-  image: "https://www.ascensionhealthnv.com/og.png",
+  image: "https://ascensionhealthnv.com/og.png",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Eugene",

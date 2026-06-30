@@ -10,12 +10,12 @@ import { PageHero, AppointmentSidebar, BottomCTA } from "@/components/InteriorPa
 import { Reveal } from "@/components/Motion";
 
 export const metadata: Metadata = {
-  title: "Accessibility in Fernley, NV | Ascension Health",
+  title: "Accessibility in Fernley, NV",
   description:
     "Ascension Health is committed to making our website accessible to everyone. Find tips and resources to help you browse our site more comfortably.",
   alternates: { canonical: "/accessibility/" },
   openGraph: {
-    title: "Accessibility in Fernley, NV | Ascension Health",
+    title: "Accessibility in Fernley, NV",
     description:
       "Ascension Health is committed to making our website accessible to everyone.",
     url: "https://ascensionhealthnv.com/accessibility/",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Ascension Health",
   },
   twitter: {
-    title: "Accessibility in Fernley, NV | Ascension Health",
+    title: "Accessibility in Fernley, NV",
     description:
       "Ascension Health is committed to making our website accessible to everyone.",
   },
