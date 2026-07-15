@@ -196,36 +196,46 @@ function DesktopMenuWithChildren({ item }: { item: NavItem }) {
         <ChevronDown className="h-3.5 w-3.5" aria-hidden />
       </Link>
 
-      {open && (
-        <div
-          className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-2"
-          role="menu"
-        >
-          <div className="w-[560px] rounded-xl border border-slate-100 bg-white p-4 shadow-xl">
-            <div className="grid grid-cols-2 gap-x-6 gap-y-1">
-              <Link
-                href={item.href}
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="col-span-2 mb-2 flex items-center justify-between rounded-lg bg-brand-50/60 px-4 py-3 text-sm font-semibold text-brand-800 hover:bg-brand-50"
-              >
-                <span>All {item.label}</span>
-                <span aria-hidden>→</span>
-              </Link>
-              {item.children?.map((child) => (
+      {open && (() => {
+        const childCount = item.children?.length ?? 0;
+        const isCompact = childCount <= 4;
+        const panelWidth = isCompact ? "w-64" : "w-[560px]";
+        const gridCols = isCompact ? "grid-cols-1" : "grid-cols-2";
+        const allSpan = isCompact ? "col-span-1" : "col-span-2";
+        return (
+          <div
+            className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-2"
+            role="menu"
+          >
+            <div className={cn(panelWidth, "rounded-xl border border-slate-100 bg-white p-4 shadow-xl")}>
+              <div className={cn("grid gap-x-6 gap-y-1", gridCols)}>
                 <Link
-                  key={child.href}
-                  href={child.href}
+                  href={item.href}
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  className="rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brand-700"
-                  role="menuitem"
+                  className={cn(
+                    allSpan,
+                    "mb-2 flex items-center justify-between rounded-lg bg-brand-50/60 px-4 py-3 text-sm font-semibold text-brand-800 hover:bg-brand-50"
+                  )}
                 >
-                  {child.label}
+                  <span>All {item.label}</span>
+                  <span aria-hidden>→</span>
                 </Link>
-              ))}
+                {item.children?.map((child) => (
+                  <Link
+                    key={child.href}
+                    href={child.href}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brand-700"
+                    role="menuitem"
+                  >
+                    {child.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
     </li>
   );
 }

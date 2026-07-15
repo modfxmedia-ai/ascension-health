@@ -10,6 +10,7 @@ const QUICK_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about/" },
   { label: "Our Team", href: "/our-team/" },
+  { label: "Blog", href: "/blog/" },
   { label: "New Patients", href: "/new-patients/" },
   { label: "Online Forms", href: "/new-patients/online-forms/" },
   { label: "Appointments", href: "/appointments/" },
