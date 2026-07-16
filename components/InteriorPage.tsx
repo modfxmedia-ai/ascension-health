@@ -64,7 +64,7 @@ export function AppointmentSidebar() {
         <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-accent">Request Appointment</p>
         <h2 className="mt-3 font-display text-2xl font-semibold leading-tight">Let&apos;s get you feeling better</h2>
         <p className="mt-3 text-sm text-brand-100/80 leading-relaxed">
-          Speak with our Fernley team — we&apos;ll find a time that works for your schedule.
+          Speak with our Fernley team, we&apos;ll find a time that works for your schedule.
         </p>
 
         <a

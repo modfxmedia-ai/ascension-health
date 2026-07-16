@@ -346,7 +346,7 @@ function BlockRenderer({ block }: { block: BlogBlock }) {
           </blockquote>
           {block.attribution && (
             <figcaption className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
-              — {block.attribution}
+              {block.attribution}
             </figcaption>
           )}
         </figure>

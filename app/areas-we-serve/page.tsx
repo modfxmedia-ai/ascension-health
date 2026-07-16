@@ -25,7 +25,7 @@ import { PSEO_TARGET_CITIES, buildPageMetadata } from "@/lib/pSEO-routing";
 export const metadata: Metadata = buildPageMetadata({
   title: "Areas We Serve in Fernley, NV",
   description:
-    "Browse every Nevada city Ascension Health serves — chiropractic, physical therapy, joint injections, medical weight loss, hormone therapy and more from our Fernley clinic.",
+    "Browse every Nevada city Ascension Health serves, chiropractic, physical therapy, joint injections, medical weight loss, hormone therapy and more from our Fernley clinic.",
   path: "/areas-we-serve/",
 });
 
@@ -89,7 +89,7 @@ export default function AreasWeServePage() {
               cities at our Fernley clinic, plus auto accident injury care in
               Eugene, OR. Choose your city for chiropractic
               care, physical therapy, injections, medical weight loss,
-              hormone therapy and more — with same-week appointments and
+              hormone therapy and more, with same-week appointments and
               most major insurance accepted.
             </p>
           </Reveal>
@@ -149,7 +149,7 @@ export default function AreasWeServePage() {
             </h2>
             <p className="mt-3 max-w-2xl text-slate-700 leading-relaxed">
               Each city hub lists every service and condition we treat for
-              local patients — plus drive time, nearby cities, and what to
+              local patients, plus drive time, nearby cities, and what to
               expect on your first visit.
             </p>
           </Reveal>
@@ -291,7 +291,7 @@ export default function AreasWeServePage() {
       <BottomCTA
         kicker="Don't see your city?"
         heading={`Call ${SITE.phone}`}
-        body="We see patients from across Nevada — even outside the cities listed here. Call our Fernley team to check availability and verify your insurance."
+        body="We see patients from across Nevada, even outside the cities listed here. Call our Fernley team to check availability and verify your insurance."
       />
     </main>
   );

@@ -12,12 +12,12 @@ import { ClientPill } from "@/components/ConditionPill";
 export const metadata: Metadata = {
   title: "Conditions Treated in Fernley, NV",
   description:
-    "Ascension Health in Fernley, NV specializes in pain management — back pain, neck pain, sciatica, headaches, joint pain, sports injuries and more.",
+    "Ascension Health in Fernley, NV specializes in pain management, back pain, neck pain, sciatica, headaches, joint pain, sports injuries and more.",
   alternates: { canonical: "/conditions-treated/" },
   openGraph: {
     title: "Conditions Treated in Fernley, NV",
     description:
-      "Pain management in Fernley, NV — back, neck, joint, knee, sciatica, whiplash and more.",
+      "Pain management in Fernley, NV, back, neck, joint, knee, sciatica, whiplash and more.",
     url: "https://ascensionhealthnv.com/conditions-treated/",
     type: "article",
     siteName: "Ascension Health",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Conditions Treated in Fernley, NV",
     description:
-      "Pain management in Fernley, NV — back, neck, joint, knee, sciatica, whiplash and more.",
+      "Pain management in Fernley, NV, back, neck, joint, knee, sciatica, whiplash and more.",
   },
 };
 
@@ -92,7 +92,7 @@ export default function ConditionsTreatedPage() {
                     </h3>
                     <p className="mt-2 text-[15px] leading-relaxed text-slate-700">
                       Call our Fernley office and we&apos;ll help you figure
-                      out the next step — even if your pain doesn&apos;t
+                      out the next step, even if your pain doesn&apos;t
                       neatly match a label.
                     </p>
                     <a

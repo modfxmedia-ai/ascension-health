@@ -13,7 +13,7 @@ export default function Page() {
     <ConditionStub
       title="Whiplash"
       slug="whiplash"
-      intro="Whiplash is a neck injury caused by a sudden, forceful back-and-forth motion of the head — most commonly from a rear-end auto collision. Symptoms can take hours or days to surface, and untreated whiplash often turns into chronic neck pain, headaches and stiffness."
+      intro="Whiplash is a neck injury caused by a sudden, forceful back-and-forth motion of the head, most commonly from a rear-end auto collision. Symptoms can take hours or days to surface, and untreated whiplash often turns into chronic neck pain, headaches and stiffness."
     />
   );
 }

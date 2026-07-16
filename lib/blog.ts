@@ -72,7 +72,7 @@ export type BlogPost = {
 export const DEFAULT_AUTHOR: BlogAuthor = {
   name: "Ascension Health",
   role: "Chiropractic & Wellness Team",
-  bio: "Fernley’s trusted team for chiropractic care, physical therapy, joint injections, hormone therapy and medical weight loss — helping Northern Nevada live pain-free.",
+  bio: "Fernley’s trusted team for chiropractic care, physical therapy, joint injections, hormone therapy and medical weight loss, helping Northern Nevada live pain-free.",
 };
 
 /* ------------------------------------------------------------------ */
@@ -349,7 +349,7 @@ export const BLOG_POSTS: BlogPost[] = [
       alt: "Chiropractor examining a patient's shoulder and cervical spine in Fernley, NV",
     },
     author: DEFAULT_AUTHOR,
-    lede: "Stubborn shoulder pain often starts higher up — in the neck and upper back. Knowing the signs helps you find the real source faster.",
+    lede: "Stubborn shoulder pain often starts higher up, in the neck and upper back. Knowing the signs helps you find the real source faster.",
     related: ["spinal-decompression-fernley-back-pain-relief"],
     content: [
       {
@@ -424,7 +424,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "callout",
         variant: "warning",
         title: "When to seek care sooner",
-        body: "Sudden, severe shoulder or arm pain with weakness or loss of coordination — or pain that starts after a car accident, sports impact, or a fall — deserves prompt evaluation. Persistent shoulder pain that lasts more than a couple of weeks despite rest and ice also means your spine and nerves deserve a closer look.",
+        body: "Sudden, severe shoulder or arm pain with weakness or loss of coordination, or pain that starts after a car accident, sports impact, or a fall, deserves prompt evaluation. Persistent shoulder pain that lasts more than a couple of weeks despite rest and ice also means your spine and nerves deserve a closer look.",
       },
 
       {
@@ -598,7 +598,7 @@ export function formatPostDate(iso: string): string {
 
 /**
  * Estimate reading time from a block list. Useful if you want to omit
- * `readingMinutes` and derive it later — currently posts set it explicitly.
+ * `readingMinutes` and derive it later, currently posts set it explicitly.
  */
 export function estimateReadingMinutes(blocks: BlogBlock[]): number {
   const words = blocks

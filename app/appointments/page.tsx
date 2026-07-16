@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Appointments in Fernley, NV",
     description:
-      "Request an appointment with Ascension Health in Fernley, NV — chiropractic, physical therapy and wellness services.",
+      "Request an appointment with Ascension Health in Fernley, NV, chiropractic, physical therapy and wellness services.",
     url: "https://ascensionhealthnv.com/appointments/",
     type: "article",
     siteName: "Ascension Health",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Appointments in Fernley, NV",
     description:
-      "Request an appointment with Ascension Health in Fernley, NV — chiropractic, physical therapy and wellness services.",
+      "Request an appointment with Ascension Health in Fernley, NV, chiropractic, physical therapy and wellness services.",
   },
 };
 

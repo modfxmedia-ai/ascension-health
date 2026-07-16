@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Joint Pain in Fernley, NV",
     description:
-      "Non-surgical joint pain care in Fernley, NV — chiropractic, injections and physical therapy.",
+      "Non-surgical joint pain care in Fernley, NV, chiropractic, injections and physical therapy.",
     url: "https://ascensionhealthnv.com/conditions-treated/joint-pain/",
     type: "article",
     siteName: "Ascension Health",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Joint Pain in Fernley, NV",
     description:
-      "Non-surgical joint pain care in Fernley, NV — chiropractic, injections and physical therapy.",
+      "Non-surgical joint pain care in Fernley, NV, chiropractic, injections and physical therapy.",
   },
 };
 
@@ -51,7 +51,7 @@ export default function JointPainPage() {
       <ServiceSchema
         kind="condition"
         name="Joint Pain"
-        description="Joint pain treatment for hip, shoulder, spine and other joints — chiropractic care, joint injections and physical therapy."
+        description="Joint pain treatment for hip, shoulder, spine and other joints, chiropractic care, joint injections and physical therapy."
         pagePath="/conditions-treated/joint-pain/"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -79,13 +79,13 @@ export default function JointPainPage() {
 
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Most joint pain has a clear, identifiable cause — osteoarthritis, an old injury that never healed correctly, repetitive strain, poor posture or inflammation linked to diet and stress. Our job is to find that cause and treat it directly so the pain does not creep back the moment medication wears off.
+                Most joint pain has a clear, identifiable cause, osteoarthritis, an old injury that never healed correctly, repetitive strain, poor posture or inflammation linked to diet and stress. Our job is to find that cause and treat it directly so the pain does not creep back the moment medication wears off.
               </p>
             </Reveal>
 
             <Reveal delay={0.12}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Care at Ascension Health typically combines chiropractic adjustments to restore proper motion, targeted joint or trigger-point injections to calm inflammation, and physical therapy to strengthen the muscles that support the joint. For many patients this combination delivers the relief they had hoped surgery would provide — without the recovery time.
+                Care at Ascension Health typically combines chiropractic adjustments to restore proper motion, targeted joint or trigger-point injections to calm inflammation, and physical therapy to strengthen the muscles that support the joint. For many patients this combination delivers the relief they had hoped surgery would provide, without the recovery time.
               </p>
             </Reveal>
 
@@ -127,11 +127,11 @@ export default function JointPainPage() {
 
       <CityLinkGrid
         heading="Find Joint Pain Treatment Near You"
-        intro="Non-surgical joint pain care from our Fernley clinic — serving patients across northern and southern Nevada."
+        intro="Non-surgical joint pain care from our Fernley clinic, serving patients across northern and southern Nevada."
         topic={{ slug: "joint-pain", name: "Joint Pain", kind: "condition" }}
       />
 
-      <BottomCTA kicker="Questions?" heading={`Call ${SITE.phone}`} body="Tell our Fernley team where it hurts — we'll outline non-surgical options that can help." />
+      <BottomCTA kicker="Questions?" heading={`Call ${SITE.phone}`} body="Tell our Fernley team where it hurts, we'll outline non-surgical options that can help." />
     </main>
   );
 }

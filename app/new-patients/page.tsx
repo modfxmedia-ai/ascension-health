@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "New Patients in Fernley, NV",
     description:
-      "What to expect on your first visit to Ascension Health in Fernley, NV — forms, evaluation and personalized care plan.",
+      "What to expect on your first visit to Ascension Health in Fernley, NV, forms, evaluation and personalized care plan.",
     url: "https://ascensionhealthnv.com/new-patients/",
     type: "article",
     siteName: "Ascension Health",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "New Patients in Fernley, NV",
     description:
-      "What to expect on your first visit to Ascension Health in Fernley, NV — forms, evaluation and personalized care plan.",
+      "What to expect on your first visit to Ascension Health in Fernley, NV, forms, evaluation and personalized care plan.",
   },
 };
 
@@ -48,7 +48,7 @@ const steps = [
   {
     icon: <MessageCircle className="h-5 w-5" />,
     title: "Tell us what brought you in",
-    body: "We listen first — share your story, your goals and any prior treatments you've tried.",
+    body: "We listen first, share your story, your goals and any prior treatments you've tried.",
   },
   {
     icon: <Stethoscope className="h-5 w-5" />,
@@ -65,7 +65,7 @@ const steps = [
 const faqs = [
   {
     q: "Do I need a referral to be seen?",
-    a: "No — you can call us directly to book an appointment. Most insurance plans don't require a referral for chiropractic care.",
+    a: "No, you can call us directly to book an appointment. Most insurance plans don't require a referral for chiropractic care.",
   },
   {
     q: "How long is the first visit?",
@@ -208,14 +208,14 @@ export default function NewPatientsPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-6 lg:grid-cols-2">
             <CalloutCard
-              title="Save time — complete your forms online."
+              title="Save time, complete your forms online."
               body="Download and fill in your new-patient paperwork before your visit. It only takes a few minutes."
               href="/new-patients/online-forms/"
               cta="Open Online Forms"
             />
             <CalloutCard
               title="Have questions? Talk to our team."
-              body="Insurance, scheduling, or what to bring — we're happy to help. Call us at (775) 575-9922."
+              body="Insurance, scheduling, or what to bring, we're happy to help. Call us at (775) 575-9922."
               href={SITE.phoneHref}
               cta={`Call ${SITE.phone}`}
             />

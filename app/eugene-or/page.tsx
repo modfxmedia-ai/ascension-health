@@ -15,7 +15,7 @@ import { SITE } from "@/lib/navigation";
 import { buildPageMetadata } from "@/lib/pSEO-routing";
 
 /**
- * Standalone auto-accident geo landing page — `/eugene-or/`.
+ * Standalone auto-accident geo landing page, `/eugene-or/`.
  *
  * Eugene, OR sits outside the Nevada programmatic SEO silo (which is keyed
  * on the `-nv` city slugs), so this page is hand-built rather than routed
@@ -82,7 +82,7 @@ const FAQS: { question: string; answer: string }[] = [
   {
     question: "How soon after a car accident should I see a chiropractor?",
     answer:
-      "You should see a chiropractor as soon as possible after a car accident — ideally within 72 hours. Early treatment helps prevent injuries like whiplash from becoming chronic conditions.",
+      "You should see a chiropractor as soon as possible after a car accident, ideally within 72 hours. Early treatment helps prevent injuries like whiplash from becoming chronic conditions.",
   },
   {
     question:
@@ -146,7 +146,7 @@ const FAQ_SCHEMA = {
   })),
 };
 
-/** Serialise JSON-LD safely — escape `<` to block XSS. */
+/** Serialise JSON-LD safely, escape `<` to block XSS. */
 function ldJson(payload: unknown): string {
   return JSON.stringify(payload).replace(/</g, "\\u003c");
 }
@@ -267,7 +267,7 @@ export default function EugeneAutoAccidentPage() {
                 After a car accident in {CITY}, the adrenaline can mask real
                 damage. Auto accident injuries like whiplash, neck pain, and
                 soft tissue tears often go undetected in the first hours and
-                days — and without prompt chiropractic treatment they quietly
+                days, and without prompt chiropractic treatment they quietly
                 worsen, stiffening into chronic pain, reduced range of motion,
                 and nagging headaches that linger for months.
               </p>
@@ -426,7 +426,7 @@ export default function EugeneAutoAccidentPage() {
               {
                 icon: <CheckCircle2 className="h-6 w-6" />,
                 t: "Drug-Free Recovery",
-                b: "Conservative, evidence-based care with clear progress markers — not endless adjustments.",
+                b: "Conservative, evidence-based care with clear progress markers, not endless adjustments.",
               },
             ].map((c, i) => (
               <Reveal key={c.t} delay={0.06 * i}>
@@ -454,7 +454,7 @@ export default function EugeneAutoAccidentPage() {
             Frequently Asked Questions
           </p>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl font-semibold text-brand-950 max-w-3xl">
-            Auto accident chiropractic care in {CITY} — your questions, answered
+            Auto accident chiropractic care in {CITY}, your questions, answered
           </h2>
         </Reveal>
         <div className="mt-10 grid gap-3">
@@ -490,7 +490,7 @@ export default function EugeneAutoAccidentPage() {
             </h2>
             <p className="mt-3 text-brand-100/90 max-w-2xl mx-auto">
               The sooner you&apos;re evaluated, the better your recovery. Most
-              new {CITY} accident patients are seen within the week — we&apos;ll
+              new {CITY} accident patients are seen within the week, we&apos;ll
               verify your insurance and build a real plan with progress markers.
             </p>
           </Reveal>

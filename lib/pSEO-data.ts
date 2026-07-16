@@ -9,16 +9,16 @@
  * ──────────────────────────────────────────────────────────────────────────
  *
  * 1. TOP QUERIES (by impressions / clicks)
- *    - "fernley chiropractic"       — 58 impr, 1 click, pos 14.5
- *    - "ascension chiropractic"     — 49 impr, 1 click, pos 11.1
- *    - "chiropractor fernley nv"    — 30 impr, 1 click, pos 3.5  (top click intent)
- *    - "fernley chiropractor"       — 10 impr, 1 click, pos 2.5
- *    - "gainswave las vegas"        — 44 impr, 0 clicks, pos 30.5
- *    - "ascension"                  — 26 impr, brand
- *    - "how to do myofascial release correctly" — 15 impr, pos 6.6
- *    - "physical therapy fernley nv" — 12 impr, pos 9.4
- *    - "invisalign in fernley"      — 11 impr, pos 51.9  (off-offer, ignore)
- *    - "joint injections las vegas" — 9 impr, pos 69.3   (rank-too-deep gap)
+ *    - "fernley chiropractic"     , 58 impr, 1 click, pos 14.5
+ *    - "ascension chiropractic"   , 49 impr, 1 click, pos 11.1
+ *    - "chiropractor fernley nv"  , 30 impr, 1 click, pos 3.5  (top click intent)
+ *    - "fernley chiropractor"     , 10 impr, 1 click, pos 2.5
+ *    - "gainswave las vegas"      , 44 impr, 0 clicks, pos 30.5
+ *    - "ascension"                , 26 impr, brand
+ *    - "how to do myofascial release correctly", 15 impr, pos 6.6
+ *    - "physical therapy fernley nv", 12 impr, pos 9.4
+ *    - "invisalign in fernley"    , 11 impr, pos 51.9  (off-offer, ignore)
+ *    - "joint injections las vegas", 9 impr, pos 69.3   (rank-too-deep gap)
  *
  * 2. KEYWORD PATTERNS OBSERVED
  *    - {service} + {city/nv}        e.g. "physical therapy fernley nv",
@@ -34,7 +34,7 @@
  *    - branded geographic           e.g. "ascension health fernley"
  *    - comparison / vs (latent)     e.g. "myofascial release vs myofascial release"
  *
- * 3. QUICK-WIN PAGES (high impressions, low CTR — already ranking but bleeding)
+ * 3. QUICK-WIN PAGES (high impressions, low CTR, already ranking but bleeding)
  *    - /about/                       134 impr, 0 clicks, pos 8.0
  *    - /contact/                     133 impr, 0 clicks, pos 7.4
  *    - /services/chiropractic-care/  132 impr, 0 clicks, pos 7.7
@@ -50,7 +50,7 @@
  * 4. AUDIENCE
  *    96%+ of impressions are US-based. Cluster impressions around Northern
  *    Nevada (Fernley / Reno / Carson) and Southern Nevada (Las Vegas /
- *    Henderson / Paradise) — the two pSEO geo-clusters below.
+ *    Henderson / Paradise), the two pSEO geo-clusters below.
  *
  * ──────────────────────────────────────────────────────────────────────────
  * PROGRAMMATIC PAGE CATEGORIES (5)
@@ -73,7 +73,7 @@ export type PSEOCategory =
   | "comparison";
 
 export type PSEOPage = {
-  /** URL path (leading + trailing slash) — unique. */
+  /** URL path (leading + trailing slash), unique. */
   slug: string;
   category: PSEOCategory;
   /** Primary keyword/phrase this page targets. */
@@ -104,7 +104,7 @@ export type PSEOCity = {
 
 /** 30 Nevada cities/communities clustered around our two service geos. */
 export const PSEO_CITIES: PSEOCity[] = [
-  // Northern NV (primary — Fernley HQ)
+  // Northern NV (primary, Fernley HQ)
   { slug: "fernley", name: "Fernley", region: "Northern NV" },
   { slug: "fallon", name: "Fallon", region: "Northern NV" },
   { slug: "reno", name: "Reno", region: "Northern NV" },
@@ -124,7 +124,7 @@ export const PSEO_CITIES: PSEOCity[] = [
   { slug: "cold-springs", name: "Cold Springs", region: "Northern NV" },
   { slug: "elko", name: "Elko", region: "Northern NV" },
   { slug: "ely", name: "Ely", region: "Northern NV" },
-  // Southern NV (secondary — GAINSWave / weight-loss traffic seen in GSC)
+  // Southern NV (secondary, GAINSWave / weight-loss traffic seen in GSC)
   { slug: "las-vegas", name: "Las Vegas", region: "Southern NV" },
   { slug: "henderson", name: "Henderson", region: "Southern NV" },
   { slug: "north-las-vegas", name: "North Las Vegas", region: "Southern NV" },
@@ -262,7 +262,7 @@ export type PSEOComparison = {
   angle: string;
 };
 
-/** Comparison/decision queries — high-intent bottom-of-funnel pages. */
+/** Comparison/decision queries, high-intent bottom-of-funnel pages. */
 export const PSEO_COMPARISONS: PSEOComparison[] = [
   {
     slug: "chiropractor-vs-physical-therapist",
@@ -283,7 +283,7 @@ export const PSEO_COMPARISONS: PSEOComparison[] = [
     a: "Trigger Point Injections",
     b: "Dry Needling",
     title: "Trigger Point Injections vs. Dry Needling",
-    angle: "two approaches to muscle-knot pain — what's the difference?",
+    angle: "two approaches to muscle-knot pain, what's the difference?",
   },
   {
     slug: "joint-injections-vs-oral-pain-meds",
@@ -332,7 +332,7 @@ export const PSEO_COMPARISONS: PSEOComparison[] = [
     a: "Myofascial Release",
     b: "Deep Tissue Massage",
     title: "Myofascial Release vs. Deep Tissue Massage",
-    angle: "two hands-on therapies — which one fits your pain?",
+    angle: "two hands-on therapies, which one fits your pain?",
   },
 ];
 
@@ -346,8 +346,6 @@ const COMPARISON_CITIES = PSEO_CITIES.filter((c) =>
     "carson-city",
     "dayton",
     "gardnerville",
-    "las-vegas",
-    "henderson",
     "summerlin",
   ].includes(c.slug)
 );
@@ -366,7 +364,7 @@ function buildServiceCityPages(): PSEOPage[] {
         category: "service-city",
         primaryKeyword: keyword.toLowerCase(),
         title: `${s.name} in ${c.name}, NV`,
-        metaDescription: `${s.name} for ${c.name}, Nevada patients — ${s.benefit}. Book a same-week visit with Ascension Health.`,
+        metaDescription: `${s.name} for ${c.name}, Nevada patients, ${s.benefit}. Book a same-week visit with Ascension Health.`,
         h1: `${s.name} in ${c.name}, Nevada`,
         service: s.slug,
         city: c.slug,
@@ -402,7 +400,7 @@ function buildServiceNearMePages(): PSEOPage[] {
     category: "service-near-me",
     primaryKeyword: `${s.name.toLowerCase()} near me`,
     title: `${s.name} Near Me (Fernley, NV)`,
-    metaDescription: `Looking for ${s.name.toLowerCase()} near you? Ascension Health serves Northern & Southern Nevada — ${s.benefit}.`,
+    metaDescription: `Looking for ${s.name.toLowerCase()} near you? Ascension Health serves Northern & Southern Nevada, ${s.benefit}.`,
     h1: `${s.name} Near You`,
     service: s.slug,
   }));
@@ -417,7 +415,7 @@ function buildSymptomPages(): PSEOPage[] {
         category: "symptom",
         primaryKeyword: `${sym.intent} ${region.name.replace(/^the /i, "")}`.toLowerCase(),
         title: `${sym.phrase} in ${region.name.replace(/^the /i, "")}`,
-        metaDescription: `${sym.phrase} for patients in ${region.name}. Conservative, root-cause care from the Ascension Health team — book an evaluation today.`,
+        metaDescription: `${sym.phrase} for patients in ${region.name}. Conservative, root-cause care from the Ascension Health team, book an evaluation today.`,
         h1: `${sym.phrase} in ${region.name}`,
         symptom: sym.slug,
       });
@@ -434,7 +432,7 @@ function buildComparisonPages(): PSEOPage[] {
       slug: `/${cmp.slug}/`,
       category: "comparison",
       primaryKeyword: `${cmp.a.toLowerCase()} vs ${cmp.b.toLowerCase()}`,
-      title: `${cmp.title} — Which Is Right for You?`,
+      title: `${cmp.title}, Which Is Right for You?`,
       metaDescription: `${cmp.title}: ${cmp.angle}. An honest side-by-side from the clinicians at Ascension Health.`,
       h1: `${cmp.title}: Which Is Right for You?`,
       comparisonAgainst: cmp.b,
@@ -446,7 +444,7 @@ function buildComparisonPages(): PSEOPage[] {
         category: "comparison",
         primaryKeyword: `${cmp.a.toLowerCase()} vs ${cmp.b.toLowerCase()} ${c.name.toLowerCase()}`,
         title: `${cmp.title} in ${c.name}, NV`,
-        metaDescription: `${cmp.title} for ${c.name}, Nevada patients — ${cmp.angle}.`,
+        metaDescription: `${cmp.title} for ${c.name}, Nevada patients, ${cmp.angle}.`,
         h1: `${cmp.title} for ${c.name}, NV Patients`,
         city: c.slug,
         comparisonAgainst: cmp.b,
@@ -513,13 +511,13 @@ export const PSEO_QUICK_WINS: {
   recommendation: string;
 }[] = [
   { url: "/about/", impressions: 134, clicks: 0, position: 8.01, recommendation: "Rewrite title to include 'Fernley NV chiropractor & wellness clinic'; add team schema." },
-  { url: "/contact/", impressions: 133, clicks: 0, position: 7.41, recommendation: "Title: 'Contact Ascension Health — Fernley, NV Chiropractor'; add LocalBusiness schema + click-to-call." },
+  { url: "/contact/", impressions: 133, clicks: 0, position: 7.41, recommendation: "Title: 'Contact Ascension Health, Fernley, NV Chiropractor'; add LocalBusiness schema + click-to-call." },
   { url: "/services/chiropractic-care/", impressions: 132, clicks: 0, position: 7.72, recommendation: "Add 'Chiropractor in Fernley, NV' to title + above-the-fold city H2; insert FAQ schema." },
   { url: "/gainswave/", impressions: 69, clicks: 0, position: 26.45, recommendation: "Build out content depth (1500+ words), add 'GAINSWave Las Vegas / Reno' sections, internal-link from sexual-wellness pages." },
-  { url: "/new-patients/", impressions: 66, clicks: 0, position: 7.48, recommendation: "Title: 'New Patients — Same-Week Appointments in Fernley, NV'; reduce friction copy." },
+  { url: "/new-patients/", impressions: 66, clicks: 0, position: 7.48, recommendation: "Title: 'New Patients, Same-Week Appointments in Fernley, NV'; reduce friction copy." },
   { url: "/appointments/", impressions: 63, clicks: 0, position: 6.76, recommendation: "Title: 'Book an Appointment in Fernley, NV'; surface phone + online-form CTA above the fold." },
   { url: "/services/", impressions: 60, clicks: 0, position: 6.72, recommendation: "Add benefit-driven title + condition→service grid; internal links to programmatic /{service}-in-{city}-nv/ pages." },
-  { url: "/joint-pain/", impressions: 55, clicks: 0, position: 3.71, recommendation: "Already page-1 — rewrite title to 'Joint Pain Treatment in Fernley, NV' + add FAQ schema. Highest-leverage win." },
+  { url: "/joint-pain/", impressions: 55, clicks: 0, position: 3.71, recommendation: "Already page-1, rewrite title to 'Joint Pain Treatment in Fernley, NV' + add FAQ schema. Highest-leverage win." },
   { url: "/conditions-treated/", impressions: 55, clicks: 0, position: 8.42, recommendation: "Restructure as condition hub with intro + grid linking each condition→city programmatic page." },
   { url: "/pain-relief/", impressions: 43, clicks: 1, position: 16.79, recommendation: "Re-target 'natural pain relief nevada' (we already rank #72.86 for that). Add NV-region H2 + supporting copy." },
 ];

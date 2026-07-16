@@ -22,7 +22,7 @@ import inlineImage from "@/images/chiropractic-care.jpg";
 export const metadata: Metadata = {
   title: "Chiropractic Care in Fernley, NV",
   description:
-    "Chiropractic care in Fernley, NV. Gentle adjustments to relieve back pain, neck pain, headaches and joint pain — a safe, drug-free alternative to medication.",
+    "Chiropractic care in Fernley, NV. Gentle adjustments to relieve back pain, neck pain, headaches and joint pain, a safe, drug-free alternative to medication.",
   alternates: { canonical: "/services/chiropractic-care/" },
   openGraph: {
     title: "Chiropractic Care in Fernley, NV",
@@ -76,7 +76,7 @@ export default function ChiropracticCarePage() {
     <main className="bg-slate-50">
       <ServiceSchema
         name="Chiropractic Care"
-        description="Gentle chiropractic adjustments that relieve back pain, neck pain, headaches and joint pain — a safe, drug-free alternative to medication."
+        description="Gentle chiropractic adjustments that relieve back pain, neck pain, headaches and joint pain, a safe, drug-free alternative to medication."
         pagePath="/services/chiropractic-care/"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -111,7 +111,7 @@ export default function ChiropracticCarePage() {
               <p className="mt-8 text-[16px] leading-relaxed text-slate-700">
                 At Ascension Health, chiropractic care is at the heart of what
                 we do. It&apos;s a natural form of healthcare that supports the
-                musculoskeletal and nervous systems — and the many ways they
+                musculoskeletal and nervous systems, and the many ways they
                 influence your overall health. Most patients come to us for
                 back pain, neck pain, joint pain in the arms or legs, and
                 headaches, but the benefits extend much further.
@@ -121,7 +121,7 @@ export default function ChiropracticCarePage() {
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
                 The chiropractic adjustment is one of the most familiar
-                techniques in our toolkit. It rarely causes discomfort — in
+                techniques in our toolkit. It rarely causes discomfort, in
                 fact, most patients feel immediate relief. When you&apos;re in
                 pain, it&apos;s tempting to reach for medication; chiropractic
                 care is a safer, more sustainable option that addresses the
@@ -170,7 +170,7 @@ export default function ChiropracticCarePage() {
                     The first time you step into our office, you&apos;ll be
                     greeted by our friendly team. We&apos;ll walk you through
                     your history, help with your insurance, and answer every
-                    question. Our goal isn&apos;t to cover up symptoms — it&apos;s
+                    question. Our goal isn&apos;t to cover up symptoms, it&apos;s
                     to find the root cause and resolve it so you can stay
                     feeling well.
                   </p>

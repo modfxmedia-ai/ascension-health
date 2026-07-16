@@ -35,7 +35,7 @@ const benefits = [
   { icon: <Sparkles className="h-5 w-5" />, title: "Restored Confidence", body: "Reliable performance that helps you feel like yourself again." },
   { icon: <HeartPulse className="h-5 w-5" />, title: "Better Circulation", body: "GAINSWave therapy stimulates new blood vessel growth for stronger response." },
   { icon: <Activity className="h-5 w-5" />, title: "Hormone Support", body: "BHRT can restore testosterone and other hormones that drive libido." },
-  { icon: <ShieldCheck className="h-5 w-5" />, title: "Discreet & Non-Surgical", body: "Drug-free, needle-light, no downtime — and always confidential." },
+  { icon: <ShieldCheck className="h-5 w-5" />, title: "Discreet & Non-Surgical", body: "Drug-free, needle-light, no downtime, and always confidential." },
 ];
 
 const related = [
@@ -73,19 +73,19 @@ export default function SexualDysfunctionPage() {
 
             <Reveal delay={0.05}>
               <p className="mt-8 text-[16px] leading-relaxed text-slate-700">
-                Sexual dysfunction is more common than most people realise — and far more treatable than people fear. Whether the concern is erectile dysfunction, low libido, premature ejaculation or a drop in stamina, these symptoms almost always trace back to something physical: blood flow, hormones, nerves, medications or stress.
+                Sexual dysfunction is more common than most people realise, and far more treatable than people fear. Whether the concern is erectile dysfunction, low libido, premature ejaculation or a drop in stamina, these symptoms almost always trace back to something physical: blood flow, hormones, nerves, medications or stress.
               </p>
             </Reveal>
 
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                At Ascension Health our approach is straightforward and confidential. We take time to understand the full picture — labs, lifestyle and medical history — and then put together a non-surgical plan that addresses the underlying cause rather than just masking it with a pill before intimacy.
+                At Ascension Health our approach is straightforward and confidential. We take time to understand the full picture, labs, lifestyle and medical history, and then put together a non-surgical plan that addresses the underlying cause rather than just masking it with a pill before intimacy.
               </p>
             </Reveal>
 
             <Reveal delay={0.12}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                For many men, GAINSWave acoustic-wave therapy combined with bioidentical hormone replacement provides remarkable improvements in performance, sensitivity and confidence — without surgery and without ongoing prescriptions.
+                For many men, GAINSWave acoustic-wave therapy combined with bioidentical hormone replacement provides remarkable improvements in performance, sensitivity and confidence, without surgery and without ongoing prescriptions.
               </p>
             </Reveal>
 
@@ -127,7 +127,7 @@ export default function SexualDysfunctionPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Discreet, evidence-based sexual wellness care from our Fernley clinic — serving patients across Nevada."
+        intro="Discreet, evidence-based sexual wellness care from our Fernley clinic, serving patients across Nevada."
         topic={{ slug: "sexual-wellness-treatment", name: "Sexual Wellness Treatment", kind: "service" }}
       />
 

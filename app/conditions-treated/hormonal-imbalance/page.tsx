@@ -79,13 +79,13 @@ export default function HormonalImbalancePage() {
 
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                When even one hormone drifts out of balance, the symptoms can feel scattered and frustrating — stubborn weight gain, low energy, brain fog, mood swings, poor sleep, low libido, hot flashes or anxiety that wasn&apos;t there before. The good news is that these signals are exactly that: signals you can listen to and act on.
+                When even one hormone drifts out of balance, the symptoms can feel scattered and frustrating, stubborn weight gain, low energy, brain fog, mood swings, poor sleep, low libido, hot flashes or anxiety that wasn&apos;t there before. The good news is that these signals are exactly that: signals you can listen to and act on.
               </p>
             </Reveal>
 
             <Reveal delay={0.12}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Our team uses bioidentical hormone replacement therapy (BHRT) and a full lab work-up to understand what your body is asking for. Treatment is personalised — never one-size-fits-all — and re-evaluated regularly to make sure you are getting steady relief without overshooting.
+                Our team uses bioidentical hormone replacement therapy (BHRT) and a full lab work-up to understand what your body is asking for. Treatment is personalised, never one-size-fits-all, and re-evaluated regularly to make sure you are getting steady relief without overshooting.
               </p>
             </Reveal>
 
@@ -127,7 +127,7 @@ export default function HormonalImbalancePage() {
 
       <CityLinkGrid
         heading="Find Hormone Care Near You"
-        intro="Lab-guided hormone therapy from our Fernley clinic — serving men and women across Nevada."
+        intro="Lab-guided hormone therapy from our Fernley clinic, serving men and women across Nevada."
         topic={{ slug: "hormonal-imbalance", name: "Hormonal Imbalance", kind: "condition" }}
       />
 

@@ -61,7 +61,7 @@ export default function ServicesPage() {
           <SectionEyebrow
             kicker="What we offer"
             title="Care designed around your goals."
-            description="Ascension Health offers a full range of services to help you feel better, move better and live better — whether you're recovering from an injury, managing a chronic condition or simply trying to feel your best."
+            description="Ascension Health offers a full range of services to help you feel better, move better and live better, whether you're recovering from an injury, managing a chronic condition or simply trying to feel your best."
           />
         </Reveal>
 

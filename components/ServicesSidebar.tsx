@@ -31,7 +31,7 @@ export function ServicesSidebar({ currentSlug }: { currentSlug?: string }) {
           Ready to feel better?
         </h2>
         <p className="mt-3 text-sm text-brand-100/80 leading-relaxed">
-          Speak with our Fernley team — we&apos;ll match you with the right care
+          Speak with our Fernley team, we&apos;ll match you with the right care
           plan.
         </p>
 

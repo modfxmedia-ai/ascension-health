@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Knee Pain in Fernley, NV",
     description:
-      "Non-surgical knee pain care in Fernley, NV — chiropractic, joint injections and physical therapy.",
+      "Non-surgical knee pain care in Fernley, NV, chiropractic, joint injections and physical therapy.",
     url: "https://ascensionhealthnv.com/conditions-treated/knee-pain/",
     type: "article",
     siteName: "Ascension Health",
@@ -27,12 +27,12 @@ export const metadata: Metadata = {
   twitter: {
     title: "Knee Pain in Fernley, NV",
     description:
-      "Non-surgical knee pain care in Fernley, NV — chiropractic, joint injections and physical therapy.",
+      "Non-surgical knee pain care in Fernley, NV, chiropractic, joint injections and physical therapy.",
   },
 };
 
 const benefits = [
-  { icon: <Activity className="h-5 w-5" />, title: "Real Cause Diagnosis", body: "We don't accept \"wear and tear\" as an answer — we find the actual cause." },
+  { icon: <Activity className="h-5 w-5" />, title: "Real Cause Diagnosis", body: "We don't accept \"wear and tear\" as an answer, we find the actual cause." },
   { icon: <HeartPulse className="h-5 w-5" />, title: "Joint Injections", body: "Targeted injections reduce inflammation and lubricate the joint." },
   { icon: <ShieldCheck className="h-5 w-5" />, title: "Avoid Surgery", body: "Many patients postpone or avoid knee surgery with our conservative care." },
   { icon: <Sparkles className="h-5 w-5" />, title: "Strength Rebuild", body: "Physical therapy rebuilds the muscles that protect and support the knee." },
@@ -73,7 +73,7 @@ export default function KneePainPage() {
 
             <Reveal delay={0.05}>
               <p className="mt-8 text-[16px] leading-relaxed text-slate-700">
-                Knee pain is increasingly becoming a more common problem in society. It is a complaint we see frequently. The most common complaint associated with knee pain is considered the normal &ldquo;wear and tear.&rdquo; The truth is there is no such thing as normal wear and tear. Osteoarthritis is one of the most common conditions that affect people&apos;s knees — a degenerative process that starts when there is dysfunction in how the joint moves and loads.
+                Knee pain is increasingly becoming a more common problem in society. It is a complaint we see frequently. The most common complaint associated with knee pain is considered the normal &ldquo;wear and tear.&rdquo; The truth is there is no such thing as normal wear and tear. Osteoarthritis is one of the most common conditions that affect people&apos;s knees, a degenerative process that starts when there is dysfunction in how the joint moves and loads.
               </p>
             </Reveal>
 
@@ -127,7 +127,7 @@ export default function KneePainPage() {
 
       <CityLinkGrid
         heading="Find Knee Pain Treatment Near You"
-        intro="Help your knees avoid surgery — conservative care from our Fernley clinic serving Nevada patients."
+        intro="Help your knees avoid surgery, conservative care from our Fernley clinic serving Nevada patients."
         topic={{ slug: "knee-pain", name: "Knee Pain", kind: "condition" }}
       />
 

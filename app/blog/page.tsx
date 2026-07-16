@@ -16,7 +16,7 @@ const BLOG_DESCRIPTION =
   "Insights from Ascension Health on chiropractic care, physical therapy, hormone health, weight loss, and pain-free living in Fernley, NV and Northern Nevada.";
 
 export const metadata: Metadata = {
-  title: "Blog — Chiropractic, Wellness & Pain-Free Living",
+  title: "Blog, Chiropractic, Wellness & Pain-Free Living",
   description: BLOG_DESCRIPTION,
   alternates: { canonical: "/blog/" },
   openGraph: {
@@ -116,7 +116,7 @@ export default function BlogIndexPage() {
       <BottomCTA
         kicker="Ready when you are"
         heading="Have a question our blog didn't answer?"
-        body="Call our Fernley team — we're happy to help you find the right next step."
+        body="Call our Fernley team, we're happy to help you find the right next step."
       />
     </main>
   );
@@ -231,7 +231,7 @@ function PostCard({ post }: { post: ReturnType<typeof getAllPosts>[number] }) {
 }
 
 /* ------------------------------------------------------------------ */
-/* Empty state — shown while no posts are published yet                */
+/* Empty state, shown while no posts are published yet                */
 /* ------------------------------------------------------------------ */
 
 function EmptyState() {
@@ -255,7 +255,7 @@ function EmptyState() {
         </h2>
         <p className="mt-4 text-[15.5px] leading-relaxed text-slate-600">
           Our team is putting together practical guides on chiropractic care,
-          recovery, hormone health and everyday movement. Check back soon — or
+          recovery, hormone health and everyday movement. Check back soon, or
           call us with a question in the meantime.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

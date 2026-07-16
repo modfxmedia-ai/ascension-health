@@ -12,7 +12,7 @@ export default function AppointmentForm() {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("submitting");
-    // Stub submit — replace with real endpoint or Gravity Forms proxy
+    // Stub submit, replace with real endpoint or Gravity Forms proxy
     await new Promise((r) => setTimeout(r, 900));
     setStatus("success");
     (e.target as HTMLFormElement).reset();

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nutritional IVs in Fernley, NV",
     description:
-      "IV vitamin and nutrient therapy in Fernley, NV — hydration, energy, immunity and recovery on your lunch break.",
+      "IV vitamin and nutrient therapy in Fernley, NV, hydration, energy, immunity and recovery on your lunch break.",
     url: "https://ascensionhealthnv.com/services/nutritional-ivs/",
     type: "article",
     siteName: "Ascension Health",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Nutritional IVs in Fernley, NV",
     description:
-      "IV vitamin and nutrient therapy in Fernley, NV — hydration, energy, immunity and recovery on your lunch break.",
+      "IV vitamin and nutrient therapy in Fernley, NV, hydration, energy, immunity and recovery on your lunch break.",
   },
 };
 
@@ -57,7 +57,7 @@ const benefits = [
   {
     icon: <Zap className="h-5 w-5" />,
     title: "Fast Energy & Hydration",
-    body: "Most therapies take just 15–30 minutes — patients come in on lunch breaks.",
+    body: "Most therapies take just 15–30 minutes, patients come in on lunch breaks.",
   },
   {
     icon: <Sparkles className="h-5 w-5" />,
@@ -128,7 +128,7 @@ export default function NutritionalIVsPage() {
                 nutrients to be absorbed through the digestive system, our
                 patients can quickly receive them where the body will actually
                 use them. Most therapies take between 15 and 30 minutes to
-                administer — we even have patients come in on their lunch
+                administer, we even have patients come in on their lunch
                 breaks.
               </p>
             </Reveal>
@@ -220,7 +220,7 @@ export default function NutritionalIVsPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Nutritional IV therapy at our Fernley clinic — hydration, energy, immune, and recovery blends for patients across Nevada."
+        intro="Nutritional IV therapy at our Fernley clinic, hydration, energy, immune, and recovery blends for patients across Nevada."
         topic={{ slug: "nutritional-iv-therapy", name: "Nutritional IV Therapy", kind: "service" }}
       />
 

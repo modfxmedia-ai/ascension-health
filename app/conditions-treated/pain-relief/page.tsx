@@ -14,12 +14,12 @@ import heroImage from "@/images/clone/people-3.jpg";
 export const metadata: Metadata = {
   title: "Pain Relief in Fernley, NV",
   description:
-    "Pain relief in Fernley, NV. Ascension Health treats the underlying cause of your pain — not just the symptoms — with chiropractic, injections, IV therapy and BHRT.",
+    "Pain relief in Fernley, NV. Ascension Health treats the underlying cause of your pain, not just the symptoms, with chiropractic, injections, IV therapy and BHRT.",
   alternates: { canonical: "/conditions-treated/pain-relief/" },
   openGraph: {
     title: "Pain Relief in Fernley, NV",
     description:
-      "Whole-person pain relief in Fernley, NV — treating the cause, not just the symptoms.",
+      "Whole-person pain relief in Fernley, NV, treating the cause, not just the symptoms.",
     url: "https://ascensionhealthnv.com/conditions-treated/pain-relief/",
     type: "article",
     siteName: "Ascension Health",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Pain Relief in Fernley, NV",
     description:
-      "Whole-person pain relief in Fernley, NV — treating the cause, not just the symptoms.",
+      "Whole-person pain relief in Fernley, NV, treating the cause, not just the symptoms.",
   },
 };
 
@@ -51,7 +51,7 @@ export default function PainReliefPage() {
       <ServiceSchema
         kind="condition"
         name="Pain Relief"
-        description="Comprehensive pain relief in Fernley, NV — chiropractic care, injections, IV therapy and BHRT that treat the underlying cause, not just the symptoms."
+        description="Comprehensive pain relief in Fernley, NV, chiropractic care, injections, IV therapy and BHRT that treat the underlying cause, not just the symptoms."
         pagePath="/conditions-treated/pain-relief/"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -127,11 +127,11 @@ export default function PainReliefPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Conservative, non-surgical pain management at our Fernley clinic — chiropractic, PT, and injections for patients across Nevada."
+        intro="Conservative, non-surgical pain management at our Fernley clinic, chiropractic, PT, and injections for patients across Nevada."
         topic={{ slug: "pain-management", name: "Pain Management", kind: "service" }}
       />
 
-      <BottomCTA kicker="Questions?" heading={`Call ${SITE.phone}`} body="Tell us where the pain is — our Fernley team will help map out a plan." />
+      <BottomCTA kicker="Questions?" heading={`Call ${SITE.phone}`} body="Tell us where the pain is, our Fernley team will help map out a plan." />
     </main>
   );
 }

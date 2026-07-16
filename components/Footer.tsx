@@ -39,7 +39,7 @@ export default function Footer() {
               href="/"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="inline-flex items-center gap-3"
-              aria-label="Ascension Health — Home"
+              aria-label="Ascension Health, Home"
             >
               <span className="relative block h-14 w-14 shrink-0 overflow-hidden">
                 <Image

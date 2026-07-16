@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GAINSWave® in Fernley, NV",
     description:
-      "Acoustic wave therapy for men in Fernley, NV — improve blood flow, sensitivity and sexual function without medication.",
+      "Acoustic wave therapy for men in Fernley, NV, improve blood flow, sensitivity and sexual function without medication.",
     url: "https://ascensionhealthnv.com/services/gainswave/",
     type: "article",
     siteName: "Ascension Health",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "GAINSWave® in Fernley, NV",
     description:
-      "Acoustic wave therapy for men in Fernley, NV — improve blood flow, sensitivity and sexual function without medication.",
+      "Acoustic wave therapy for men in Fernley, NV, improve blood flow, sensitivity and sexual function without medication.",
   },
 };
 
@@ -52,12 +52,12 @@ const benefits = [
   {
     icon: <Sparkles className="h-5 w-5" />,
     title: "Quick In-Office Sessions",
-    body: "Each session takes just 15 to 20 minutes — most patients need 6 to 12 visits.",
+    body: "Each session takes just 15 to 20 minutes, most patients need 6 to 12 visits.",
   },
   {
     icon: <ShieldCheck className="h-5 w-5" />,
     title: "Drug-Free & Non-Invasive",
-    body: "A safe alternative for ED and Peyronie's disease — no medication or surgery.",
+    body: "A safe alternative for ED and Peyronie's disease, no medication or surgery.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function GainsWavePage() {
     <main className="bg-slate-50">
       <ServiceSchema
         name="GAINSWave"
-        description="Acoustic wave therapy for men that improves blood flow and supports sexual health — a drug-free alternative to medication."
+        description="Acoustic wave therapy for men that improves blood flow and supports sexual health, a drug-free alternative to medication."
         pagePath="/services/gainswave/"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -105,8 +105,8 @@ export default function GainsWavePage() {
               <p className="mt-8 text-[16px] leading-relaxed text-slate-700">
                 Here at Ascension Health, we are proud to provide GAINSWave®
                 services to our male patients struggling with sexual
-                dysfunction. This treatment uses low-intensity sound waves —
-                also known as acoustic wave therapy — to help deliver increased
+                dysfunction. This treatment uses low-intensity sound waves, 
+                also known as acoustic wave therapy, to help deliver increased
                 blood flow to the penis and improve sexual function with
                 harder, more sustainable erections. This procedure has even
                 proven helpful for men who have erectile dysfunction and
@@ -187,7 +187,7 @@ export default function GainsWavePage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="GAINSWave shockwave therapy for ED and male sexual wellness — discreet treatment from our Fernley clinic for patients across Nevada."
+        intro="GAINSWave shockwave therapy for ED and male sexual wellness, discreet treatment from our Fernley clinic for patients across Nevada."
         topic={{ slug: "gainswave-therapy", name: "GAINSWave Therapy", kind: "service" }}
       />
 

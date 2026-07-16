@@ -1,7 +1,7 @@
 /**
  * Shared testimonials used across all programmatic SEO pages.
  *
- * Names + cities are illustrative composites — replace with real Google /
+ * Names + cities are illustrative composites, replace with real Google /
  * Facebook reviews once the client has approved attribution. Each entry
  * carries a `topicTags` array so pages can prefer testimonials that match
  * the page's service or condition; falls back to the first 3 when no
@@ -66,7 +66,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: "Sparks, NV",
     rating: 5,
     quote:
-      "Whiplash from a rear-end on I-80. They billed my auto insurance directly and walked me through every step. Pain free in about two months — couldn't recommend them more.",
+      "Whiplash from a rear-end on I-80. They billed my auto insurance directly and walked me through every step. Pain free in about two months, couldn't recommend them more.",
     topicTags: [
       "auto-accident-injury-care",
       "whiplash",

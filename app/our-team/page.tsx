@@ -21,12 +21,12 @@ import { SITE } from "@/lib/navigation";
 export const metadata: Metadata = {
   title: "Our Team in Fernley, NV",
   description:
-    "Meet the chiropractic and wellness team at Ascension Health in Fernley, NV — patient-first care, education and a family atmosphere on every visit.",
+    "Meet the chiropractic and wellness team at Ascension Health in Fernley, NV, patient-first care, education and a family atmosphere on every visit.",
   alternates: { canonical: "/our-team/" },
   openGraph: {
     title: "Our Team in Fernley, NV",
     description:
-      "Meet the Ascension Health team in Fernley, NV — compassionate, education-first chiropractic and wellness care.",
+      "Meet the Ascension Health team in Fernley, NV, compassionate, education-first chiropractic and wellness care.",
     url: "https://ascensionhealthnv.com/our-team/",
     type: "article",
     siteName: "Ascension Health",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Our Team in Fernley, NV",
     description:
-      "Meet the Ascension Health team in Fernley, NV — compassionate, education-first chiropractic and wellness care.",
+      "Meet the Ascension Health team in Fernley, NV, compassionate, education-first chiropractic and wellness care.",
   },
 };
 
@@ -138,7 +138,7 @@ export default function OurTeamPage() {
                 <SectionEyebrow
                   kicker="What sets our team apart"
                   title="Insightful, friendly, and focused on your goals."
-                  description="We listen first, explain clearly and build a plan that fits your life — not the other way around."
+                  description="We listen first, explain clearly and build a plan that fits your life, not the other way around."
                   align="left"
                 />
                 <div className="mt-8 grid gap-5 sm:grid-cols-2">
@@ -192,7 +192,7 @@ export default function OurTeamPage() {
             />
             <CalloutCard
               title="Ready to book? Request an appointment."
-              body="Choose your preferred day and time — a member of our staff will confirm by phone."
+              body="Choose your preferred day and time, a member of our staff will confirm by phone."
               href="/appointments/"
               cta="Request Appointment"
             />

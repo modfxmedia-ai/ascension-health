@@ -18,7 +18,7 @@ import { PSEO_TARGET_CITIES } from "@/lib/pSEO-routing";
 export const metadata: Metadata = {
   title: "Sitemap in Fernley, NV",
   description:
-    "Browse every page on the Ascension Health website — services, conditions treated, patient resources and contact information for our Fernley, NV practice.",
+    "Browse every page on the Ascension Health website, services, conditions treated, patient resources and contact information for our Fernley, NV practice.",
   alternates: { canonical: "/sitemap/" },
 };
 
@@ -138,8 +138,8 @@ export default function SitemapPage() {
                 Every page on Ascension Health
               </h2>
               <p className="mt-4 text-base text-slate-600 leading-relaxed">
-                A complete index of services, conditions, and patient resources
-                — organized to help you find what you need quickly.
+                A complete index of services, conditions, and patient resources,
+                organized to help you find what you need quickly.
               </p>
             </div>
           </Reveal>

@@ -37,7 +37,7 @@ export const SERVICES: Service[] = [
     title: "Chiropractic Care",
     tagline: "Natural adjustments for spine and nervous system health.",
     summary:
-      "Gentle, precise care to relieve back, neck and joint pain — no medication required.",
+      "Gentle, precise care to relieve back, neck and joint pain, no medication required.",
   },
   {
     slug: "nutritional-ivs",

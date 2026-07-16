@@ -28,9 +28,6 @@ const TARGET_CITY_SLUGS = new Set<string>([
   "lovelock",
   "winnemucca",
   "elko",
-  "las-vegas",
-  "henderson",
-  "north-las-vegas",
   "sun-valley",
   "spanish-springs",
 ]);
@@ -87,7 +84,7 @@ export function resolveServiceOrCondition(
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// /treatments/[slug] — deep treatment-variation pages
+// /treatments/[slug], deep treatment-variation pages
 // ──────────────────────────────────────────────────────────────────────────
 
 /**
@@ -114,7 +111,7 @@ export function getTreatmentPage(slug: string): TreatmentPage | undefined {
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// Hub URL resolution — maps a pSEO service/condition slug to its canonical
+// Hub URL resolution, maps a pSEO service/condition slug to its canonical
 // top-level hub page (used for breadcrumbs and silo linking).
 // ──────────────────────────────────────────────────────────────────────────
 

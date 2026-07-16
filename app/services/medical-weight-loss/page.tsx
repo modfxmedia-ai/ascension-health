@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medical Weight Loss in Fernley, NV",
     description:
-      "Physician-guided medical weight loss in Fernley, NV — a real plan, not just advice to eat less and move more.",
+      "Physician-guided medical weight loss in Fernley, NV, a real plan, not just advice to eat less and move more.",
     url: "https://ascensionhealthnv.com/services/medical-weight-loss/",
     type: "article",
     siteName: "Ascension Health",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Medical Weight Loss in Fernley, NV",
     description:
-      "Physician-guided medical weight loss in Fernley, NV — a real plan, not just advice to eat less and move more.",
+      "Physician-guided medical weight loss in Fernley, NV, a real plan, not just advice to eat less and move more.",
   },
 };
 
@@ -47,7 +47,7 @@ const benefits = [
   {
     icon: <Salad className="h-5 w-5" />,
     title: "Nutrition That Makes Sense",
-    body: "Clear, sustainable guidance — no fads, no overwhelming conflicting rules.",
+    body: "Clear, sustainable guidance, no fads, no overwhelming conflicting rules.",
   },
   {
     icon: <HeartPulse className="h-5 w-5" />,
@@ -109,7 +109,7 @@ export default function MedicalWeightLossPage() {
                 Weight loss is a process that is definitely easier said than
                 done. So often people hear from their medical providers, &quot;You
                 should probably lose a little weight, it will be good for
-                you.&quot; Their advice is correct — however there usually isn&apos;t
+                you.&quot; Their advice is correct, however there usually isn&apos;t
                 a plan that comes with it.
               </p>
             </Reveal>
@@ -117,7 +117,7 @@ export default function MedicalWeightLossPage() {
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
                 Diet and exercise is the usual recommendation. That can be
-                challenging — some people have so much weight to lose that
+                challenging, some people have so much weight to lose that
                 they cannot exercise for very long, or they have joint pain
                 that prohibits them from exercising. Diet can be very
                 confusing too: there is so much information out there it can
@@ -139,7 +139,7 @@ export default function MedicalWeightLossPage() {
               <Reveal>
                 <SectionEyebrow
                   kicker="Why it works"
-                  title="A real, supported plan — built for your life."
+                  title="A real, supported plan, built for your life."
                   align="left"
                 />
               </Reveal>
@@ -196,7 +196,7 @@ export default function MedicalWeightLossPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Physician-led medical weight loss with GLP-1 options, real labs, and accountability — from Fernley for patients across Nevada."
+        intro="Physician-led medical weight loss with GLP-1 options, real labs, and accountability, from Fernley for patients across Nevada."
         topic={{ slug: "medical-weight-loss", name: "Medical Weight Loss", kind: "service" }}
       />
 

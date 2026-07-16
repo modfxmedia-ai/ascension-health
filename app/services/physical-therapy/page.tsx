@@ -21,7 +21,7 @@ import ptImage from "@/images/physical-therapy.jpg";
 export const metadata: Metadata = {
   title: "Physical Therapy in Fernley, NV",
   description:
-    "Physical therapy in Fernley, NV. Personalized rehabilitation after personal injury, auto accident or fall — therapeutic exercises that restore strength, mobility and balance.",
+    "Physical therapy in Fernley, NV. Personalized rehabilitation after personal injury, auto accident or fall, therapeutic exercises that restore strength, mobility and balance.",
   alternates: { canonical: "/services/physical-therapy/" },
   openGraph: {
     title: "Physical Therapy in Fernley, NV",
@@ -47,7 +47,7 @@ const benefits = [
   {
     icon: <Dumbbell className="h-5 w-5" />,
     title: "Restore Mobility",
-    body: "Improve balance, walking and everyday function — no matter your age.",
+    body: "Improve balance, walking and everyday function, no matter your age.",
   },
   {
     icon: <ShieldCheck className="h-5 w-5" />,
@@ -117,7 +117,7 @@ export default function PhysicalTherapyPage() {
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
                 Physical therapy delivers real, lasting health benefits. It
-                doesn&apos;t just reduce or eliminate pain — many techniques
+                doesn&apos;t just reduce or eliminate pain, many techniques
                 and technologies can help prevent it from returning. PT has
                 helped patients avoid surgery, recover from sports injuries
                 and even regain function after a stroke. If standing, walking
@@ -129,7 +129,7 @@ export default function PhysicalTherapyPage() {
             <Reveal delay={0.15}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
                 Targeted exercises can quickly restore proper vestibular
-                function — relieving dizziness and vertigo. Physical therapy
+                function, relieving dizziness and vertigo. Physical therapy
                 also supports women&apos;s health concerns such as pregnancy
                 and postpartum care, and helps with pulmonary issues through
                 breathing exercises and lung-clearance techniques.
@@ -165,7 +165,7 @@ export default function PhysicalTherapyPage() {
                 <p className="mt-3 text-[15px] leading-relaxed text-slate-700">
                   Whether you&apos;re improving mobility or building a
                   treatment plan after an injury, we&apos;re here to make
-                  recovery — and everyday life — easier. To discuss your
+                  recovery, and everyday life, easier. To discuss your
                   situation with an experienced specialist, please contact us
                   today at{" "}
                   <a
@@ -216,7 +216,7 @@ export default function PhysicalTherapyPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Outpatient physical therapy at our Fernley clinic — same-week new patient appointments for cities across Nevada."
+        intro="Outpatient physical therapy at our Fernley clinic, same-week new patient appointments for cities across Nevada."
         topic={{ slug: "physical-therapy", name: "Physical Therapy", kind: "service" }}
       />
 

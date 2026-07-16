@@ -4,7 +4,7 @@ import { ConditionStub } from "@/components/ConditionStub";
 export const metadata: Metadata = {
   title: "Back Pain in Fernley, NV",
   description:
-    "Back pain treatment in Fernley, NV. Chronic back pain is one of the biggest problems Americans face today — Ascension Health offers non-surgical relief.",
+    "Back pain treatment in Fernley, NV. Chronic back pain is one of the biggest problems Americans face today, Ascension Health offers non-surgical relief.",
   alternates: { canonical: "/conditions-treated/back-pain/" },
 };
 

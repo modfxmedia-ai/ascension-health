@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "What Can We Improve? in Fernley, NV",
     description:
-      "Share your feedback with Ascension Health — your honest input helps us deliver better chiropractic, physical therapy and wellness care.",
+      "Share your feedback with Ascension Health, your honest input helps us deliver better chiropractic, physical therapy and wellness care.",
     url: "https://ascensionhealthnv.com/what-can-we-improve/",
     type: "article",
     siteName: "Ascension Health",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "What Can We Improve? in Fernley, NV",
     description:
-      "Share your feedback with Ascension Health — your honest input helps us deliver better care.",
+      "Share your feedback with Ascension Health, your honest input helps us deliver better care.",
   },
 };
 
@@ -28,7 +28,7 @@ const points = [
   {
     icon: <MessageSquare className="h-6 w-6" />,
     title: "Tell us what happened",
-    body: "Whether it was a scheduling hiccup, wait time or anything else — share the details so we understand the full picture.",
+    body: "Whether it was a scheduling hiccup, wait time or anything else, share the details so we understand the full picture.",
   },
   {
     icon: <Heart className="h-6 w-6" />,
@@ -38,7 +38,7 @@ const points = [
   {
     icon: <ShieldCheck className="h-6 w-6" />,
     title: "Your feedback stays private",
-    body: "Comments submitted here come straight to our leadership team — they are not posted publicly anywhere.",
+    body: "Comments submitted here come straight to our leadership team, they are not posted publicly anywhere.",
   },
 ];
 
@@ -61,8 +61,8 @@ export default function WhatCanWeImprovePage() {
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
                 At Ascension Health, we are always working to raise the bar on
                 the care we provide. If something about your experience
-                fell short of what you expected — from booking your appointment
-                to your time in the office — we want to know about it directly.
+                fell short of what you expected, from booking your appointment
+                to your time in the office, we want to know about it directly.
                 Your feedback goes straight to our leadership team and helps us
                 improve how we care for every patient who walks through our
                 doors.
@@ -93,7 +93,7 @@ export default function WhatCanWeImprovePage() {
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-600">
                   Use the form below to tell us what we can do better. A team
-                  member will follow up if you would like a personal response —
+                  member will follow up if you would like a personal response, 
                   otherwise, your comments will be reviewed internally and used
                   to improve our practice.
                 </p>

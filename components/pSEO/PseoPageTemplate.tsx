@@ -31,7 +31,7 @@ import type { Testimonial } from "@/lib/pSEO-testimonials";
  * LocalBusiness, and MedicalOrganization JSON-LD that Google reads.
  *
  * The same template powers service+city, condition+city, near-city, and
- * treatment-detail pages — each route passes a different mix of props
+ * treatment-detail pages, each route passes a different mix of props
  * (notably `relatedItems`, `subSectionHeading`, and `city`) but the layout,
  * typography, and structured data stay consistent so every page is
  * indexable, internally linked, and >800 words.
@@ -40,13 +40,13 @@ import type { Testimonial } from "@/lib/pSEO-testimonials";
 export type RelatedItem = { label: string; href: string };
 
 export type PseoPageTemplateProps = {
-  /** Slug of the primary topic (service or condition) — drives schema. */
+  /** Slug of the primary topic (service or condition), drives schema. */
   topicSlug: string;
-  /** Human-readable topic name — used in trust badge and JSON-LD. */
+  /** Human-readable topic name, used in trust badge and JSON-LD. */
   topicName: string;
-  /** Topic kind — selects MedicalCondition vs MedicalProcedure schema. */
+  /** Topic kind, selects MedicalCondition vs MedicalProcedure schema. */
   topicKind: "service" | "condition" | "treatment";
-  /** Root-relative path of this page — used to build the canonical & breadcrumb URLs. */
+  /** Root-relative path of this page, used to build the canonical & breadcrumb URLs. */
   pagePath: string;
   /** Hero H1. */
   h1: string;
@@ -56,19 +56,19 @@ export type PseoPageTemplateProps = {
   trustBadge: string;
   /** Optional breadcrumb parent. */
   parent?: { label: string; href: string };
-  /** Canonical hub URL for the topic (e.g. /services/chiropractic-care/) — inserts an extra breadcrumb level when a city is present. */
+  /** Canonical hub URL for the topic (e.g. /services/chiropractic-care/), inserts an extra breadcrumb level when a city is present. */
   topicHubHref?: string;
-  /** Section 2 — "What is" content. */
+  /** Section 2, "What is" content. */
   aboutHeading: string;
   aboutParagraphs: string[];
-  /** Section 4 — list label + linked items. */
+  /** Section 4, list label + linked items. */
   relatedHeading: string;
   relatedItems: RelatedItem[];
-  /** Section 6 — FAQs (rendered + emitted as FAQPage JSON-LD). */
+  /** Section 6, FAQs (rendered + emitted as FAQPage JSON-LD). */
   faqs: FAQ[];
-  /** Section 7 — testimonials. */
+  /** Section 7, testimonials. */
   testimonials: Testimonial[];
-  /** Section 8 — only rendered when present. */
+  /** Section 8, only rendered when present. */
   city?: PSEOCity;
   /** Cities shown in the "Also serving" list. */
   nearbyCities?: PSEOCity[];
@@ -155,7 +155,7 @@ export function PseoPageTemplate(props: PseoPageTemplateProps) {
       <WhyChooseSection cityName={cityName} />
 
       {/* ─────────── 4. RELATED (services or conditions) ─────────── */}
-      {/* Skip when InternalLinks (section 8b) will render — keeps total contextual link count under ~20. */}
+      {/* Skip when InternalLinks (section 8b) will render, keeps total contextual link count under ~20. */}
       {relatedItems.length > 0 && !(city && (topicKind === "service" || topicKind === "condition")) && (
         <RelatedSection heading={relatedHeading} items={relatedItems} />
       )}
@@ -351,7 +351,7 @@ function WhyChooseSection({ cityName }: { cityName?: string }) {
     {
       icon: Award,
       title: "Local Experts",
-      body: `Serving ${cityName ?? "Northern Nevada"} since ${CLINIC_FOUNDING_YEAR} — chiropractic, physical therapy, regenerative and medical services under one Fernley roof.`,
+      body: `Serving ${cityName ?? "Northern Nevada"} since ${CLINIC_FOUNDING_YEAR}, chiropractic, physical therapy, regenerative and medical services under one Fernley roof.`,
     },
     {
       icon: ClipboardList,
@@ -361,7 +361,7 @@ function WhyChooseSection({ cityName }: { cityName?: string }) {
     {
       icon: ShieldCheck,
       title: "Evidence-Based Care",
-      body: "Proven, conservative techniques with clear progress markers. If care isn't working, we change the plan — we don't just keep going.",
+      body: "Proven, conservative techniques with clear progress markers. If care isn't working, we change the plan, we don't just keep going.",
     },
     {
       icon: CalendarCheck,
@@ -444,7 +444,7 @@ function WhatToExpectSection({ cityName }: { cityName?: string }) {
     {
       icon: ClipboardList,
       title: "Receive Your Personalized Plan",
-      body: "Your first visit includes a thorough evaluation — exam, history, orthopedic and movement testing. We then build a written plan with clear progress markers.",
+      body: "Your first visit includes a thorough evaluation, exam, history, orthopedic and movement testing. We then build a written plan with clear progress markers.",
     },
     {
       icon: HeartHandshake,
@@ -503,8 +503,8 @@ function FaqSection({
         </p>
         <h2 className="mt-3 font-display text-3xl sm:text-4xl font-semibold text-brand-900 max-w-3xl">
           {cityName
-            ? `${topicName} in ${cityName} — your questions, answered`
-            : `${topicName} — your questions, answered`}
+            ? `${topicName} in ${cityName}, your questions, answered`
+            : `${topicName}, your questions, answered`}
         </h2>
       </Reveal>
       <div className="mt-10 grid gap-3">
@@ -605,15 +605,16 @@ function LocalAreaSection({
           </Reveal>
           <Reveal delay={0.06}>
             <p className="mt-5 text-slate-700 leading-relaxed text-[17px]">
-              Ascension Health is based in Fernley, NV — a short, easy drive
-              from {city.name} and the rest of {city.region}. We see patients
-              from across the region every week, and we coordinate appointment
-              times so you&apos;re not making the trip more often than you have to.
+              Ascension Health is based in Fernley, NV, and serves patients
+              from {city.name} and the surrounding {city.region} area. We see
+              patients from across the region every week, and we coordinate
+              appointment times so you&apos;re not making the trip more often
+              than you have to.
             </p>
             <p className="mt-4 text-slate-700 leading-relaxed text-[17px]">
               Our clinic combines chiropractic, physical therapy, regenerative
               medicine, and physician-led metabolic and hormone care under one
-              roof — so {city.name} patients can get a full workup without
+              roof, so {city.name} patients can get a full workup without
               driving to four different offices. Free on-site parking, accessible
               entrance, evening flexibility when you need it.
             </p>

@@ -47,7 +47,7 @@ const benefits = [
   {
     icon: <Activity className="h-5 w-5" />,
     title: "Return to Activity",
-    body: "Use your muscles right after treatment — just avoid strenuous activity for a few days.",
+    body: "Use your muscles right after treatment, just avoid strenuous activity for a few days.",
   },
   {
     icon: <CheckCircle2 className="h-5 w-5" />,
@@ -93,7 +93,7 @@ export default function TriggerPointInjectionsPage() {
               <div className="relative aspect-[16/9] overflow-hidden rounded-3xl ring-1 ring-slate-200 shadow-xl shadow-brand-900/10">
                 <Image
                   src={heroImage}
-                  alt="Patient with muscle pain — trigger point injections at Ascension Health"
+                  alt="Patient with muscle pain, trigger point injections at Ascension Health"
                   fill
                   sizes="(min-width: 1024px) 720px, 100vw"
                   className="object-cover"
@@ -192,7 +192,7 @@ export default function TriggerPointInjectionsPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Trigger point injections for stubborn muscle knots, tension headaches, and myofascial pain — from our Fernley clinic serving Nevada cities."
+        intro="Trigger point injections for stubborn muscle knots, tension headaches, and myofascial pain, from our Fernley clinic serving Nevada cities."
         topic={{ slug: "trigger-point-injections", name: "Trigger Point Injections", kind: "service" }}
       />
 

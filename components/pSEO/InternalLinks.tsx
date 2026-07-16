@@ -17,9 +17,9 @@ import {
  * Three contextual internal-link blocks rendered on every service+city and
  * condition+city pSEO page. Forms the lateral edges of the silo:
  *
- *   Block A — other services available in the same city
- *   Block B — the same service in 5 nearest cities
- *   Block C — conditions treated by this service in the same city
+ *   Block A, other services available in the same city
+ *   Block B, the same service in 5 nearest cities
+ *   Block C, conditions treated by this service in the same city
  *
  * All links are plain `<Link>` / `<a>` tags so Googlebot can crawl them
  * without executing JavaScript. Each block is capped to keep the total
@@ -45,7 +45,7 @@ export function InternalLinks({ topic, city, nearbyCities }: InternalLinksProps)
   const topicName = isService ? topic.service.name : topic.condition.name;
   const topicSlug = isService ? topic.service.slug : topic.condition.slug;
 
-  // ── Block A — other topics in the same city ───────────────────────────
+  // ── Block A, other topics in the same city ───────────────────────────
   // For service pages: other services. For condition pages: other conditions.
   const blockAItems = (
     isService
@@ -64,7 +64,7 @@ export function InternalLinks({ topic, city, nearbyCities }: InternalLinksProps)
     ? `Related Services in ${city.name}`
     : `Other Conditions We Treat in ${city.name}`;
 
-  // ── Block B — same topic in nearby cities ─────────────────────────────
+  // ── Block B, same topic in nearby cities ─────────────────────────────
   const blockBItems = nearbyCities.slice(0, NEARBY_CITY_COUNT).map((c) => ({
     label: isService
       ? `${topicName} in ${c.name}, NV`
@@ -76,7 +76,7 @@ export function InternalLinks({ topic, city, nearbyCities }: InternalLinksProps)
     ? `${topicName} in Nearby Cities`
     : `${topicName} Treatment in Nearby Cities`;
 
-  // ── Block C — cross-silo connector ────────────────────────────────────
+  // ── Block C, cross-silo connector ────────────────────────────────────
   // For service pages: conditions treated by this service in the same city.
   // For condition pages: services we use to treat this condition in the same city.
   const blockCRaw = isService

@@ -52,7 +52,7 @@ const benefits = [
   {
     icon: <ShieldCheck className="h-5 w-5" />,
     title: "Non-Invasive",
-    body: "No incisions, no downtime — a comfortable session inside our Fernley office.",
+    body: "No incisions, no downtime, a comfortable session inside our Fernley office.",
   },
   {
     icon: <Sparkles className="h-5 w-5" />,
@@ -73,7 +73,7 @@ export default function SpinalDecompressionPage() {
     <main className="bg-slate-50">
       <ServiceSchema
         name="Spinal Decompression"
-        description="Non-surgical spinal decompression — a gentle treatment that relieves pressure on spinal discs and pinched nerves."
+        description="Non-surgical spinal decompression, a gentle treatment that relieves pressure on spinal discs and pinched nerves."
         pagePath="/spinal-decompression/"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -106,7 +106,7 @@ export default function SpinalDecompressionPage() {
                 Spinal decompression is a non-invasive, in-office procedure
                 used to relieve back pain. By gently stretching the spine, it
                 takes pressure off the discs that cushion the vertebrae.
-                That relief lets bulging discs retract back into place — and
+                That relief lets bulging discs retract back into place, and
                 takes pressure off the nerves that cause radiating pain.
               </p>
             </Reveal>
@@ -197,7 +197,7 @@ export default function SpinalDecompressionPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Non-surgical spinal decompression at Ascension Health in Fernley — serving disc herniation, sciatica, and chronic low-back patients across Nevada."
+        intro="Non-surgical spinal decompression at Ascension Health in Fernley, serving disc herniation, sciatica, and chronic low-back patients across Nevada."
         topic={{ slug: "spinal-decompression", name: "Spinal Decompression", kind: "service" }}
       />
 

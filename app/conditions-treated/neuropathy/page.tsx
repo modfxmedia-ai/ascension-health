@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 const benefits = [
   { icon: <Zap className="h-5 w-5" />, title: "Calms Nerve Pain", body: "Targeted protocols reduce burning, tingling and shooting sensations." },
   { icon: <Activity className="h-5 w-5" />, title: "Restores Function", body: "Improves balance, sensation and grip so daily life feels normal again." },
-  { icon: <ShieldCheck className="h-5 w-5" />, title: "Non-Surgical", body: "Drug-free, non-invasive care — no incisions, no opioid prescriptions." },
+  { icon: <ShieldCheck className="h-5 w-5" />, title: "Non-Surgical", body: "Drug-free, non-invasive care, no incisions, no opioid prescriptions." },
   { icon: <Sparkles className="h-5 w-5" />, title: "Whole-Person Plan", body: "We combine chiropractic, nutrition and supportive therapies for lasting relief." },
 ];
 
@@ -73,7 +73,7 @@ export default function NeuropathyPage() {
 
             <Reveal delay={0.05}>
               <p className="mt-8 text-[16px] leading-relaxed text-slate-700">
-                Peripheral neuropathy is nerve damage that interferes with the way signals travel between your brain and the rest of your body. For many people it shows up first as numbness, tingling, burning or stabbing pain in the hands and feet — and gradually starts to interfere with balance, sleep and the simple things you used to enjoy.
+                Peripheral neuropathy is nerve damage that interferes with the way signals travel between your brain and the rest of your body. For many people it shows up first as numbness, tingling, burning or stabbing pain in the hands and feet, and gradually starts to interfere with balance, sleep and the simple things you used to enjoy.
               </p>
             </Reveal>
 
@@ -85,7 +85,7 @@ export default function NeuropathyPage() {
 
             <Reveal delay={0.12}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Most people who walk through our doors have already tried medications that masked symptoms but never resolved the underlying problem. We start with a thorough evaluation, identify the contributing factors — diabetes, chemotherapy aftermath, spinal compression or vitamin deficiencies are common — and build a plan around what your nerves actually need to recover.
+                Most people who walk through our doors have already tried medications that masked symptoms but never resolved the underlying problem. We start with a thorough evaluation, identify the contributing factors, diabetes, chemotherapy aftermath, spinal compression or vitamin deficiencies are common, and build a plan around what your nerves actually need to recover.
               </p>
             </Reveal>
 
@@ -127,7 +127,7 @@ export default function NeuropathyPage() {
 
       <CityLinkGrid
         heading="Find Neuropathy Treatment Near You"
-        intro="Multi-modal neuropathy care from our Fernley clinic — serving patients across Nevada."
+        intro="Multi-modal neuropathy care from our Fernley clinic, serving patients across Nevada."
         topic={{ slug: "neuropathy-treatment", name: "Neuropathy Treatment", kind: "service" }}
       />
 

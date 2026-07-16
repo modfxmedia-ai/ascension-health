@@ -128,7 +128,7 @@ export default function JointInjectionsPage() {
                 unable to relieve your pain, we may proceed with another method
                 of treatment such as joint injections. This non-surgical
                 treatment option can not only help you experience pain relief,
-                but also provide increased range of motion — which can make
+                but also provide increased range of motion, which can make
                 physical therapy more comfortable.
               </p>
             </Reveal>
@@ -193,7 +193,7 @@ export default function JointInjectionsPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="In-office joint injections at Ascension Health in Fernley — knee, shoulder, hip, and more for patients across northern and southern Nevada."
+        intro="In-office joint injections at Ascension Health in Fernley, knee, shoulder, hip, and more for patients across northern and southern Nevada."
         topic={{ slug: "joint-injections", name: "Joint Injections", kind: "service" }}
       />
 

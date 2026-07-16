@@ -83,15 +83,15 @@ export default async function TreatmentPage({
 
   const aboutParagraphs = isComparison
     ? [
-        `${page.metaDescription} For ${cityLabel ? `${cityLabel}, NV` : "Nevada"} patients trying to decide between options, the honest answer is usually "it depends" — and our job in this guide is to help you understand what it depends on so you can pick the right starting point.`,
-        `At Ascension Health we have both approaches under one roof, which gives us a genuine advantage when explaining the tradeoffs. We've watched the same patient profiles do better with one path or the other, and we've seen what happens when the wrong path gets chosen first. The cost isn't usually the treatment itself — it's the months lost going down the path that wasn't going to work.`,
-        `Most ${cityLabel ?? "Nevada"} patients benefit from a brief evaluation before committing to a plan. A 15-minute conversation with our clinical team often saves weeks of trial-and-error and several hundred dollars of misdirected co-pays. We won't push you toward whichever option we make the most money on — we tell you what we'd recommend if you were a family member.`,
-        `Below you'll find the structured comparison plus our recommendations for who tends to do best with each path. If you'd rather just talk it through, call (775) 575-9922 — we genuinely don't mind the question.`,
+        `${page.metaDescription} For ${cityLabel ? `${cityLabel}, NV` : "Nevada"} patients trying to decide between options, the honest answer is usually "it depends", and our job in this guide is to help you understand what it depends on so you can pick the right starting point.`,
+        `At Ascension Health we have both approaches under one roof, which gives us a genuine advantage when explaining the tradeoffs. We've watched the same patient profiles do better with one path or the other, and we've seen what happens when the wrong path gets chosen first. The cost isn't usually the treatment itself, it's the months lost going down the path that wasn't going to work.`,
+        `Most ${cityLabel ?? "Nevada"} patients benefit from a brief evaluation before committing to a plan. A 15-minute conversation with our clinical team often saves weeks of trial-and-error and several hundred dollars of misdirected co-pays. We won't push you toward whichever option we make the most money on, we tell you what we'd recommend if you were a family member.`,
+        `Below you'll find the structured comparison plus our recommendations for who tends to do best with each path. If you'd rather just talk it through, call (775) 575-9922, we genuinely don't mind the question.`,
       ]
     : [
         `${page.metaDescription} If you've landed on this page, you're probably dealing with the symptom yourself or watching someone close to you struggle with it. In ${cityLabel ?? "Nevada"} we see this pattern often, and the good news is most cases are very treatable when the plan addresses the right driver.`,
-        `Our approach at Ascension Health is conservative-first and root-cause-focused. We start with a real evaluation — exam, history, the mechanical and metabolic context — then build a written plan with clear progress markers. If you've been told "you'll just have to live with it" or "take this medication and we'll see," that's almost always a sign the workup wasn't thorough enough.`,
-        `Treatment for the symptoms covered on this page usually combines two or three modalities — chiropractic, physical therapy, soft-tissue work, targeted injections, nutritional or hormonal support depending on the driver. The right combination is what tends to produce the results that hold, rather than a single intervention that fades.`,
+        `Our approach at Ascension Health is conservative-first and root-cause-focused. We start with a real evaluation, exam, history, the mechanical and metabolic context, then build a written plan with clear progress markers. If you've been told "you'll just have to live with it" or "take this medication and we'll see," that's almost always a sign the workup wasn't thorough enough.`,
+        `Treatment for the symptoms covered on this page usually combines two or three modalities, chiropractic, physical therapy, soft-tissue work, targeted injections, nutritional or hormonal support depending on the driver. The right combination is what tends to produce the results that hold, rather than a single intervention that fades.`,
         `Most ${cityLabel ?? "Nevada"} patients see meaningful change within the first 4–6 weeks. Some need longer; a few need a different specialist and we'll tell you so. The first step is a no-pressure consultation where we can lay out what we'd recommend.`,
       ];
 
@@ -115,8 +115,8 @@ export default async function TreatmentPage({
       }
       aboutHeading={
         isComparison
-          ? `How to choose — for ${cityLabel ?? "Nevada"} patients`
-          : `What's going on — and what helps`
+          ? `How to choose, for ${cityLabel ?? "Nevada"} patients`
+          : `What's going on, and what helps`
       }
       aboutParagraphs={aboutParagraphs}
       relatedHeading={

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chiropractor Near Me - Contact Us",
     description:
-      "Get in touch with Ascension Health — chiropractic care and wellness in Fernley, NV.",
+      "Get in touch with Ascension Health, chiropractic care and wellness in Fernley, NV.",
     url: "https://ascensionhealthnv.com/contact/",
     type: "website",
     siteName: "Ascension Health",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Chiropractor Near Me - Contact Us",
     description:
-      "Get in touch with Ascension Health — chiropractic care and wellness in Fernley, NV.",
+      "Get in touch with Ascension Health, chiropractic care and wellness in Fernley, NV.",
   },
 };
 
@@ -136,7 +136,7 @@ export default function ContactPage() {
                 <div className="overflow-hidden rounded-3xl shadow-xl shadow-brand-900/10 ring-1 ring-slate-100">
                   <div className="relative aspect-square sm:aspect-[4/5] lg:aspect-[3/4] w-full bg-slate-100">
                     <iframe
-                      title="Ascension Health — 415 HWY 95A Suite 503, Fernley, NV 89408"
+                      title="Ascension Health, 415 HWY 95A Suite 503, Fernley, NV 89408"
                       src={MAPS_EMBED}
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"

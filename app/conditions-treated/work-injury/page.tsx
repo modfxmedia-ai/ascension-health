@@ -13,7 +13,7 @@ export default function Page() {
     <ConditionStub
       title="Work Injury"
       slug="work-injury"
-      intro="Workplace injuries don't only occur during traumatic slips and falls at work — more often, they are the result of repetitive movements and the physical demands of your job carried out over an extended period of time. These types of workplace injuries are all too common in today's workforce and are best identified by their symptoms."
+      intro="Workplace injuries don't only occur during traumatic slips and falls at work, more often, they are the result of repetitive movements and the physical demands of your job carried out over an extended period of time. These types of workplace injuries are all too common in today's workforce and are best identified by their symptoms."
     />
   );
 }

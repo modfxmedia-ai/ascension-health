@@ -28,7 +28,7 @@ import { pickTestimonials } from "@/lib/pSEO-testimonials";
 /**
  * `app/[service]/[city]/page.tsx`
  *
- * One dynamic route, three URL shapes — all pre-rendered at build time:
+ * One dynamic route, three URL shapes, all pre-rendered at build time:
  *
  *   1. Service + city          /chiropractic-care/fernley-nv/
  *   2. Condition + city        /back-pain/fernley-nv/
@@ -116,7 +116,7 @@ export async function generateMetadata({
     case "service-city":
       return buildPageMetadata({
         title: `${r.service.name} in ${r.city.name}, NV`,
-        description: `${r.service.name} for ${r.city.name}, NV patients — ${r.service.benefit}. Same-week appointments at our Fernley clinic, serving ${r.city.region}.`,
+        description: `${r.service.name} for ${r.city.name}, NV patients, ${r.service.benefit}. Same-week appointments at our Fernley clinic, serving ${r.city.region}.`,
         path,
       });
     case "condition-city":
@@ -128,7 +128,7 @@ export async function generateMetadata({
     case "service-near-city":
       return buildPageMetadata({
         title: `${r.service.name} Near ${r.city.name}, NV`,
-        description: `Looking for ${r.service.name.toLowerCase()} near ${r.city.name}? Ascension Health serves ${r.city.region} from our Fernley clinic — ${r.service.benefit}.`,
+        description: `Looking for ${r.service.name.toLowerCase()} near ${r.city.name}? Ascension Health serves ${r.city.region} from our Fernley clinic, ${r.service.benefit}.`,
         path,
       });
   }
@@ -154,7 +154,7 @@ export default async function ServiceCityRoute({
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// Render dispatchers — each one constructs PseoPageTemplate props
+// Render dispatchers, each one constructs PseoPageTemplate props
 // ──────────────────────────────────────────────────────────────────────────
 
 function renderServiceCity(service: Service, city: City) {
@@ -169,11 +169,11 @@ function renderServiceCity(service: Service, city: City) {
       topicKind="service"
       pagePath={`/${service.slug}/${city.slug}-nv/`}
       h1={`${service.name} in ${city.name}, NV | Ascension Health`}
-      subheading={`${service.name} for ${city.name} patients — ${service.benefit}. Same-week appointments at our Fernley clinic serving ${city.region}.`}
+      subheading={`${service.name} for ${city.name} patients, ${service.benefit}. Same-week appointments at our Fernley clinic serving ${city.region}.`}
       trustBadge={`Serving ${city.name} & Surrounding Areas`}
       parent={{ label: "Services", href: "/services/" }}
       topicHubHref={getServiceHubHref(service.slug)}
-      aboutHeading={`What is ${service.name} — and how it helps ${city.name} patients`}
+      aboutHeading={`What is ${service.name}, and how it helps ${city.name} patients`}
       aboutParagraphs={content.paragraphs.map((p) => interpolate(p, vars))}
       relatedHeading={`Conditions we treat with ${service.name}`}
       relatedItems={conds.map((c) => ({
@@ -233,11 +233,11 @@ function renderNearCity(service: Service, city: City) {
       topicKind="service"
       pagePath={`/${service.slug}/near-${city.slug}/`}
       h1={`${service.name} Near ${city.name}, NV | Ascension Health`}
-      subheading={`Looking for ${service.name.toLowerCase()} near ${city.name}? Ascension Health serves ${city.region} from our Fernley clinic — a short drive with same-week appointments.`}
+      subheading={`Looking for ${service.name.toLowerCase()} near ${city.name}? Ascension Health serves ${city.region} from our Fernley clinic, with same-week appointments and most major insurance accepted.`}
       trustBadge={`Near ${city.name} · Serving ${city.region}`}
       parent={{ label: "Services", href: "/services/" }}
       topicHubHref={getServiceHubHref(service.slug)}
-      aboutHeading={`${service.name} a short drive from ${city.name}`}
+      aboutHeading={`${service.name} serving ${city.name} from our Fernley clinic`}
       aboutParagraphs={content.paragraphs.map((p) => interpolate(p, vars))}
       relatedHeading={`What we treat with ${service.name}`}
       relatedItems={conds.map((c) => ({

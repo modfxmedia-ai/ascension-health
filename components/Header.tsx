@@ -71,7 +71,7 @@ export default function Header() {
             href="/"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center -my-1"
-            aria-label="Ascension Health — Home"
+            aria-label="Ascension Health, Home"
           >
             <Image
               src={logo}

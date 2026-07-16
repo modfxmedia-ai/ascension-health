@@ -52,7 +52,7 @@ const why = [
   {
     icon: <ShieldCheck className="h-5 w-5" />,
     title: "Drug & Surgery-Free",
-    body: "A non-invasive alternative — most patients return to normal activity the same day.",
+    body: "A non-invasive alternative, most patients return to normal activity the same day.",
   },
   {
     icon: <Sparkles className="h-5 w-5" />,
@@ -74,7 +74,7 @@ export default function ServicesSpinalDecompressionPage() {
     <main className="bg-slate-50">
       <ServiceSchema
         name="Spinal Decompression"
-        description="Non-surgical spinal decompression — gentle mechanical traction that relieves pressure on bulging or herniated discs and pinched spinal nerves."
+        description="Non-surgical spinal decompression, gentle mechanical traction that relieves pressure on bulging or herniated discs and pinched spinal nerves."
         pagePath="/services/spinal-decompression/"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -109,7 +109,7 @@ export default function ServicesSpinalDecompressionPage() {
               <p className="mt-8 text-[16px] leading-relaxed text-slate-700">
                 Spinal decompression is a non-invasive, in-office procedure
                 designed to relieve back pain. It works by gently stretching
-                the spine to take pressure off the discs — the soft cushions
+                the spine to take pressure off the discs, the soft cushions
                 that sit between your vertebrae. When that pressure is
                 released, bulging discs can retract back into place, easing the
                 strain on nearby nerves.
@@ -121,7 +121,7 @@ export default function ServicesSpinalDecompressionPage() {
                 Decompression also allows water, oxygen and nutrients to flow
                 back into the discs, helping them heal naturally. For anyone
                 living with chronic back pain who wants a path back to a
-                pain-free life — without drugs or surgery — it&apos;s an
+                pain-free life, without drugs or surgery, it&apos;s an
                 excellent option to consider.
               </p>
             </Reveal>
@@ -157,12 +157,12 @@ export default function ServicesSpinalDecompressionPage() {
                   consultation we&apos;ll complete a thorough exam to rule out
                   conditions that could pose a risk. Common contraindications
                   include advanced osteoporosis, pregnancy, obesity and
-                  extensive nerve damage — we&apos;ll discuss everything in
+                  extensive nerve damage, we&apos;ll discuss everything in
                   detail at your first visit.
                 </p>
                 <p className="mt-4 text-[15px] leading-relaxed text-slate-700">
-                  If chronic back or neck pain has been disrupting your life —
-                  making it hard to stand, sleep or carry groceries — you
+                  If chronic back or neck pain has been disrupting your life, 
+                  making it hard to stand, sleep or carry groceries, you
                   don&apos;t have to live this way. Call our office today at{" "}
                   <a
                     href={SITE.phoneHref}
@@ -212,7 +212,7 @@ export default function ServicesSpinalDecompressionPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Spinal decompression at Ascension Health in Fernley — serving patients across northern and southern Nevada. Choose your city for local details."
+        intro="Spinal decompression at Ascension Health in Fernley, serving patients across northern and southern Nevada. Choose your city for local details."
         topic={{ slug: "spinal-decompression", name: "Spinal Decompression", kind: "service" }}
       />
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/Motion";
 import { PSEO_TARGET_CITIES } from "@/lib/pSEO-routing";
 
@@ -58,7 +58,7 @@ export function CityLinkGrid({ heading, intro, topic }: CityLinkGridProps) {
       <div className="mx-auto max-w-7xl px-6">
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
-            Local Care Across the West
+            Service Area · Our clinic in Fernley, NV
           </p>
           <h2 className="mt-2 font-display text-3xl sm:text-4xl font-semibold text-brand-950">
             {heading}
@@ -78,7 +78,7 @@ export function CityLinkGrid({ heading, intro, topic }: CityLinkGridProps) {
                   className="group flex items-center gap-3 rounded-xl bg-slate-50 px-4 py-3 ring-1 ring-slate-200/70 hover:bg-brand-50 hover:ring-brand-200 transition-colors"
                 >
                   <span className="grid h-8 w-8 place-items-center rounded-lg bg-white text-brand-700 ring-1 ring-brand-100">
-                    <MapPin className="h-4 w-4" />
+                    <ArrowRight className="h-4 w-4" />
                   </span>
                   <span className="text-sm font-medium text-slate-800 group-hover:text-brand-900 leading-snug">
                     {it.label}

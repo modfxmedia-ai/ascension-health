@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Ascension Health — Medical Center in Fernley, NV";
+export const alt = "Ascension Health, Medical Center in Fernley, NV";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -64,7 +64,7 @@ export default function OpengraphImage() {
               maxWidth: 920,
             }}
           >
-            Chiropractic care, regenerative medicine and physical therapy —
+            Chiropractic care, regenerative medicine and physical therapy, 
             accepting new appointments.
           </div>
         </div>

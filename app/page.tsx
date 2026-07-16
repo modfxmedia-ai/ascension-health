@@ -118,8 +118,8 @@ export default function Home() {
       <WhyChooseUs />
       <Appointment />
       <CityLinkGrid
-        heading="Local Care Across the West"
-        intro="Local care, close to home — explore Ascension Health resources for your city. Same-week appointments and most major insurance accepted."
+        heading="Our clinic in Fernley, proudly serving these Northern Nevada communities"
+        intro="Ascension Health operates a single office at 415 HWY 95A Suite 503 in Fernley, NV. Patients travel in from the communities below for chiropractic, physical therapy, regenerative and physician-led medical care, all under one roof. Same-week appointments and most major insurance accepted."
       />
       <BottomCta />
     </>
@@ -145,7 +145,7 @@ function Hero() {
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
 
-      {/* Overlays for legibility — deeper, more contrast */}
+      {/* Overlays for legibility, deeper, more contrast */}
       <div
         className="absolute inset-0 -z-10 bg-gradient-to-r from-brand-950/95 via-brand-950/80 to-brand-900/55"
         aria-hidden="true"
@@ -208,8 +208,8 @@ function Hero() {
             <Reveal delay={0.2}>
               <p className="mt-7 max-w-xl text-lg leading-relaxed text-brand-50/90">
                 Welcome to Ascension Health. We treat the source of your pain
-                using a variety of specialized techniques — from chiropractic
-                care to physical therapy and wellness — so you can get back to
+                using a variety of specialized techniques, from chiropractic
+                care to physical therapy and wellness, so you can get back to
                 living the active life you deserve.
               </p>
             </Reveal>
@@ -248,7 +248,7 @@ function Hero() {
             </Reveal>
           </div>
 
-          {/* Right column — animated graphic */}
+          {/* Right column, animated graphic */}
           <Reveal delay={0.2} y={0}>
             <div className="relative hidden lg:block">
               <HeroVisual />
@@ -436,7 +436,7 @@ function Services() {
             <Reveal delay={0.2}>
               <p className="mt-5 text-slate-600 leading-relaxed">
                 From spinal alignment and hands-on therapy to advanced
-                injections and whole-body wellness — every plan is built around
+                injections and whole-body wellness, every plan is built around
                 your goals and refined with years of specialized training.
               </p>
             </Reveal>
@@ -474,7 +474,7 @@ function Services() {
                     {
                       step: "02",
                       title: "Assess",
-                      body: "Hands-on evaluation to pinpoint the real source — not just the symptom.",
+                      body: "Hands-on evaluation to pinpoint the real source, not just the symptom.",
                     },
                     {
                       step: "03",
@@ -583,7 +583,7 @@ function Conditions() {
             <p className="mt-5 text-slate-600 leading-relaxed">
               Chronic pain affects more Americans than diabetes, heart disease
               and cancer combined. We are dedicated to helping patients regain
-              pain-free lives — at the onset of symptoms.
+              pain-free lives, at the onset of symptoms.
             </p>
           </Reveal>
         </div>
@@ -623,7 +623,7 @@ const FEATURES = [
   {
     icon: Users,
     title: "Personalized Plans",
-    body: "Care customized to your body, history and goals — never one-size-fits-all.",
+    body: "Care customized to your body, history and goals, never one-size-fits-all.",
   },
   {
     icon: Award,
@@ -638,7 +638,7 @@ const FEATURES = [
   {
     icon: Brain,
     title: "Whole-Body Focus",
-    body: "Head to toes — musculoskeletal dysfunction wherever it lives.",
+    body: "Head to toes, musculoskeletal dysfunction wherever it lives.",
   },
 ];
 
@@ -700,7 +700,7 @@ function WhyChooseUs() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 text-brand-100/80 leading-relaxed">
-                A small, specialized team — pairing years of training with a
+                A small, specialized team, pairing years of training with a
                 gentle, evidence-based approach so every visit feels personal.
               </p>
             </Reveal>
@@ -942,7 +942,7 @@ function BottomCta() {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-4 text-lg text-brand-100/90">
-            Book a visit with our Fernley team — or call us today.
+            Book a visit with our Fernley team, or call us today.
           </p>
         </Reveal>
         <Reveal delay={0.2}>

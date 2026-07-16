@@ -4,7 +4,7 @@ import { ConditionStub } from "@/components/ConditionStub";
 export const metadata: Metadata = {
   title: "Shoulder Pain in Fernley, NV",
   description:
-    "Shoulder pain treatment in Fernley, NV. Shoulder pain affects nearly half of Americans — Ascension Health offers non-surgical options that work.",
+    "Shoulder pain treatment in Fernley, NV. Shoulder pain affects nearly half of Americans, Ascension Health offers non-surgical options that work.",
   alternates: { canonical: "/conditions-treated/shoulder-pain/" },
 };
 

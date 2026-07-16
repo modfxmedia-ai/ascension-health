@@ -13,7 +13,7 @@ export default function Page() {
     <ConditionStub
       title="Myofascial Release"
       slug="myofascial-release"
-      intro="If you have never undergone a myofascial release procedure before, you might wonder what will be done. There is no need to panic — it is a minor therapy intervention meant to alleviate pain that can result from fascia muscle restriction and tightness."
+      intro="If you have never undergone a myofascial release procedure before, you might wonder what will be done. There is no need to panic, it is a minor therapy intervention meant to alleviate pain that can result from fascia muscle restriction and tightness."
     />
   );
 }

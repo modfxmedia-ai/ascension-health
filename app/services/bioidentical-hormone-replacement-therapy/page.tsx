@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bioidentical Hormone Replacement Therapy in Fernley, NV",
     description:
-      "BHRT for men and women in Fernley, NV — relief for menopause, andropause, fatigue, low libido and more.",
+      "BHRT for men and women in Fernley, NV, relief for menopause, andropause, fatigue, low libido and more.",
     url: "https://ascensionhealthnv.com/services/bioidentical-hormone-replacement-therapy/",
     type: "article",
     siteName: "Ascension Health",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Bioidentical Hormone Replacement Therapy in Fernley, NV",
     description:
-      "BHRT for men and women in Fernley, NV — relief for menopause, andropause, fatigue, low libido and more.",
+      "BHRT for men and women in Fernley, NV, relief for menopause, andropause, fatigue, low libido and more.",
   },
 };
 
@@ -153,9 +153,9 @@ export default function BHRTPage() {
 
             <Reveal delay={0.15}>
               <p className="mt-8 text-[15.5px] leading-relaxed text-slate-700">
-                Symptoms common with menopause — hot flashes, night sweats,
+                Symptoms common with menopause, hot flashes, night sweats,
                 mood changes, memory loss, weight gain, sleep issues and low
-                libido — can be dramatically improved with BHRT. For many
+                libido, can be dramatically improved with BHRT. For many
                 other conditions, BHRT can improve vitality, energy, mental
                 clarity, mood, weight loss, and even muscle strength.
               </p>
@@ -240,8 +240,8 @@ export default function BHRTPage() {
                 like to{" "}
                 <Link href={SITE.appointmentsHref} className="font-semibold text-brand-700 hover:text-brand-800">
                   request an appointment
-                </Link>
-                , call our friendly office today at{" "}
+                </Link>,{" "}
+                call our friendly office today at{" "}
                 <a href={SITE.phoneHref} className="font-semibold text-brand-700 hover:text-brand-800">
                   {SITE.phone}
                 </a>
@@ -273,7 +273,7 @@ export default function BHRTPage() {
 
       <CityLinkGrid
         heading="Serving These Nevada Cities"
-        intro="Bioidentical hormone replacement therapy for men and women — lab-guided plans from our Fernley clinic serving Nevada."
+        intro="Bioidentical hormone replacement therapy for men and women, lab-guided plans from our Fernley clinic serving Nevada."
         topic={{ slug: "bioidentical-hormone-replacement-therapy", name: "Bioidentical Hormone Replacement Therapy", kind: "service" }}
       />
 

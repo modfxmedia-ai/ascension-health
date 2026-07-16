@@ -6,19 +6,19 @@ import type { FAQ } from "@/lib/pSEO-content";
  *
  * Renders up to four schemas as native `<script type="application/ld+json">`
  * tags:
- *   1. MedicalBusiness (LocalBusiness subtype) — clinic NAP, area served,
+ *   1. MedicalBusiness (LocalBusiness subtype), clinic NAP, area served,
  *      medical specialties.
- *   2. FAQPage — exactly the Q&As shown on the page, so Google's rich result
+ *   2. FAQPage, exactly the Q&As shown on the page, so Google's rich result
  *      eligibility matches the rendered content.
- *   3. BreadcrumbList — Home → Category → Page.
- *   4. MedicalCondition or MedicalProcedure — page-topic entity that ties
+ *   3. BreadcrumbList, Home → Category → Page.
+ *   4. MedicalCondition or MedicalProcedure, page-topic entity that ties
  *      the local business to the medical concept.
  *
  * Note on `next/script`: the official Next.js JSON-LD guide explicitly
  * recommends a native `<script>` tag for structured data, because
  * `next/script` is optimised for executable JavaScript and JSON-LD is
  * inert payload. The `beforeInteractive` strategy also has a hard rule
- * that it can only live in the root layout — which would force a single
+ * that it can only live in the root layout, which would force a single
  * page-wide payload instead of the per-page schema we want. Using native
  * tags is the documented best practice and gives us the per-page,
  * fully-static JSON-LD that Google reads from server-rendered HTML.
@@ -60,7 +60,7 @@ export type SchemaMarkupProps = {
   medical?: MedicalEntity;
 };
 
-/** Serialise a JSON-LD payload safely — escape `<` to block XSS. */
+/** Serialise a JSON-LD payload safely, escape `<` to block XSS. */
 function ldJson(payload: unknown): string {
   return JSON.stringify(payload).replace(/</g, "\\u003c");
 }

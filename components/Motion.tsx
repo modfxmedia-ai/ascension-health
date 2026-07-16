@@ -138,7 +138,7 @@ export function OrbitGraphic() {
         }}
       />
 
-      {/* Botanical leaf silhouette — slowly rotates, echoes the logo mark */}
+      {/* Botanical leaf silhouette, slowly rotates, echoes the logo mark */}
       <motion.svg
         aria-hidden
         viewBox="0 0 400 400"
@@ -451,7 +451,7 @@ export function HeroVisual() {
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      {/* Service icon ring — rotates slowly, with each icon counter-rotated to stay upright */}
+      {/* Service icon ring, rotates slowly, with each icon counter-rotated to stay upright */}
       <ServiceIconRing items={serviceIcons} />
 
       {/* Centerpiece: the existing OrbitGraphic */}

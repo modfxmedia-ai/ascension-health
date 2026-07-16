@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const benefits = [
   { icon: <Activity className="h-5 w-5" />, title: "Back in the Game", body: "Recovery plans aim to return you to your sport, not just out of pain." },
-  { icon: <HeartPulse className="h-5 w-5" />, title: "Acute & Lingering", body: "From fresh strains to old injuries that never fully healed — we treat both." },
+  { icon: <HeartPulse className="h-5 w-5" />, title: "Acute & Lingering", body: "From fresh strains to old injuries that never fully healed, we treat both." },
   { icon: <ShieldCheck className="h-5 w-5" />, title: "Drug-Free First", body: "Chiropractic, physical therapy and targeted injections before medication." },
   { icon: <Sparkles className="h-5 w-5" />, title: "Performance Boost", body: "Better alignment and recovery often mean stronger performance afterward." },
 ];
@@ -79,7 +79,7 @@ export default function SportsInjuriesPage() {
 
             <Reveal delay={0.1}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Whether you tweaked something this weekend or have been quietly compensating for an old injury for years, our team takes it seriously. Sports injuries that get only partial attention almost always come back — usually right when you least want them to.
+                Whether you tweaked something this weekend or have been quietly compensating for an old injury for years, our team takes it seriously. Sports injuries that get only partial attention almost always come back, usually right when you least want them to.
               </p>
             </Reveal>
 
@@ -127,11 +127,11 @@ export default function SportsInjuriesPage() {
 
       <CityLinkGrid
         heading="Find Sports Injury Care Near You"
-        intro="Recovery-focused sports injury care from our Fernley clinic — serving athletes and active patients across Nevada."
+        intro="Recovery-focused sports injury care from our Fernley clinic, serving athletes and active patients across Nevada."
         topic={{ slug: "sports-injuries", name: "Sports Injuries", kind: "condition" }}
       />
 
-      <BottomCTA kicker="Questions?" heading={`Call ${SITE.phone}`} body="Tell our Fernley team about your injury — recent or lingering — and we'll map a recovery plan." />
+      <BottomCTA kicker="Questions?" heading={`Call ${SITE.phone}`} body="Tell our Fernley team about your injury, recent or lingering, and we'll map a recovery plan." />
     </main>
   );
 }

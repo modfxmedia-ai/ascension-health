@@ -24,7 +24,7 @@ import { nearbyCities } from "@/lib/pSEO-content";
 import { pickTestimonials } from "@/lib/pSEO-testimonials";
 
 /**
- * City hub page — `/{city}-nv/` (e.g. /fernley-nv/).
+ * City hub page, `/{city}-nv/` (e.g. /fernley-nv/).
  *
  * Lives under the existing `[service]` dynamic segment so it can co-exist
  * with `[service]/[city]/page.tsx` without creating sibling dynamic
@@ -125,7 +125,7 @@ export default async function CityHubPage({
               Ascension Health serves {cityName} from our Fernley clinic with
               chiropractic, physical therapy, joint and trigger-point
               injections, medical weight loss, hormone therapy, and a full
-              line of pain and wellness services — drug-free,
+              line of pain and wellness services, drug-free,
               evidence-based, and built around a real plan with progress
               markers.
             </p>
@@ -158,7 +158,7 @@ export default async function CityHubPage({
               Local Care in {cityName}
             </p>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl font-semibold text-brand-950">
-              One clinical team for everything that hurts — or holds you back
+              One clinical team for everything that hurts, or holds you back
             </h2>
             <div className="mt-6 space-y-4 text-slate-700 leading-relaxed">
               <p>
@@ -166,7 +166,7 @@ export default async function CityHubPage({
                 being passed between specialists who only see one piece of
                 the puzzle. We're built differently: chiropractic, physical
                 therapy, injections, and medical wellness are all in-house,
-                so your plan can change shape as your body responds —
+                so your plan can change shape as your body responds, 
                 without starting over with a new clinic.
               </p>
               <p>
@@ -313,7 +313,7 @@ export default async function CityHubPage({
             <p className="mt-3 text-brand-100/90 max-w-2xl mx-auto">
               Most new {cityName} patients are seen within the week. We'll
               verify your insurance before your first visit and build a real
-              plan with progress markers — not just a stack of adjustments.
+              plan with progress markers, not just a stack of adjustments.
             </p>
           </Reveal>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -337,7 +337,7 @@ export default async function CityHubPage({
                   "{testimonials[0].quote}"
                 </blockquote>
                 <figcaption className="mt-3 text-sm text-brand-100/70">
-                  — {testimonials[0].name}, {testimonials[0].city}
+                  {testimonials[0].name}, {testimonials[0].city}
                 </figcaption>
               </figure>
             </Reveal>
