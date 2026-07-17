@@ -37,9 +37,8 @@ export const TESTIMONIALS: Testimonial[] = [
     city: "Reno, NV",
     rating: 5,
     quote:
-      "Drove out to Fernley after my Reno PT clinic kept rebooking me without progress. Ascension built me a real plan, gave me homework, and got me back on the mountain bike in six weeks. Worth every mile of the drive.",
+      "Drove out to Fernley after my Reno chiropractor kept rebooking me without progress. Ascension built me a real plan, gave me homework, and got me back on the mountain bike in six weeks. Worth every mile of the drive.",
     topicTags: [
-      "physical-therapy",
       "sports-injury-care",
       "knee-pain",
       "shoulder-pain",

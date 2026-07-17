@@ -72,7 +72,7 @@ export type BlogPost = {
 export const DEFAULT_AUTHOR: BlogAuthor = {
   name: "Ascension Health",
   role: "Chiropractic & Wellness Team",
-  bio: "Fernley’s trusted team for chiropractic care, physical therapy, joint injections, hormone therapy and medical weight loss, helping Northern Nevada live pain-free.",
+  bio: "Fernley’s trusted team for chiropractic care, joint injections, hormone therapy and medical weight loss, helping Northern Nevada live pain-free.",
 };
 
 /* ------------------------------------------------------------------ */
@@ -277,7 +277,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "list",
         items: [
           "Chiropractic adjustments to improve joint motion where it is restricted",
-          "Physical therapy style rehab to build strength and flexibility",
+          "Targeted rehab exercises to build strength and flexibility",
           "Regenerative wellness services offered at our clinic, when appropriate",
         ],
       },

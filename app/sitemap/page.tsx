@@ -56,7 +56,6 @@ const GROUPS: SitemapGroup[] = [
       { label: "Services Overview", href: "/services/" },
       { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
       { label: "Spinal Decompression", href: "/services/spinal-decompression/" },
-      { label: "Physical Therapy", href: "/services/physical-therapy/" },
       { label: "Joint Injections", href: "/services/joint-injections/" },
       { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
       { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },

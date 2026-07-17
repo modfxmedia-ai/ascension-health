@@ -57,7 +57,6 @@ export function SiteSchema() {
     ],
     medicalSpecialty: [
       "Chiropractic",
-      "Physical Therapy",
       "Pain Management",
       "Regenerative Medicine",
     ],

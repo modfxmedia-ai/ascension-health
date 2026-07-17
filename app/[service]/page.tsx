@@ -51,7 +51,7 @@ export async function generateMetadata({
   if (!cityObj) return {};
   return buildPageMetadata({
     title: `Chiropractic & Medical Services in ${cityObj.name}, NV`,
-    description: `Find chiropractic care, physical therapy, joint injections, medical weight loss and more in ${cityObj.name}, NV. Same-week appointments at Ascension Health serving ${cityObj.region}.`,
+    description: `Find chiropractic care, joint injections, medical weight loss and more in ${cityObj.name}, NV. Same-week appointments at Ascension Health serving ${cityObj.region}.`,
     path: `/${service}/`,
   });
 }
@@ -76,7 +76,7 @@ export default async function CityHubPage({
       <SchemaMarkup
         pagePath={pagePath}
         areaServed={[cityName, ...surrounding.map((c) => c.name)]}
-        medicalSpecialty={["Chiropractic", "PhysicalTherapy", "PainManagement"]}
+        medicalSpecialty={["Chiropractic", "PainManagement"]}
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: `${cityName}, NV`, url: pagePath },
@@ -123,7 +123,7 @@ export default async function CityHubPage({
           <Reveal delay={0.12}>
             <p className="mt-5 max-w-2xl text-lg text-brand-100/90 leading-relaxed">
               Ascension Health serves {cityName} from our Fernley clinic with
-              chiropractic, physical therapy, joint and trigger-point
+              chiropractic, joint and trigger-point
               injections, medical weight loss, hormone therapy, and a full
               line of pain and wellness services, drug-free,
               evidence-based, and built around a real plan with progress

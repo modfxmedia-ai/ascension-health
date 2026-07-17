@@ -44,7 +44,6 @@ export const NAVIGATION: NavItem[] = [
     children: [
       { label: "Joint Injections", href: "/services/joint-injections/" },
       { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
-      { label: "Physical Therapy", href: "/services/physical-therapy/" },
       { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
       { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },
       {

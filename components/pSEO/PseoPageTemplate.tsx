@@ -351,7 +351,7 @@ function WhyChooseSection({ cityName }: { cityName?: string }) {
     {
       icon: Award,
       title: "Local Experts",
-      body: `Serving ${cityName ?? "Northern Nevada"} since ${CLINIC_FOUNDING_YEAR}, chiropractic, physical therapy, regenerative and medical services under one Fernley roof.`,
+      body: `Serving ${cityName ?? "Northern Nevada"} since ${CLINIC_FOUNDING_YEAR}, chiropractic, regenerative and medical services under one Fernley roof.`,
     },
     {
       icon: ClipboardList,
@@ -612,7 +612,7 @@ function LocalAreaSection({
               than you have to.
             </p>
             <p className="mt-4 text-slate-700 leading-relaxed text-[17px]">
-              Our clinic combines chiropractic, physical therapy, regenerative
+              Our clinic combines chiropractic, regenerative
               medicine, and physician-led metabolic and hormone care under one
               roof, so {city.name} patients can get a full workup without
               driving to four different offices. Free on-site parking, accessible

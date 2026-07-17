@@ -113,7 +113,7 @@ export function ConditionStub({
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
                 At Ascension Health our Fernley team treats {title.toLowerCase()} with
                 non-surgical, drug-free care whenever possible, chiropractic adjustments,
-                targeted physical therapy, joint or trigger-point injections, and supportive
+                soft-tissue work, joint or trigger-point injections, and supportive
                 services like IV nutrition. We start by understanding the underlying cause
                 so the relief actually lasts.
               </p>

@@ -85,7 +85,7 @@ export default function PainReliefPage() {
 
             <Reveal delay={0.12}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Depending on what we find, a pain-relief plan might include chiropractic adjustments, spinal decompression, joint or trigger-point injections, physical therapy, IV nutrition, hormone optimization or simple lifestyle adjustments. Most patients see relief in the first few visits and steady improvement from there.
+                Depending on what we find, a pain-relief plan might include chiropractic adjustments, spinal decompression, joint or trigger-point injections, targeted rehab, IV nutrition, hormone optimization or simple lifestyle adjustments. Most patients see relief in the first few visits and steady improvement from there.
               </p>
             </Reveal>
 

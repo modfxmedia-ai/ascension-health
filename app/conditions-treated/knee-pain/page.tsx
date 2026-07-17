@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Knee Pain in Fernley, NV",
     description:
-      "Non-surgical knee pain care in Fernley, NV, chiropractic, joint injections and physical therapy.",
+      "Non-surgical knee pain care in Fernley, NV, chiropractic, joint injections and targeted rehab.",
     url: "https://ascensionhealthnv.com/conditions-treated/knee-pain/",
     type: "article",
     siteName: "Ascension Health",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Knee Pain in Fernley, NV",
     description:
-      "Non-surgical knee pain care in Fernley, NV, chiropractic, joint injections and physical therapy.",
+      "Non-surgical knee pain care in Fernley, NV, chiropractic, joint injections and targeted rehab.",
   },
 };
 
@@ -35,14 +35,14 @@ const benefits = [
   { icon: <Activity className="h-5 w-5" />, title: "Real Cause Diagnosis", body: "We don't accept \"wear and tear\" as an answer, we find the actual cause." },
   { icon: <HeartPulse className="h-5 w-5" />, title: "Joint Injections", body: "Targeted injections reduce inflammation and lubricate the joint." },
   { icon: <ShieldCheck className="h-5 w-5" />, title: "Avoid Surgery", body: "Many patients postpone or avoid knee surgery with our conservative care." },
-  { icon: <Sparkles className="h-5 w-5" />, title: "Strength Rebuild", body: "Physical therapy rebuilds the muscles that protect and support the knee." },
+  { icon: <Sparkles className="h-5 w-5" />, title: "Strength Rebuild", body: "Targeted rehab rebuilds the muscles that protect and support the knee." },
 ];
 
 const related = [
   { label: "Joint Pain", href: "/conditions-treated/joint-pain/" },
   { label: "Joint Injections", href: "/services/joint-injections/" },
   { label: "Sports Injuries", href: "/sports-injuries/" },
-  { label: "Physical Therapy", href: "/services/physical-therapy/" },
+  { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
 ];
 
 export default function KneePainPage() {
@@ -85,7 +85,7 @@ export default function KneePainPage() {
 
             <Reveal delay={0.12}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Treatment usually combines chiropractic adjustments, joint injections when appropriate, and a progressive physical therapy plan to restore strength and stability. Many patients who came in expecting they&apos;d need surgery leave with a plan that keeps them on their own two knees.
+                Treatment usually combines chiropractic adjustments, joint injections when appropriate, and a progressive rehab plan to restore strength and stability. Many patients who came in expecting they&apos;d need surgery leave with a plan that keeps them on their own two knees.
               </p>
             </Reveal>
 

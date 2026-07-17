@@ -63,7 +63,6 @@ const benefits = [
 
 const related = [
   { label: "Joint Injections", href: "/services/joint-injections/" },
-  { label: "Physical Therapy", href: "/services/physical-therapy/" },
   { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
   { label: "Spinal Decompression", href: "/services/spinal-decompression/" },
 ];

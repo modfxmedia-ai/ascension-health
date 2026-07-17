@@ -51,19 +51,18 @@ const benefits = [
   },
   {
     icon: <CheckCircle2 className="h-5 w-5" />,
-    title: "Supports Physical Therapy",
+    title: "Supports Recovery",
     body: "Less pain makes rehab and therapeutic exercise more effective and tolerable.",
   },
   {
     icon: <ShieldCheck className="h-5 w-5" />,
     title: "Non-Surgical Option",
-    body: "A conservative alternative when medications and PT alone aren't enough.",
+    body: "A conservative alternative when medications and other conservative care alone aren't enough.",
   },
 ];
 
 const related = [
   { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
-  { label: "Physical Therapy", href: "/services/physical-therapy/" },
   { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
   { label: "Spinal Decompression", href: "/services/spinal-decompression/" },
 ];
@@ -124,12 +123,12 @@ export default function JointInjectionsPage() {
 
             <Reveal delay={0.15}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                If over-the-counter medications and physical therapy prove
+                If over-the-counter medications and conservative care prove
                 unable to relieve your pain, we may proceed with another method
                 of treatment such as joint injections. This non-surgical
                 treatment option can not only help you experience pain relief,
                 but also provide increased range of motion, which can make
-                physical therapy more comfortable.
+                daily movement and rehab more comfortable.
               </p>
             </Reveal>
 

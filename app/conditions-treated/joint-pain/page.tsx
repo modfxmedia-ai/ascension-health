@@ -14,12 +14,12 @@ import heroImage from "@/images/clone/jointpain_img.jpg";
 export const metadata: Metadata = {
   title: "Joint Pain in Fernley, NV",
   description:
-    "Joint pain treatment in Fernley, NV. Ascension Health treats hip, shoulder, spine and other joint pain with chiropractic care, joint injections and physical therapy.",
+    "Joint pain treatment in Fernley, NV. Ascension Health treats hip, shoulder, spine and other joint pain with chiropractic care, joint injections and targeted rehab.",
   alternates: { canonical: "/conditions-treated/joint-pain/" },
   openGraph: {
     title: "Joint Pain in Fernley, NV",
     description:
-      "Non-surgical joint pain care in Fernley, NV, chiropractic, injections and physical therapy.",
+      "Non-surgical joint pain care in Fernley, NV, chiropractic, injections and targeted rehab.",
     url: "https://ascensionhealthnv.com/conditions-treated/joint-pain/",
     type: "article",
     siteName: "Ascension Health",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Joint Pain in Fernley, NV",
     description:
-      "Non-surgical joint pain care in Fernley, NV, chiropractic, injections and physical therapy.",
+      "Non-surgical joint pain care in Fernley, NV, chiropractic, injections and targeted rehab.",
   },
 };
 
@@ -42,7 +42,7 @@ const related = [
   { label: "Knee Pain", href: "/conditions-treated/knee-pain/" },
   { label: "Joint Injections", href: "/services/joint-injections/" },
   { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
-  { label: "Physical Therapy", href: "/services/physical-therapy/" },
+  { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
 ];
 
 export default function JointPainPage() {
@@ -51,7 +51,7 @@ export default function JointPainPage() {
       <ServiceSchema
         kind="condition"
         name="Joint Pain"
-        description="Joint pain treatment for hip, shoulder, spine and other joints, chiropractic care, joint injections and physical therapy."
+        description="Joint pain treatment for hip, shoulder, spine and other joints, chiropractic care, joint injections and targeted rehab."
         pagePath="/conditions-treated/joint-pain/"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -85,7 +85,7 @@ export default function JointPainPage() {
 
             <Reveal delay={0.12}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                Care at Ascension Health typically combines chiropractic adjustments to restore proper motion, targeted joint or trigger-point injections to calm inflammation, and physical therapy to strengthen the muscles that support the joint. For many patients this combination delivers the relief they had hoped surgery would provide, without the recovery time.
+                Care at Ascension Health typically combines chiropractic adjustments to restore proper motion, targeted joint or trigger-point injections to calm inflammation, and a targeted rehab program to strengthen the muscles that support the joint. For many patients this combination delivers the relief they had hoped surgery would provide, without the recovery time.
               </p>
             </Reveal>
 

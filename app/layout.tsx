@@ -24,7 +24,7 @@ const TITLE_DEFAULT =
   "Chiropractor & Wellness Clinic in Fernley, NV | Ascension Health";
 const TITLE_TEMPLATE = "%s | Ascension Health";
 const DESCRIPTION =
-  "Chiropractic care, physical therapy, joint injections and medical weight loss in Fernley, NV. Same-week appointments, insurance accepted. Book online today.";
+  "Chiropractic care, joint injections and medical weight loss in Fernley, NV. Same-week appointments, insurance accepted. Book online today.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ascensionhealthnv.com"),

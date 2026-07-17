@@ -9,7 +9,6 @@ import {
   Calendar,
   Clock,
   Droplet,
-  Dumbbell,
   HeartPulse,
   MapPin,
   Phone,
@@ -35,7 +34,6 @@ import LeadForm from "@/components/LeadForm";
 import { CityLinkGrid } from "@/components/pSEO/CityLinkGrid";
 import imgChiropracticCare from "@/images/chiropractic-care.jpg";
 import imgSpinalDecompression from "@/images/spinal-decompression.jpg";
-import imgPhysicalTherapy from "@/images/physical-therapy.jpg";
 import imgJointInjections from "@/images/joint-injections.jpg";
 import imgTriggerPointInjections from "@/images/trigger-point-injections.jpg";
 import imgNutritionalIvs from "@/images/nutritional-ivs.jpg";
@@ -65,11 +63,6 @@ const SERVICE_META: Record<
     icon: Activity,
     tag: "Disc Therapy",
     image: imgSpinalDecompression,
-  },
-  "/services/physical-therapy/": {
-    icon: Dumbbell,
-    tag: "Rehab & Recovery",
-    image: imgPhysicalTherapy,
   },
   "/services/joint-injections/": {
     icon: Syringe,
@@ -104,7 +97,7 @@ const SERVICE_META: Record<
   "/sports-injuries/": {
     icon: Stethoscope,
     tag: "Performance Care",
-    image: imgPhysicalTherapy,
+    image: imgChiropracticCare,
   },
 };
 
@@ -119,7 +112,7 @@ export default function Home() {
       <Appointment />
       <CityLinkGrid
         heading="Our clinic in Fernley, proudly serving these Northern Nevada communities"
-        intro="Ascension Health operates a single office at 415 HWY 95A Suite 503 in Fernley, NV. Patients travel in from the communities below for chiropractic, physical therapy, regenerative and physician-led medical care, all under one roof. Same-week appointments and most major insurance accepted."
+        intro="Ascension Health operates a single office at 415 HWY 95A Suite 503 in Fernley, NV. Patients travel in from the communities below for chiropractic, regenerative and physician-led medical care, all under one roof. Same-week appointments and most major insurance accepted."
       />
       <BottomCta />
     </>
@@ -209,7 +202,7 @@ function Hero() {
               <p className="mt-7 max-w-xl text-lg leading-relaxed text-brand-50/90">
                 Welcome to Ascension Health. We treat the source of your pain
                 using a variety of specialized techniques, from chiropractic
-                care to physical therapy and wellness, so you can get back to
+                care to wellness services, so you can get back to
                 living the active life you deserve.
               </p>
             </Reveal>

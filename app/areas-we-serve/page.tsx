@@ -25,7 +25,7 @@ import { PSEO_TARGET_CITIES, buildPageMetadata } from "@/lib/pSEO-routing";
 export const metadata: Metadata = buildPageMetadata({
   title: "Areas We Serve in Fernley, NV",
   description:
-    "Browse every Nevada city Ascension Health serves, chiropractic, physical therapy, joint injections, medical weight loss, hormone therapy and more from our Fernley clinic.",
+    "Browse every Nevada city Ascension Health serves, chiropractic, joint injections, medical weight loss, hormone therapy and more from our Fernley clinic.",
   path: "/areas-we-serve/",
 });
 
@@ -88,7 +88,7 @@ export default function AreasWeServePage() {
               Ascension Health serves patients from {CITIES.length} Nevada
               cities at our Fernley clinic, plus auto accident injury care in
               Eugene, OR. Choose your city for chiropractic
-              care, physical therapy, injections, medical weight loss,
+              care, injections, medical weight loss,
               hormone therapy and more, with same-week appointments and
               most major insurance accepted.
             </p>

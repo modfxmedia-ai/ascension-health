@@ -118,7 +118,6 @@ export function getTreatmentPage(slug: string): TreatmentPage | undefined {
 const SERVICE_HUB_OVERRIDES: Record<string, string> = {
   "chiropractic-care": "/services/chiropractic-care/",
   "spinal-decompression": "/services/spinal-decompression/",
-  "physical-therapy": "/services/physical-therapy/",
   "joint-injections": "/services/joint-injections/",
   "trigger-point-injections": "/services/trigger-point-injections/",
   "medical-weight-loss": "/services/medical-weight-loss/",

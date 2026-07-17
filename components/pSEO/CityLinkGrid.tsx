@@ -9,7 +9,7 @@ import { PSEO_TARGET_CITIES } from "@/lib/pSEO-routing";
  * Renders a grid of links to every target Nevada city for one topic.
  *
  * Used on:
- *   - Top-level service pages  (e.g. /physical-therapy/)        topicKind="service"
+ *   - Top-level service pages  (e.g. /chiropractic-care/)        topicKind="service"
  *   - Top-level condition pages (e.g. /conditions-treated/back-pain/)   topicKind="condition"
  *   - Homepage  (omit topicSlug to link to city hubs instead)
  *

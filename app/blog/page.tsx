@@ -13,7 +13,7 @@ import {
 } from "@/lib/blog";
 
 const BLOG_DESCRIPTION =
-  "Insights from Ascension Health on chiropractic care, physical therapy, hormone health, weight loss, and pain-free living in Fernley, NV and Northern Nevada.";
+  "Insights from Ascension Health on chiropractic care, hormone health, weight loss, and pain-free living in Fernley, NV and Northern Nevada.";
 
 export const metadata: Metadata = {
   title: "Blog, Chiropractic, Wellness & Pain-Free Living",

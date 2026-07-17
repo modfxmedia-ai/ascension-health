@@ -29,7 +29,7 @@ const CITY = "Eugene, OR";
 export const metadata: Metadata = buildPageMetadata({
   title: "Auto Accident Chiropractor in Eugene, OR",
   description:
-    "Injured in a car accident in Eugene, OR? Ascension Health provides expert chiropractic care, physical therapy, and pain relief for auto accident injuries. Same-week appointments. Most insurance accepted.",
+    "Injured in a car accident in Eugene, OR? Ascension Health provides expert chiropractic care and pain relief for auto accident injuries. Same-week appointments. Most insurance accepted.",
   path: "/eugene-or/",
 });
 
@@ -39,12 +39,6 @@ const SERVICES: { name: string; href: string; benefit: string }[] = [
     href: "/services/chiropractic-care/",
     benefit:
       "Gentle spinal adjustments realign the joints jolted by a Eugene collision, easing whiplash and restoring mobility without medication.",
-  },
-  {
-    name: "Physical Therapy",
-    href: "/services/physical-therapy/",
-    benefit:
-      "Targeted rehab rebuilds the strength and range of motion lost after a car accident so soft-tissue injuries heal instead of lingering.",
   },
   {
     name: "Spinal Decompression",
@@ -98,7 +92,7 @@ const FAQS: { question: string; answer: string }[] = [
   {
     question: "Can a chiropractor treat whiplash in Eugene, OR?",
     answer:
-      "Yes. Chiropractic care is one of the most effective treatments for whiplash. At Ascension Health, we use a combination of spinal adjustments, physical therapy, and soft tissue techniques to relieve pain and restore mobility.",
+      "Yes. Chiropractic care is one of the most effective treatments for whiplash. At Ascension Health, we use a combination of spinal adjustments, targeted rehab, and soft tissue techniques to relieve pain and restore mobility.",
   },
 ];
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "What Can We Improve? in Fernley, NV",
     description:
-      "Share your feedback with Ascension Health, your honest input helps us deliver better chiropractic, physical therapy and wellness care.",
+      "Share your feedback with Ascension Health, your honest input helps us deliver better chiropractic and wellness care.",
     url: "https://ascensionhealthnv.com/what-can-we-improve/",
     type: "article",
     siteName: "Ascension Health",

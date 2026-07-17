@@ -24,14 +24,6 @@ export const SERVICES: Service[] = [
       "Quick in-office injections that calm tight muscle bands and ease chronic tension.",
   },
   {
-    slug: "physical-therapy",
-    href: "/services/physical-therapy/",
-    title: "Physical Therapy",
-    tagline: "Recover strength, mobility and confidence.",
-    summary:
-      "Personalized rehab and therapeutic exercise after injury, surgery or chronic pain.",
-  },
-  {
     slug: "chiropractic-care",
     href: "/services/chiropractic-care/",
     title: "Chiropractic Care",

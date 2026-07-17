@@ -65,7 +65,6 @@ const related = [
   { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },
   { label: "Bioidentical Hormones", href: "/services/bioidentical-hormone-replacement-therapy/" },
   { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
-  { label: "Physical Therapy", href: "/services/physical-therapy/" },
 ];
 
 export default function MedicalWeightLossPage() {

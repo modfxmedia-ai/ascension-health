@@ -33,8 +33,8 @@ export const SERVICE_CONTENT: Record<string, TopicContent> = {
     paragraphs: [
       "Chiropractic care is a hands-on, drug-free approach to spine and nervous-system health. By restoring proper motion to restricted joints, especially in the spine, your body can move better, recover faster, and stop sending the pain signals that come from irritated nerves. For {city} patients dealing with stiffness, headaches, or chronic discomfort, chiropractic is often the first step that actually moves the needle.",
       "At Ascension Health, every adjustment starts with a real evaluation. We don't run an assembly-line clinic, we look at your posture, range of motion, orthopedic and neurological responses, and (when needed) imaging before we touch your spine. That means the adjustment you receive is targeted to the segment that actually needs it, not a one-size-fits-all routine.",
-      "Most {city} patients combine chiropractic with one or two supporting therapies, soft-tissue work, intersegmental traction, or physical-therapy exercise, so the joint stays mobile between visits. We'll build the smallest care plan that gets the result, then graduate you out of regular care. Long-term wellness visits are an option, never a requirement.",
-      "If you've avoided chiropractic because of nightmare stories, endless visits, big up-front contracts, popping you don't understand, we hear that all the time. Our {region} patients tell us our approach feels closer to physical medicine than to traditional chiropractic, and the only way to know if it's right for you is a no-pressure consultation.",
+      "Most {city} patients combine chiropractic with one or two supporting therapies, soft-tissue work, intersegmental traction, or targeted rehab exercise, so the joint stays mobile between visits. We'll build the smallest care plan that gets the result, then graduate you out of regular care. Long-term wellness visits are an option, never a requirement.",
+      "If you've avoided chiropractic because of nightmare stories, endless visits, big up-front contracts, popping you don't understand, we hear that all the time. Our {region} patients tell us our approach feels closer to integrative musculoskeletal medicine than to traditional chiropractic, and the only way to know if it's right for you is a no-pressure consultation.",
     ],
     relatedConditionSlugs: ["back-pain", "neck-pain", "sciatica", "headaches", "migraines", "whiplash", "scoliosis", "shoulder-pain"],
   },
@@ -47,19 +47,10 @@ export const SERVICE_CONTENT: Record<string, TopicContent> = {
     ],
     relatedConditionSlugs: ["back-pain", "sciatica", "herniated-disc", "neck-pain"],
   },
-  "physical-therapy": {
-    paragraphs: [
-      "Physical therapy at Ascension Health is one-on-one with a licensed therapist, not a 45-minute group session with a tech checking on three people at once. That means your exercises are the right level of hard, your form gets corrected in real time, and the plan changes as your body changes.",
-      "For {city} patients recovering from surgery, an auto accident, or chronic mechanical pain, PT is often the piece that locks in everything else. The chiropractic adjustment restores motion; the PT work teaches your body how to keep it. Without that second piece, the gains tend to slip back.",
-      "We use functional-movement screens, manual therapy, dry-needling-style trigger-point work, and a graded exercise progression you can keep doing at home or in your gym. Every patient leaves with a written program, no guessing what to do between visits.",
-      "Most plans run 6–12 visits over 4–8 weeks. We'll document everything for your primary care doctor or surgeon when they need it, and we'll tell you the moment continued visits stop adding measurable value.",
-    ],
-    relatedConditionSlugs: ["back-pain", "neck-pain", "shoulder-pain", "knee-pain", "hip-pain", "sports-injuries", "work-injuries", "auto-accident-injuries"],
-  },
   "joint-injections": {
     paragraphs: [
       "Joint injections deliver targeted anti-inflammatory medication directly into the painful joint capsule, knee, shoulder, hip, sacroiliac, so it can calm the inflammation without flooding your whole body with steroids or NSAIDs. For the right patient, a single well-placed injection can buy you weeks or months of relief.",
-      "In our {city} patient population we use joint injections as a tool inside a larger plan, not as a standalone fix. The injection settles the fire; chiropractic, PT, and lifestyle work address why the fire started. That combination is what tends to keep the pain from coming back six weeks later.",
+      "In our {city} patient population we use joint injections as a tool inside a larger plan, not as a standalone fix. The injection settles the fire; chiropractic, targeted rehab, and lifestyle work address why the fire started. That combination is what tends to keep the pain from coming back six weeks later.",
       "Our providers use image guidance when indicated to make sure the medication lands precisely where it should, sloppy injections are why patients sometimes feel let down by past treatments. We use small-gauge needles, numbing protocols, and clear pre/post instructions.",
       "If you've been told you need joint replacement but want to exhaust conservative options first, this is a reasonable next step to consider. We'll walk you through the realistic expectations for your specific joint.",
     ],
@@ -122,7 +113,7 @@ export const SERVICE_CONTENT: Record<string, TopicContent> = {
   "pain-management": {
     paragraphs: [
       "Pain management at Ascension Health means drug-free, root-cause care, not a prescription pad. For {city} patients dealing with chronic pain, the question we ask first is \"why is this happening?\" rather than \"what can we throw at it?\" The answer often involves mechanics, soft tissue, posture, hormones, sleep, or a combination, and the plan should match.",
-      "Our approach combines chiropractic, physical therapy, soft-tissue work, image-guided injections when needed, and lifestyle coaching. We coordinate inside one clinic so you're not driving from a chiro to a PT to an injection clinic and trying to be the project manager yourself.",
+      "Our approach combines chiropractic, soft-tissue work, image-guided injections when needed, and lifestyle coaching. We coordinate inside one clinic so you're not driving from a chiro to an injection clinic to a wellness office and trying to be the project manager yourself.",
       "We measure progress and we graduate patients out of regular care when they're ready. If you've been told the only option is more medication or surgery, conservative care deserves a fair trial first, and Ascension is the kind of {region} clinic that does conservative care well.",
       "No long contracts, no \"come three times a week for six months\" sales pitch. Just an honest plan you can stick to.",
     ],
@@ -159,7 +150,7 @@ export const SERVICE_CONTENT: Record<string, TopicContent> = {
     paragraphs: [
       "Auto-accident injury care is a specialty in itself, the injuries are different (whiplash, concussion symptoms, soft-tissue trauma), the timeline matters (some symptoms surface days later), and the paperwork is its own world. We do this work daily for {city} patients and we do it right.",
       "We document your injuries thoroughly, communicate with your insurance company or attorney as needed, and bill MedPay or your auto insurance directly so you don't pay out of pocket while the claim is open. You focus on healing; we handle the back-office grind.",
-      "Treatment combines chiropractic, physical therapy, soft-tissue work, and (when needed) targeted injections to address whiplash, headaches, low-back pain, shoulder strain, and the other typical post-collision injuries. Plans run weeks-to-months depending on injury severity, with clear progress markers along the way.",
+      "Treatment combines chiropractic, targeted rehab exercise, soft-tissue work, and (when needed) targeted injections to address whiplash, headaches, low-back pain, shoulder strain, and the other typical post-collision injuries. Plans run weeks-to-months depending on injury severity, with clear progress markers along the way.",
       "If you were in a wreck in {region}, the worst thing you can do is wait. The sooner we evaluate, the better both your recovery and your documentation. Same-week appointments for accident patients are standard.",
     ],
     relatedConditionSlugs: ["whiplash", "neck-pain", "back-pain", "headaches", "auto-accident-injuries"],
@@ -193,10 +184,10 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
     paragraphs: [
       "Back pain is the single most common reason adults in {city} miss work, lose sleep, and end up on medications they don't want to be on. Most back pain is mechanical, a joint, disc, or soft-tissue issue, and most mechanical back pain responds well to conservative care if it's diagnosed correctly and treated consistently.",
       "At Ascension Health, your first visit is a real evaluation: where exactly does it hurt, what makes it better or worse, what's the range of motion, what do the orthopedic tests show, and (if needed) what do imaging studies tell us? From there we build a written plan, not a generic protocol.",
-      "Treatment may combine chiropractic care, physical therapy, spinal decompression for disc issues, soft-tissue work, and (rarely) targeted injections. We measure progress at clear checkpoints. If you're not better, we change the plan or refer out, we don't just keep going.",
+      "Treatment may combine chiropractic care, spinal decompression for disc issues, soft-tissue work, and (rarely) targeted injections. We measure progress at clear checkpoints. If you're not better, we change the plan or refer out, we don't just keep going.",
       "The {region} patients who get the best results are the ones who come in before the back pain has been there for years. But chronic cases get better too, they just take longer.",
     ],
-    relatedServiceSlugs: ["chiropractic-care", "spinal-decompression", "physical-therapy", "myofascial-release", "trigger-point-injections", "intersegmental-traction"],
+    relatedServiceSlugs: ["chiropractic-care", "spinal-decompression", "myofascial-release", "trigger-point-injections", "intersegmental-traction"],
   },
   "neck-pain": {
     paragraphs: [
@@ -205,7 +196,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Headaches and neck pain go together. If you've got both, treating the neck often resolves the headache pattern, something a lot of patients don't realize is possible.",
       "We're conservative-first and surgery-avoidant for the right cases. We'll also tell you clearly when an MRI or surgical consult is the right next step.",
     ],
-    relatedServiceSlugs: ["chiropractic-care", "physical-therapy", "myofascial-release", "trigger-point-injections", "intersegmental-traction"],
+    relatedServiceSlugs: ["chiropractic-care", "myofascial-release", "trigger-point-injections", "intersegmental-traction"],
   },
   "shoulder-pain": {
     paragraphs: [
@@ -214,7 +205,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Sleep is often the canary in the coal mine for shoulder problems. If you're avoiding sleeping on it, the issue is past mild and deserves attention.",
       "If you've been told you need surgery, that may end up being true, but conservative care first is almost always worth the trial. Most {region} shoulders don't actually need a scalpel.",
     ],
-    relatedServiceSlugs: ["physical-therapy", "chiropractic-care", "joint-injections", "myofascial-release"],
+    relatedServiceSlugs: ["chiropractic-care", "joint-injections", "myofascial-release"],
   },
   "knee-pain": {
     paragraphs: [
@@ -223,7 +214,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "For arthritic knees, the right conservative plan can delay or eliminate the need for replacement. For acute injuries, early proper care prevents the cycle of compensation that turns a six-week recovery into a six-month one.",
       "{region} patients should know: not every knee problem needs surgery, but every knee problem deserves a real plan.",
     ],
-    relatedServiceSlugs: ["physical-therapy", "joint-injections", "chiropractic-care"],
+    relatedServiceSlugs: ["joint-injections", "chiropractic-care"],
   },
   "hip-pain": {
     paragraphs: [
@@ -232,7 +223,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Sleep position, sitting habits, and how you walk all matter for the hip. We coach those just as much as we treat the joint itself.",
       "If a surgeon has mentioned hip replacement, that conversation may be appropriate, but the right conservative plan first is worth the trial.",
     ],
-    relatedServiceSlugs: ["physical-therapy", "chiropractic-care", "joint-injections"],
+    relatedServiceSlugs: ["chiropractic-care", "joint-injections"],
   },
   "sciatica": {
     paragraphs: [
@@ -241,16 +232,16 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Most sciatica improves with conservative care. The cases that don't, true progressive weakness, bowel/bladder symptoms, need a surgical consult and we'll tell you so.",
       "If you've been told to just take meds and wait it out, that's not your only option. Active treatment usually shortens the timeline meaningfully.",
     ],
-    relatedServiceSlugs: ["spinal-decompression", "chiropractic-care", "physical-therapy", "myofascial-release"],
+    relatedServiceSlugs: ["spinal-decompression", "chiropractic-care", "myofascial-release"],
   },
   "herniated-disc": {
     paragraphs: [
       "A herniated disc happens when the soft inner material of a spinal disc pushes through the tougher outer ring and irritates a nearby nerve. For {city} patients, this often shows up as back pain plus a radiating symptom into the arm or leg, depending on whether the herniation is in the neck or low back.",
-      "Surgery is one option but rarely the first or best one. Non-surgical spinal decompression, chiropractic care, targeted physical therapy, and (occasionally) interventional injections can resolve symptoms in most cases over a 6–12 week course.",
+      "Surgery is one option but rarely the first or best one. Non-surgical spinal decompression, chiropractic care, targeted rehabilitation, and (occasionally) interventional injections can resolve symptoms in most cases over a 6–12 week course.",
       "We use MRI findings when we have them, but we treat the patient, not the picture. Lots of healthy people have herniated discs on imaging and feel fine; symptoms and function are what guide the plan.",
       "The earlier you start a real plan, the better the odds. Stalling on a herniated disc rarely improves it.",
     ],
-    relatedServiceSlugs: ["spinal-decompression", "chiropractic-care", "physical-therapy"],
+    relatedServiceSlugs: ["spinal-decompression", "chiropractic-care"],
   },
   "headaches": {
     paragraphs: [
@@ -259,7 +250,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Most patients who've lived with chronic headaches for years see meaningful change inside 4–6 weeks of a real plan. That's not a guarantee, some headaches are migraine, hormonal, or neurological in origin and need a different team, but mechanical headache patterns are extremely treatable.",
       "If you're taking OTC pain relievers more than twice a week, that's a sign the headaches deserve a real workup rather than another bottle of Advil.",
     ],
-    relatedServiceSlugs: ["chiropractic-care", "trigger-point-injections", "myofascial-release", "physical-therapy"],
+    relatedServiceSlugs: ["chiropractic-care", "trigger-point-injections", "myofascial-release"],
   },
   "migraines": {
     paragraphs: [
@@ -273,11 +264,11 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
   "whiplash": {
     paragraphs: [
       "Whiplash is the soft-tissue and ligamentous injury that happens when the head and neck snap back and forth, most commonly in a rear-end collision. For {city} drivers, even a low-speed crash can cause meaningful whiplash, and symptoms often surface days later as inflammation peaks.",
-      "Early evaluation matters. We document the injury, image when indicated, and start treatment immediately to keep the soft tissue from stiffening into a long-term problem. Care combines chiropractic, physical therapy, soft-tissue work, modalities, and trigger-point injections when warranted.",
+      "Early evaluation matters. We document the injury, image when indicated, and start treatment immediately to keep the soft tissue from stiffening into a long-term problem. Care combines chiropractic, targeted rehab, soft-tissue work, modalities, and trigger-point injections when warranted.",
       "We handle the auto-insurance and MedPay billing side so you focus on healing, not on paperwork. If you have an attorney, we coordinate documentation directly.",
       "Most whiplash cases resolve well over 6–12 weeks of consistent care. The worst outcomes are almost always the people who waited too long to start.",
     ],
-    relatedServiceSlugs: ["auto-accident-injury-care", "chiropractic-care", "physical-therapy", "trigger-point-injections", "myofascial-release"],
+    relatedServiceSlugs: ["auto-accident-injury-care", "chiropractic-care", "trigger-point-injections", "myofascial-release"],
   },
   "scoliosis": {
     paragraphs: [
@@ -286,7 +277,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Adolescents with progressive curves need orthopedic monitoring; we coordinate with the right specialists when bracing or surgical consideration enters the picture.",
       "Adults with longstanding scoliosis are often surprised at how much pain and stiffness can improve with the right plan, even when the curve itself doesn't change.",
     ],
-    relatedServiceSlugs: ["chiropractic-care", "physical-therapy", "myofascial-release"],
+    relatedServiceSlugs: ["chiropractic-care", "myofascial-release"],
   },
   "carpal-tunnel": {
     paragraphs: [
@@ -295,7 +286,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Our plan starts with a careful nerve-path exam, then combines chiropractic and soft-tissue work along the full neural path, specific exercises, ergonomic coaching, and night-splinting where it helps. Many patients can avoid surgery entirely with a thorough conservative trial.",
       "If symptoms are progressive, true muscle wasting in the thumb pad, that's a surgical-consult conversation and we'll tell you so.",
     ],
-    relatedServiceSlugs: ["chiropractic-care", "physical-therapy", "myofascial-release", "work-injury-care"],
+    relatedServiceSlugs: ["chiropractic-care", "myofascial-release", "work-injury-care"],
   },
   "joint-pain": {
     paragraphs: [
@@ -304,7 +295,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "We're not a quick-fix clinic for joints, most cases take 4–12 weeks of consistent care to feel meaningfully different. But many patients who've been told \"it's just arthritis, live with it\" find they have a lot more room to improve than they were promised.",
       "{region} patients with multiple painful joints especially deserve a workup beyond the joints themselves, that pattern often points to a systemic driver.",
     ],
-    relatedServiceSlugs: ["joint-injections", "chiropractic-care", "physical-therapy", "nutritional-iv-therapy", "bioidentical-hormone-replacement-therapy"],
+    relatedServiceSlugs: ["joint-injections", "chiropractic-care", "nutritional-iv-therapy", "bioidentical-hormone-replacement-therapy"],
   },
   "arthritis": {
     paragraphs: [
@@ -313,7 +304,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Hormonal health matters more than most people realize for arthritis, especially in post-menopausal women, where estrogen loss accelerates joint cartilage breakdown. BHRT, where appropriate, can be part of a comprehensive plan.",
       "If joint replacement is on the horizon, conservative care doesn't always prevent it but it can buy meaningful time and improve outcomes if surgery does happen.",
     ],
-    relatedServiceSlugs: ["joint-injections", "physical-therapy", "chiropractic-care", "bioidentical-hormone-replacement-therapy", "nutritional-iv-therapy"],
+    relatedServiceSlugs: ["joint-injections", "chiropractic-care", "bioidentical-hormone-replacement-therapy", "nutritional-iv-therapy"],
   },
   "neuropathy": {
     paragraphs: [
@@ -331,7 +322,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "We treat recreational runners and cyclists, masters athletes, team-sport players, and the occasional pro. The principles are the same; the plan is individualized.",
       "{region}'s climate keeps people active year-round, which is great, except for the injuries that come with it. Get on top of them early.",
     ],
-    relatedServiceSlugs: ["sports-injury-care", "physical-therapy", "chiropractic-care", "myofascial-release"],
+    relatedServiceSlugs: ["sports-injury-care", "chiropractic-care", "myofascial-release"],
   },
   "work-injuries": {
     paragraphs: [
@@ -340,7 +331,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Treatment is conservative-first: chiropractic, PT, soft-tissue work, modalities, and a return-to-work plan that fits your actual job. We coordinate light-duty restrictions with your employer when appropriate.",
       "If you've been waiting for an appointment elsewhere, call us, accepting injured workers is part of what this clinic does.",
     ],
-    relatedServiceSlugs: ["work-injury-care", "chiropractic-care", "physical-therapy"],
+    relatedServiceSlugs: ["work-injury-care", "chiropractic-care"],
   },
   "auto-accident-injuries": {
     paragraphs: [
@@ -349,7 +340,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Treatment combines chiropractic, PT, soft-tissue work, modalities, and targeted injections when needed. Most cases resolve well over 6–12 weeks of consistent care.",
       "If you've been in a crash anywhere in {region}, the worst thing you can do is wait. The sooner we start, the better both the recovery and the documentation.",
     ],
-    relatedServiceSlugs: ["auto-accident-injury-care", "chiropractic-care", "physical-therapy", "myofascial-release"],
+    relatedServiceSlugs: ["auto-accident-injury-care", "chiropractic-care", "myofascial-release"],
   },
   "plantar-fasciitis": {
     paragraphs: [
@@ -358,7 +349,7 @@ export const CONDITION_CONTENT: Record<string, TopicContent> = {
       "Treating only the heel where it hurts is usually why plantar fasciitis lingers, the calf, the ankle mobility, and the way the foot loads while you walk all need attention.",
       "Most cases resolve in 4–10 weeks with a real plan. The cases that don't usually had care that addressed only one piece of the picture.",
     ],
-    relatedServiceSlugs: ["physical-therapy", "myofascial-release", "trigger-point-injections", "chiropractic-care"],
+    relatedServiceSlugs: ["myofascial-release", "trigger-point-injections", "chiropractic-care"],
   },
   "tmj-pain": {
     paragraphs: [
@@ -505,7 +496,7 @@ export function buildConditionCityFAQs(condition: PSEOCondition, city: PSEOCity)
   return [
     {
       question: `How is ${condLow} treated in ${c}, NV?`,
-      answer: `At Ascension Health, ${condLow} care for ${c} patients typically combines a thorough evaluation followed by a written plan, most often chiropractic, physical therapy, soft-tissue work, and (when warranted) targeted injections. We address the cause, not just the symptom, and we measure progress at clear checkpoints.`,
+      answer: `At Ascension Health, ${condLow} care for ${c} patients typically combines a thorough evaluation followed by a written plan, most often chiropractic, soft-tissue work, and (when warranted) targeted injections. We address the cause, not just the symptom, and we measure progress at clear checkpoints.`,
     },
     {
       question: `How long does it take to recover from ${condLow}?`,
@@ -544,7 +535,7 @@ export function buildNearCityFAQs(service: PSEOService, city: PSEOCity): FAQ[] {
     },
     {
       question: `Why come to Fernley for ${sLow} instead of staying in ${c}?`,
-      answer: `Many ${c} patients tell us the difference is the care plan, a real evaluation, a written program, and a clinic that combines chiropractic, physical therapy, regenerative and medical services under one roof. Patients tell us the trip is worth it for care that actually moves the needle.`,
+      answer: `Many ${c} patients tell us the difference is the care plan, a real evaluation, a written program, and a clinic that combines chiropractic, regenerative and medical services under one roof. Patients tell us the trip is worth it for care that actually moves the needle.`,
     },
     {
       question: `Can I get same-day ${sLow} near ${c}?`,

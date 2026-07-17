@@ -3,7 +3,6 @@ import type { NextConfig } from "next";
 const SERVICE_REDIRECTS = [
   "joint-injections",
   "trigger-point-injections",
-  "physical-therapy",
   "nutritional-ivs",
   "bioidentical-hormone-replacement-therapy",
   "gainswave",

@@ -64,7 +64,7 @@ export default function OpengraphImage() {
               maxWidth: 920,
             }}
           >
-            Chiropractic care, regenerative medicine and physical therapy, 
+            Chiropractic care, regenerative medicine and wellness services, 
             accepting new appointments.
           </div>
         </div>

@@ -14,7 +14,7 @@ import heroImage from "@/images/clone/football.jpg";
 export const metadata: Metadata = {
   title: "Sports Injuries in Fernley, NV",
   description:
-    "Sports injury care in Fernley, NV. Ascension Health helps athletes recover from recent and lingering injuries with chiropractic care, physical therapy and injections.",
+    "Sports injury care in Fernley, NV. Ascension Health helps athletes recover from recent and lingering injuries with chiropractic care and injections.",
   alternates: { canonical: "/sports-injuries/" },
   openGraph: {
     title: "Sports Injuries in Fernley, NV",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 const benefits = [
   { icon: <Activity className="h-5 w-5" />, title: "Back in the Game", body: "Recovery plans aim to return you to your sport, not just out of pain." },
   { icon: <HeartPulse className="h-5 w-5" />, title: "Acute & Lingering", body: "From fresh strains to old injuries that never fully healed, we treat both." },
-  { icon: <ShieldCheck className="h-5 w-5" />, title: "Drug-Free First", body: "Chiropractic, physical therapy and targeted injections before medication." },
+  { icon: <ShieldCheck className="h-5 w-5" />, title: "Drug-Free First", body: "Chiropractic and targeted injections before medication." },
   { icon: <Sparkles className="h-5 w-5" />, title: "Performance Boost", body: "Better alignment and recovery often mean stronger performance afterward." },
 ];
 
@@ -42,7 +42,7 @@ const related = [
   { label: "Joint Pain", href: "/conditions-treated/joint-pain/" },
   { label: "Knee Pain", href: "/conditions-treated/knee-pain/" },
   { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
-  { label: "Physical Therapy", href: "/services/physical-therapy/" },
+  { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
 ];
 
 export default function SportsInjuriesPage() {
@@ -51,7 +51,7 @@ export default function SportsInjuriesPage() {
       <ServiceSchema
         kind="condition"
         name="Sports Injuries"
-        description="Recovery from recent and lingering sports injuries with chiropractic care, physical therapy and injections."
+        description="Recovery from recent and lingering sports injuries with chiropractic care and injections."
         pagePath="/sports-injuries/"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -85,7 +85,7 @@ export default function SportsInjuriesPage() {
 
             <Reveal delay={0.12}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-slate-700">
-                A typical sports recovery plan combines chiropractic adjustments to restore proper motion, physical therapy to rebuild strength and stability, and targeted injections when inflammation needs to be calmed quickly. The goal is to get you back to your sport in better shape than you were before the injury.
+                A typical sports recovery plan combines chiropractic adjustments to restore proper motion, targeted rehab to rebuild strength and stability, and targeted injections when inflammation needs to be calmed quickly. The goal is to get you back to your sport in better shape than you were before the injury.
               </p>
             </Reveal>
 

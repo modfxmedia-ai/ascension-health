@@ -4,7 +4,7 @@ import { ConditionStub } from "@/components/ConditionStub";
 export const metadata: Metadata = {
   title: "Neck Pain in Fernley, NV",
   description:
-    "Neck pain treatment in Fernley, NV. Ascension Health offers non-surgical care for chronic and acute neck pain, chiropractic, decompression and physical therapy.",
+    "Neck pain treatment in Fernley, NV. Ascension Health offers non-surgical care for chronic and acute neck pain, chiropractic, decompression and soft-tissue therapy.",
   alternates: { canonical: "/conditions-treated/neck-pain/" },
 };
 

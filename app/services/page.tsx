@@ -9,7 +9,6 @@ import {
   Move3d,
   Waves,
   Scale,
-  Dumbbell,
   ArrowRight,
 } from "lucide-react";
 import { PageHero, BottomCTA } from "@/components/InteriorPage";
@@ -22,12 +21,12 @@ import { SITE } from "@/lib/navigation";
 export const metadata: Metadata = {
   title: "Services in Fernley, NV",
   description:
-    "Ascension Health in Fernley, NV offers chiropractic care, spinal decompression, physical therapy, injections, IV therapy, hormones and medical weight loss.",
+    "Ascension Health in Fernley, NV offers chiropractic care, spinal decompression, injections, IV therapy, hormones and medical weight loss.",
   alternates: { canonical: "/services/" },
   openGraph: {
     title: "Services in Fernley, NV",
     description:
-      "Chiropractic care, spinal decompression, physical therapy, injections, IV therapy, hormones, GAINSWave and medical weight loss in Fernley, NV.",
+      "Chiropractic care, spinal decompression, injections, IV therapy, hormones, GAINSWave and medical weight loss in Fernley, NV.",
     url: "https://ascensionhealthnv.com/services/",
     type: "article",
     siteName: "Ascension Health",
@@ -35,14 +34,13 @@ export const metadata: Metadata = {
   twitter: {
     title: "Services in Fernley, NV",
     description:
-      "Chiropractic care, spinal decompression, physical therapy, injections, IV therapy, hormones, GAINSWave and medical weight loss in Fernley, NV.",
+      "Chiropractic care, spinal decompression, injections, IV therapy, hormones, GAINSWave and medical weight loss in Fernley, NV.",
   },
 };
 
 const ICONS: Record<string, React.ReactNode> = {
   "joint-injections": <Syringe className="h-6 w-6" />,
   "trigger-point-injections": <Activity className="h-6 w-6" />,
-  "physical-therapy": <Dumbbell className="h-6 w-6" />,
   "chiropractic-care": <Stethoscope className="h-6 w-6" />,
   "nutritional-ivs": <Droplet className="h-6 w-6" />,
   "bioidentical-hormone-replacement-therapy": <HeartPulse className="h-6 w-6" />,

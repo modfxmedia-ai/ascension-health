@@ -91,7 +91,7 @@ export default async function TreatmentPage({
     : [
         `${page.metaDescription} If you've landed on this page, you're probably dealing with the symptom yourself or watching someone close to you struggle with it. In ${cityLabel ?? "Nevada"} we see this pattern often, and the good news is most cases are very treatable when the plan addresses the right driver.`,
         `Our approach at Ascension Health is conservative-first and root-cause-focused. We start with a real evaluation, exam, history, the mechanical and metabolic context, then build a written plan with clear progress markers. If you've been told "you'll just have to live with it" or "take this medication and we'll see," that's almost always a sign the workup wasn't thorough enough.`,
-        `Treatment for the symptoms covered on this page usually combines two or three modalities, chiropractic, physical therapy, soft-tissue work, targeted injections, nutritional or hormonal support depending on the driver. The right combination is what tends to produce the results that hold, rather than a single intervention that fades.`,
+        `Treatment for the symptoms covered on this page usually combines two or three modalities, chiropractic, soft-tissue work, targeted injections, nutritional or hormonal support depending on the driver. The right combination is what tends to produce the results that hold, rather than a single intervention that fades.`,
         `Most ${cityLabel ?? "Nevada"} patients see meaningful change within the first 4–6 weeks. Some need longer; a few need a different specialist and we'll tell you so. The first step is a no-pressure consultation where we can lay out what we'd recommend.`,
       ];
 

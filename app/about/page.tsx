@@ -208,16 +208,16 @@ export default function AboutPage() {
           <SectionEyebrow
             kicker="What we offer"
             title="A full range of services under one roof"
-            description="From chiropractic adjustments and physical therapy to medical weight loss and nutritional IVs, we bring it all together for you."
+            description="From chiropractic adjustments and spinal decompression to medical weight loss and nutritional IVs, we bring it all together for you."
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { label: "Chiropractic Care", href: "/services/chiropractic-care/" },
-              { label: "Physical Therapy", href: "/services/physical-therapy/" },
               { label: "Spinal Decompression", href: "/services/spinal-decompression/" },
               { label: "Joint Injections", href: "/services/joint-injections/" },
               { label: "Trigger Point Injections", href: "/services/trigger-point-injections/" },
               { label: "Nutritional IVs", href: "/services/nutritional-ivs/" },
+              { label: "Medical Weight Loss", href: "/services/medical-weight-loss/" },
             ].map((s, i) => (
               <Reveal key={s.href} delay={i * 0.04}>
                 <Link

@@ -56,7 +56,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm leading-relaxed text-brand-100/70 max-w-sm">
-              Personalized chiropractic, physical therapy and wellness care
+              Personalized chiropractic and wellness care
               focused on relieving pain and helping you live an active,
               pain-free life.
             </p>

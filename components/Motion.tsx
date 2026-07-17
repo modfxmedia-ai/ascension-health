@@ -16,7 +16,6 @@ import {
   ArrowRight,
   Bone,
   Droplet,
-  Dumbbell,
   HeartPulse,
   Scale,
   Sparkles,
@@ -416,7 +415,6 @@ type IconType = React.ComponentType<{ className?: string }>;
 const HERO_SERVICE_ICONS: { Icon: IconType; label: string }[] = [
   { Icon: Bone, label: "Chiropractic" },
   { Icon: Activity, label: "Spinal Decompression" },
-  { Icon: Dumbbell, label: "Physical Therapy" },
   { Icon: Syringe, label: "Joint Injections" },
   { Icon: Droplet, label: "Nutritional IVs" },
   { Icon: HeartPulse, label: "Hormone Therapy" },
@@ -675,7 +673,7 @@ export function MissionCollage() {
           {/* TODO: replace stock Unsplash URL with real clinic photography. */}
           <Image
             src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80"
-            alt="Physical therapy and recovery"
+            alt="Rehabilitation and recovery"
             fill
             sizes="180px"
             className="object-cover"

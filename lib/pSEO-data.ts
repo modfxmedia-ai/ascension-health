@@ -16,12 +16,11 @@
  *    - "gainswave las vegas"      , 44 impr, 0 clicks, pos 30.5
  *    - "ascension"                , 26 impr, brand
  *    - "how to do myofascial release correctly", 15 impr, pos 6.6
- *    - "physical therapy fernley nv", 12 impr, pos 9.4
  *    - "invisalign in fernley"    , 11 impr, pos 51.9  (off-offer, ignore)
  *    - "joint injections las vegas", 9 impr, pos 69.3   (rank-too-deep gap)
  *
  * 2. KEYWORD PATTERNS OBSERVED
- *    - {service} + {city/nv}        e.g. "physical therapy fernley nv",
+ *    - {service} + {city/nv}        e.g. "chiropractor fernley nv",
  *                                        "gainswave las vegas",
  *                                        "joint injections las vegas"
  *    - {condition} + city           e.g. "ascension headache", "fernley hospital"
@@ -61,7 +60,7 @@
  *   5. comparison       /{a}-vs-{b}-{city}-nv/
  *
  * Slugs are namespaced so they do NOT collide with the existing app routes
- * (e.g. /physical-therapy/, /joint-pain/, /services/chiropractic-care/).
+ * (e.g. /chiropractic-care/, /joint-pain/, /services/chiropractic-care/).
  * ──────────────────────────────────────────────────────────────────────────
  */
 
@@ -149,7 +148,6 @@ export type PSEOService = {
 export const PSEO_SERVICES: PSEOService[] = [
   { slug: "chiropractic-care", name: "Chiropractic Care", benefit: "natural spine and nervous-system care without medication" },
   { slug: "spinal-decompression", name: "Spinal Decompression", benefit: "non-surgical relief for bulging and herniated discs" },
-  { slug: "physical-therapy", name: "Physical Therapy", benefit: "1-on-1 rehab that restores strength and mobility" },
   { slug: "joint-injections", name: "Joint Injections", benefit: "image-guided injections that calm inflamed joints" },
   { slug: "trigger-point-injections", name: "Trigger Point Injections", benefit: "in-office injections that release painful muscle knots" },
   { slug: "medical-weight-loss", name: "Medical Weight Loss", benefit: "physician-guided weight loss with real accountability" },
@@ -264,13 +262,6 @@ export type PSEOComparison = {
 
 /** Comparison/decision queries, high-intent bottom-of-funnel pages. */
 export const PSEO_COMPARISONS: PSEOComparison[] = [
-  {
-    slug: "chiropractor-vs-physical-therapist",
-    a: "Chiropractor",
-    b: "Physical Therapist",
-    title: "Chiropractor vs. Physical Therapist",
-    angle: "how to choose the right provider for your pain",
-  },
   {
     slug: "spinal-decompression-vs-back-surgery",
     a: "Spinal Decompression",

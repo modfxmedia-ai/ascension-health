@@ -36,7 +36,6 @@ const SERVICE_ENTRIES: Entry[] = [
   "/services/",
   "/services/chiropractic-care/",
   "/services/spinal-decompression/",
-  "/services/physical-therapy/",
   "/services/joint-injections/",
   "/services/trigger-point-injections/",
   "/services/nutritional-ivs/",
