@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import coverSciaticaPiriformis from "@/images/blogs-images/sciatica-or-piriformis-get-the-right-diagnosis.png";
 import coverSpinalDecompression from "@/images/blogs-images/spinal-decompression-therapy-in-fernley-for-back-pain.jpg";
 import coverShoulderPain from "@/images/blogs-images/spine-related-causes-of-shoulder-pain-in-fernley.jpg";
 import coverSciatica from "@/images/blogs-images/is-your-sciatica-care-treating-the-real-problem.jpg";
@@ -88,6 +89,234 @@ export const DEFAULT_AUTHOR: BlogAuthor = {
  * flagged with `featured: true`.
  */
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "sciatica-vs-piriformis-syndrome-fernley",
+    title: "Sciatica Or Piriformis? Get the Right Diagnosis",
+    excerpt:
+      "Learn key signs that separate sciatica from piriformis syndrome and when to seek sciatica treatment in Fernley for lasting relief.",
+    category: "Sciatica",
+    tags: [
+      "sciatica",
+      "piriformis syndrome",
+      "leg pain",
+      "sciatica treatment",
+      "Fernley NV",
+    ],
+    publishedAt: "2026-08-14",
+    readingMinutes: 8,
+    cover: {
+      src: coverSciaticaPiriformis,
+      alt: "Chiropractor checking a patient's hip and lower back to diagnose sciatica versus piriformis syndrome in Fernley, NV",
+    },
+    author: DEFAULT_AUTHOR,
+    lede: "Sciatica and piriformis syndrome can feel almost the same, but they affect the sciatic nerve in different ways and often need different treatment plans.",
+    related: [
+      "sciatica-treatment-fernley-root-cause-signs",
+      "chronic-pain-when-to-see-fernley-chiropractor",
+      "fernley-chiropractic-adjustment-benefits-and-recovery",
+    ],
+    content: [
+      {
+        type: "heading",
+        text: "Stop Guessing Your Leg Pain: Find the Real Cause",
+      },
+      {
+        type: "paragraph",
+        text: "Leg pain that will not quit can wear you down fast. Walking around Fernley events, doing yard work, or trying to enjoy time at the lake suddenly feels harder when every step sends a streak of pain down your leg. Many people are told it is just age or are given a quick label like sciatica without a real explanation.",
+      },
+      {
+        type: "paragraph",
+        text: "Sciatica and piriformis syndrome can feel almost the same, but they are not the same problem. They affect the sciatic nerve in different ways and often need different treatment plans. When you understand the difference, it is easier to get the right help and protect your back, hips, and legs over time.",
+      },
+      {
+        type: "paragraph",
+        text: "By the end of this article, you will know the key signs of each condition, common triggers, and how a detailed exam can uncover what is really going on. Leg pain is not something you just have to live with. With the right care, many people get back to work, family time, and the Fernley activities they enjoy with more confidence and less pain.",
+      },
+
+      {
+        type: "heading",
+        text: "Sciatica 101: What It Is and How It Feels",
+      },
+      {
+        type: "paragraph",
+        text: "Sciatica is not a diagnosis by itself. It is a word that means the sciatic nerve is irritated or pinched. This large nerve starts in the lower back, runs through the buttock, and travels down the back of the leg. When something presses on it at the spine, it can send pain down the whole path.",
+      },
+      { type: "paragraph", text: "Common symptoms of sciatica include:" },
+      {
+        type: "list",
+        items: [
+          "Sharp, burning, or electric pain down the back of one leg",
+          "Numbness or tingling in the leg or foot",
+          "Weakness when you try to lift your foot or stand on your toes",
+          "Pain that gets worse when you sit, bend forward, or cough",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "In many people, sciatica comes from issues in the lower back, such as a disc bulge or herniation, spinal wear and tear, narrowing of the spinal canal, pregnancy changes, or an old injury that never healed well.",
+      },
+      {
+        type: "paragraph",
+        text: "Everyday tasks can stir it up. Summer and fall often bring more lifting, yard projects, long drives, and back-to-school routines. All that bending, twisting, and sitting can stress the lower back. If a disc pushes on the nerve or a joint is not moving well, the sciatic nerve may become angry and start to send strong pain signals.",
+      },
+      {
+        type: "paragraph",
+        text: "When someone comes in with these symptoms, sciatica treatment in Fernley usually begins with a careful exam. That may include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Health history and questions about when the pain started",
+          "Movement and posture checks",
+          "Neurological tests for strength, reflexes, and sensation",
+          "Imaging, such as an X-ray or an MRI, when needed to see the spine more clearly",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Finding where the nerve is being pressed is the first step toward calming it down.",
+      },
+
+      {
+        type: "heading",
+        text: "Piriformis Syndrome: The Sciatica Look-Alike",
+      },
+      {
+        type: "paragraph",
+        text: "Piriformis syndrome also affects the sciatic nerve, but the trouble spot is not the spine. The piriformis is a small muscle deep in the buttock that helps rotate your hip. If it gets tight, inflamed, or overworked, it can squeeze the sciatic nerve as it passes underneath or through the muscle.",
+      },
+      {
+        type: "paragraph",
+        text: "Hallmark signs of piriformis syndrome often include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Deep aching pain in the buttock on one side",
+          "Pain that can shoot down the back of the leg, similar to sciatica",
+          "Pain that gets worse when sitting on a hard surface",
+          "Discomfort when climbing stairs or getting out of a car",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Long drives between Fernley and nearby cities, desk jobs with a lot of sitting, biking, and weekend sports can all irritate the piriformis muscle. When the hip does not move well or the core is weak, this small muscle may try to do extra work and tighten up.",
+      },
+      {
+        type: "paragraph",
+        text: "There are some key differences from classic sciatica:",
+      },
+      {
+        type: "list",
+        items: [
+          "The low back may feel mostly normal, or only mildly sore",
+          "Pain is often centered in the buttock instead of starting at the spine",
+          "Stretching or rotating the hip often reproduces the pain",
+          "Pushing directly over the piriformis area can feel very tender",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Many people call any pain down the leg \u201csciatica,\u201d but if the real problem is in the hip muscles, focusing only on the spine may not bring full relief. The approach has to target the hip, glutes, and movement patterns that keep stressing the piriformis.",
+      },
+
+      {
+        type: "heading",
+        text: "Sciatica vs. Piriformis: How to Tell Them Apart",
+      },
+      {
+        type: "paragraph",
+        text: "Both conditions can cause leg pain, tingling, or numbness, so how can you tell what is what? There are a few helpful clues.",
+      },
+      { type: "paragraph", text: "Where the pain begins:" },
+      {
+        type: "list",
+        items: [
+          "Sciatica often starts in the low back and then travels into the buttock and leg",
+          "Piriformis syndrome usually starts with a deep ache in the buttock and may or may not include low back pain",
+        ],
+      },
+      { type: "paragraph", text: "What makes it worse:" },
+      {
+        type: "list",
+        items: [
+          "Sciatica tends to flare with bending forward, lifting, coughing, or sitting for long periods",
+          "Piriformis pain often spikes when sitting on one side, crossing the legs, or twisting the hip outward",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "In our clinic, a provider may use simple tests, such as:",
+      },
+      {
+        type: "list",
+        items: [
+          "Leg raise tests that stretch the sciatic nerve from the spine",
+          "Hip rotation tests that load the piriformis muscle",
+          "Gentle pressure over the piriformis to check for trigger points",
+          "Strength, reflex, and sensation checks to look for nerve pressure at the spine",
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "It is possible to have both at once",
+        body: "Someone with a disc issue in the back can also have tight hip muscles from sitting or sports. This is why self-diagnosing by reading online often leads to confusion. A hands-on exam is the most reliable way to tell what is really driving your pain and to plan sciatica treatment in Fernley that fits your body.",
+      },
+
+      {
+        type: "heading",
+        text: "How Ascension Health Treats Leg Pain at the Source",
+      },
+      {
+        type: "paragraph",
+        text: "When someone comes to Ascension Health with leg pain, we start by listening. We want to know when the pain started, what makes it worse, what your workday looks like, and what you want to get back to doing. Then we look at how you move, stand, walk, and sit.",
+      },
+      { type: "paragraph", text: "An exam for leg pain may include:" },
+      {
+        type: "list",
+        items: [
+          "Posture checks and movement testing",
+          "Spine and hip evaluation",
+          "Neurological screening for the sciatic nerve",
+          "Imaging or other studies when they are appropriate",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "For sciatica linked to the spine, conservative care may include chiropractic adjustments to improve joint motion, spinal decompression or traction methods to reduce pressure on the nerve, targeted rehab to build strength and support, and soft tissue work to ease tight muscles. We also talk about daily habits, such as lifting, sitting, and sleep positions, to help reduce nerve irritation in real life.",
+      },
+      {
+        type: "paragraph",
+        text: "For piriformis syndrome, care is more focused on the hip region. That can mean hands-on muscle release, stretching and strengthening for the hips and core, and postural retraining so the piriformis is not doing all the work. We may also review driving and desk setups, sports habits, and movement patterns. When needed, guided injections may be part of a broader plan to calm pain while we work on the root causes.",
+      },
+      {
+        type: "paragraph",
+        text: "Our clinic uses an integrative style, combining chiropractic care with physical-therapy-style rehab, injections, and holistic wellness support. We adjust each plan based on your activity level, job, and seasonal routines, so your care fits the way you actually live, from busy school seasons to active weekends outside.",
+      },
+
+      {
+        type: "heading",
+        text: "Take the Next Step Toward Pain-Free Legs in Fernley",
+      },
+      {
+        type: "paragraph",
+        text: "Ongoing leg pain is not something you have to just \u201cpush through.\u201d If you notice numbness, weakness, or pain that wakes you up, makes driving hard, or keeps you from walking around town or keeping up with family, your body is asking for attention.",
+      },
+      {
+        type: "paragraph",
+        text: "A careful leg and spine evaluation can help reveal whether your pain comes from sciatica, piriformis syndrome, or something else entirely. When the true source is clear, treatment can be more focused and, for many people, more effective, helping you move with more ease and enjoy the things you need and want to do in Fernley and beyond.",
+      },
+      {
+        type: "cta",
+        heading: "Relieve Sciatica Pain and Get Back to What You Love",
+        body: "Explore your options for personalized care with our sciatica treatment in Fernley and learn how we can address the root cause of your pain. We will work with you to create a treatment plan that fits your goals and activities.",
+        buttonLabel: "Contact Ascension Health",
+        buttonHref: "/contact/",
+      },
+    ],
+  },
+
   {
     slug: "fernley-chiropractic-adjustment-benefits-and-recovery",
     title: "What to Expect From a Chiropractic Adjustment in Fernley",
