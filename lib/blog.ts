@@ -68,7 +68,6 @@ export type BlogPost = {
   content: BlogBlock[];
   /** Related post slugs. If omitted, related posts are picked automatically. */
   related?: string[];
-  featured?: boolean;
 };
 
 /* ------------------------------------------------------------------ */
@@ -84,9 +83,9 @@ export const DEFAULT_AUTHOR: BlogAuthor = {
 /* Posts                                                               */
 /* ------------------------------------------------------------------ */
 /**
- * Add new posts here. The most recent (top of the array) becomes the
- * featured post on the archive page automatically unless another post is
- * flagged with `featured: true`.
+ * Add new posts here. The most recently published post always becomes the
+ * featured post on the archive page — do not add a manual override, or a
+ * newer post added later will be silently skipped.
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -337,7 +336,6 @@ export const BLOG_POSTS: BlogPost[] = [
       alt: "Chiropractor performing a gentle chiropractic adjustment on a patient in Fernley, NV",
     },
     author: DEFAULT_AUTHOR,
-    featured: true,
     lede: "A chiropractic adjustment in Fernley is meant to help your body move better and calm down pain, so you can get back to the daily life you enjoy in Northern Nevada.",
     related: [
       "sciatica-treatment-fernley-root-cause-signs",
@@ -1750,8 +1748,8 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 }
 
 export function getFeaturedPost(): BlogPost | undefined {
-  const posts = getAllPosts();
-  return posts.find((p) => p.featured) ?? posts[0];
+  // Always the most recently published post — see BLOG_POSTS comment above.
+  return getAllPosts()[0];
 }
 
 export function getAllCategories(): string[] {
