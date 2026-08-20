@@ -102,7 +102,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "nerve pain",
       "Fernley NV",
     ],
-    publishedAt: "2026-08-21",
+    publishedAt: "2026-08-20",
     readingMinutes: 8,
     cover: {
       src: coverSciaticaTimeline,
@@ -386,7 +386,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "sciatica treatment",
       "Fernley NV",
     ],
-    publishedAt: "2026-08-14",
+    publishedAt: "2026-08-13",
     readingMinutes: 8,
     cover: {
       src: coverSciaticaPiriformis,
@@ -614,7 +614,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "mobility",
       "Fernley NV",
     ],
-    publishedAt: "2026-08-05",
+    publishedAt: "2026-08-06",
     readingMinutes: 8,
     cover: {
       src: coverChiroAdjustment,
@@ -880,7 +880,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "chiropractic care",
       "Fernley NV",
     ],
-    publishedAt: "2026-07-27",
+    publishedAt: "2026-07-30",
     readingMinutes: 8,
     cover: {
       src: coverSciatica,
