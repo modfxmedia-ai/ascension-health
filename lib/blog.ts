@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import coverSciaticaTimeline from "@/images/blogs-images/sciatica-recovery-timeline-what-to-expect-in-fernley.webp";
 import coverSciaticaPiriformis from "@/images/blogs-images/sciatica-or-piriformis-get-the-right-diagnosis.png";
 import coverSpinalDecompression from "@/images/blogs-images/spinal-decompression-therapy-in-fernley-for-back-pain.jpg";
 import coverShoulderPain from "@/images/blogs-images/spine-related-causes-of-shoulder-pain-in-fernley.jpg";
@@ -88,6 +89,290 @@ export const DEFAULT_AUTHOR: BlogAuthor = {
  * newer post added later will be silently skipped.
  */
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "sciatica-recovery-timeline-fernley",
+    title: "Sciatica Recovery Timeline: What to Expect in Fernley",
+    excerpt:
+      "Wondering how long sciatica relief takes? Learn phases, milestones, and when to adjust sciatica treatment in Fernley for lasting comfort.",
+    category: "Sciatica",
+    tags: [
+      "sciatica",
+      "sciatica treatment",
+      "recovery timeline",
+      "nerve pain",
+      "Fernley NV",
+    ],
+    publishedAt: "2026-08-21",
+    readingMinutes: 8,
+    cover: {
+      src: coverSciaticaTimeline,
+      alt: "Patient reviewing recovery progress with a chiropractor during sciatica treatment in Fernley, NV",
+    },
+    author: DEFAULT_AUTHOR,
+    lede: "Sciatica rarely clears up in a few days. Here is a realistic week-by-week timeline, the milestones to expect, and when it is time to adjust your plan.",
+    related: [
+      "sciatica-vs-piriformis-syndrome-fernley",
+      "sciatica-treatment-fernley-root-cause-signs",
+      "spinal-decompression-fernley-back-pain-relief",
+    ],
+    content: [
+      {
+        type: "heading",
+        text: "Find Out What a Realistic Sciatica Timeline Looks Like",
+      },
+      {
+        type: "paragraph",
+        text: "Sciatica can be frustrating because it rarely clears up in just a few days. It is irritation of the sciatic nerve, which runs from your low back through your hips and down your leg. When that nerve gets pinched or inflamed, you can feel sharp pain, tingling, burning, or weakness anywhere along that path.",
+      },
+      {
+        type: "paragraph",
+        text: "Nerves heal slowly, which is why sciatica can last for weeks or even months. Many people around Fernley try to push through it. They keep working, traveling, doing yard work, or driving to and from Reno or Fallon, hoping it will just fade. By the time they look for help, the nerve is often more irritated and the timeline is longer.",
+      },
+      {
+        type: "paragraph",
+        text: "Our goal with sciatica treatment in Fernley is not an overnight fix. The goal is steady, measurable progress with clear checkpoints. You should know what to expect in the first couple of weeks, what the next phase looks like, and when it is time to adjust your plan if things are not improving the way they should.",
+      },
+
+      {
+        type: "heading",
+        text: "What Affects How Long Sciatica Treatment Takes",
+      },
+      {
+        type: "paragraph",
+        text: "Every case of sciatica is a little different, so timelines are never exactly the same. Some people improve quickly, while others need more time and support. A few key things can change how long your recovery might take.",
+      },
+      { type: "paragraph", text: "Common factors include:" },
+      {
+        type: "list",
+        items: [
+          "How severe the nerve irritation is",
+          "How long you have had symptoms",
+          "Your age and general health",
+          "The type of work you do",
+          "Your usual activity level",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Underlying causes also matter. Sciatica is a symptom, not a stand-alone problem. It can come from:",
+      },
+      {
+        type: "list",
+        items: [
+          "Disc herniation or disc bulge",
+          "Spinal stenosis, or narrowing around the nerve",
+          "Tight or spasming muscles in the hip or low back",
+          "Pelvic or sacroiliac (SI) joint irritation",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Some of these calm down fairly quickly with the right care. Others, like long-standing stenosis or a larger disc issue, often need more time and a more careful plan.",
+      },
+      {
+        type: "paragraph",
+        text: "Life around Fernley can also affect how long sciatica treatment takes. Common triggers include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Long drives on straight highways",
+          "Yard work like raking, shoveling, or lifting heavy bags",
+          "Summer sports, hiking, or boating that stress the low back",
+          "Winter stiffness from being less active or sitting more",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you keep irritating the nerve with the same daily habits, healing will be slower. Part of good care is spotting those triggers and working around them so your body actually has a chance to recover.",
+      },
+
+      {
+        type: "heading",
+        text: "Typical Sciatica Healing Milestones Week by Week",
+      },
+      {
+        type: "paragraph",
+        text: "While every person is different, there are general phases that many patients move through. These are not strict rules, but they help set expectations.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Early Phase (Days 1 to 14)",
+      },
+      {
+        type: "paragraph",
+        text: "The focus here is calming things down. The main goals are:",
+      },
+      {
+        type: "list",
+        items: [
+          "Lowering pain levels",
+          "Reducing inflammation around the nerve",
+          "Decreasing muscle spasm and guarding",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "In this window, many people notice:",
+      },
+      {
+        type: "list",
+        items: [
+          "Slightly easier standing and walking",
+          "Less sharp or stabbing pain",
+          "Fewer \u201cgrabby\u201d moments when they move wrong",
+          "A bit more comfort finding a position to sleep",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "You might still have pain, but it often changes from intense, constant pain to more \u201cups and downs\u201d as the irritation starts to settle.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Sub-Acute Phase (Weeks 3 to 6)",
+      },
+      {
+        type: "paragraph",
+        text: "Once the nerve is a little calmer, the plan often shifts. This is where gentle movement and specific rehab start to matter more. Goals usually include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Better walking tolerance",
+          "Less pain traveling down the leg",
+          "Improved sleep and ability to change positions",
+          "Starting targeted exercises and light physical therapy-style work",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "In this phase, you should start to feel more confident doing daily tasks like getting in and out of the car, standing at the sink, or walking around a store, even if you still have some symptoms.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Rebuilding Phase (Weeks 7 to 12)",
+      },
+      {
+        type: "paragraph",
+        text: "This is when we focus on keeping the pain away, not just putting out fires. The goals often include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Improving strength in your core, hips, and legs",
+          "Restoring flexibility where you are stiff",
+          "Stabilizing the low back and pelvis",
+          "Gradually returning to work tasks, hobbies, and outdoor activities",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "By this point, many people are doing much more with much less pain, but they still need structure. Skipping this phase often leads to repeat flare-ups when life gets busy again.",
+      },
+
+      {
+        type: "heading",
+        text: "What a Complete Sciatica Treatment Plan Should Include",
+      },
+      {
+        type: "paragraph",
+        text: "A good plan for sciatica treatment in Fernley is rarely just one thing. Since the nerve, joints, muscles, and daily habits are all involved, we usually need to work on several layers at once.",
+      },
+      { type: "paragraph", text: "A more complete approach may include:" },
+      {
+        type: "list",
+        items: [
+          "Chiropractic care to improve joint motion and alignment",
+          "Physical rehabilitation exercises to build strength and control",
+          "Targeted injections when appropriate to calm stubborn inflammation",
+          "Soft tissue work to ease tight or overworked muscles",
+          "Home exercises and simple posture changes between visits",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "There is a big difference between masking pain and actually changing how your body moves and loads the sciatic nerve. Masking pain might make you feel better for a short time, but if the mechanics in your spine, hips, and pelvis do not improve, the nerve can keep getting irritated.",
+      },
+      {
+        type: "paragraph",
+        text: "Conservative care like hands-on treatment and exercise is often enough for many people, especially when they start early. If pain is severe, not improving, or there are signs of a more serious issue, advanced imaging, injections, or a referral to another provider may be recommended as part of a team approach.",
+      },
+
+      {
+        type: "heading",
+        text: "When to Re-Evaluate and Adjust Your Sciatica Care",
+      },
+      {
+        type: "paragraph",
+        text: "You should not feel stuck doing the same plan for months with no change. Clear checkpoints help you and your provider know when things are on track and when to re-evaluate.",
+      },
+      { type: "paragraph", text: "General time-based checkpoints:" },
+      {
+        type: "list",
+        items: [
+          "By 2 weeks: Some decrease in pain or frequency of flare-ups, and at least a small improvement in daily movement",
+          "By 4 to 6 weeks: Better walking and standing tolerance, less leg pain, and fewer sharp episodes",
+          "By 8 to 12 weeks: Stronger, more flexible, and able to do most normal tasks with manageable or minimal symptoms",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you are not seeing any change at all by those points, it is time to look closer at your diagnosis, triggers, and treatment mix.",
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        title: "Red flags that need immediate attention",
+        body: "Worsening leg or foot weakness, trouble controlling bowel or bladder, severe pain that wakes you up and will not ease, or new or spreading numbness, especially in the groin area, all call for immediate re-evaluation. Do not wait on your next scheduled visit if you notice any of these.",
+      },
+      {
+        type: "paragraph",
+        text: "Your provider should also adjust your plan as you improve. That can look like:",
+      },
+      {
+        type: "list",
+        items: [
+          "Progressing or changing your exercises",
+          "Modifying adjustment frequency or style",
+          "Considering injections if inflammation stays stubborn",
+          "Ordering additional diagnostics if something does not fit the usual pattern",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Re-evaluation is a sign that your care is being taken seriously, not that you are failing.",
+      },
+
+      {
+        type: "heading",
+        text: "How Ascension Health Helps You Stay on Track in Fernley",
+      },
+      {
+        type: "paragraph",
+        text: "At Ascension Health in Fernley, we know no two cases of sciatica feel the same or heal on the same schedule. We look at your specific symptoms, your work demands, your daily activities, and your health history to build a plan and a timeline that fits you instead of using a one-size-fits-all protocol.",
+      },
+      {
+        type: "paragraph",
+        text: "Because our clinic blends chiropractic care, physical therapy style rehab, and integrative options like targeted injections under one roof, we can adjust your plan quickly as your body changes. That helps many people move from pain relief into the rebuilding phase sooner and can lower the chances of repeat flare-ups when life gets busy again.",
+      },
+      {
+        type: "paragraph",
+        text: "Sciatica does not have to control your travel plans, outdoor fun, school routines, or end-of-year work demands. With a clear timeline, realistic milestones, and a team that re-evaluates along the way, you can give your sciatic nerve the time and support it needs to calm down and stay that way.",
+      },
+      {
+        type: "cta",
+        heading: "Take The First Step Toward Lasting Sciatica Relief",
+        body: "If sciatic pain is limiting your work, sleep, or daily routine, we are here to help you address the cause, not just the symptoms. Contact Ascension Health today to discuss your symptoms, explore treatment options, and schedule your first visit.",
+        buttonLabel: "Contact Ascension Health",
+        buttonHref: "/contact/",
+      },
+    ],
+  },
+
   {
     slug: "sciatica-vs-piriformis-syndrome-fernley",
     title: "Sciatica Or Piriformis? Get the Right Diagnosis",
