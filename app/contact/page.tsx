@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 const MAPS_QUERY = encodeURIComponent("415 HWY 95A Suite 503, Fernley, NV 89408");
 const MAPS_EMBED = `https://www.google.com/maps?q=${MAPS_QUERY}&output=embed`;
-const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${MAPS_QUERY}`;
+const MAPS_LINK = SITE.mapsHref;
 
 const INFO_CARDS = [
   {

@@ -9,13 +9,15 @@ export const SITE = {
   phone: "(775) 575-9922",
   phoneHref: "tel:+17755759922",
   address: "415 HWY 95A Suite 503, Fernley, NV 89408",
-  mapsHref: "https://g.page/FernleyChiropractor?share",
+  mapsHref:
+    "https://www.google.com/search?sca_esv=17f5dce0afacffdc&hl=en&authuser=0&sxsrf=APpeQnvbGhIomYhON7mZ_6owQq7m2MSyaw:1788182826613&kgmid=/g/11hdnygs_d&q=Ascension+Health+%7C+Joint+and+Back+Pain+Clinic&shem=dlvs1,epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=d887d0045188ce84&utm_source=dlvs1,epsd1,ltae,rimspwouoe,sh/x/loc/uni/m1/1",
   appointmentsHref: "/appointments/",
   hours: "Mon–Thu · 9:00am – 6:00pm",
   social: {
     facebook:
       "https://www.facebook.com/Ascension-Chiropractic-734015263631952",
-    google: "https://g.page/FernleyChiropractor?share",
+    google:
+      "https://www.google.com/search?sca_esv=17f5dce0afacffdc&hl=en&authuser=0&sxsrf=APpeQnvbGhIomYhON7mZ_6owQq7m2MSyaw:1788182826613&kgmid=/g/11hdnygs_d&q=Ascension+Health+%7C+Joint+and+Back+Pain+Clinic&shem=dlvs1,epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=d887d0045188ce84&utm_source=dlvs1,epsd1,ltae,rimspwouoe,sh/x/loc/uni/m1/1",
     twitter: "https://twitter.com/AscensionChiro1",
   },
 };
