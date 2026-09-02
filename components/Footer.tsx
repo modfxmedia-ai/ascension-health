@@ -183,6 +183,13 @@ export default function Footer() {
               Accessibility
             </Link>
             <Link
+              href="/privacy-policy/"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
               href="/contact/"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="hover:text-white transition-colors"
