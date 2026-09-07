@@ -6,6 +6,7 @@ import {
   PSEO_TREATMENT_PAGES,
   SITE_URL,
 } from "@/lib/pSEO-routing";
+import { getPublishedBlogSlugs } from "@/lib/ranked/posts";
 
 type ChangeFrequency = MetadataRoute.Sitemap[number]["changeFrequency"];
 
@@ -108,20 +109,21 @@ function buildPseoEntries(): Entry[] {
       changeFrequency: "monthly",
     });
   }
-for (const post of getAllPosts()) {
-    entries.push({
-      path: `/blog/${post.slug}/`,
-      priority: 0.7,
-      changeFrequency: "monthly",
-    });
-  }
 
-  
   return entries;
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date();
+
+  const slugs = await getPublishedBlogSlugs().catch(() =>
+    getAllPosts().map((post) => post.slug),
+  );
+  const blogEntries: Entry[] = slugs.map((slug) => ({
+    path: `/blog/${slug}/`,
+    priority: 0.7,
+    changeFrequency: "monthly",
+  }));
 
   const seen = new Map<string, Entry>();
   for (const e of [
@@ -130,6 +132,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...CONDITION_ENTRIES,
     ...CITY_HUB_ENTRIES,
     ...buildPseoEntries(),
+    ...blogEntries,
   ]) {
     const prev = seen.get(e.path);
     if (!prev || e.priority > prev.priority) seen.set(e.path, e);

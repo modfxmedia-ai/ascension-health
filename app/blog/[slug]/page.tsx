@@ -21,20 +21,26 @@ import { Reveal } from "@/components/Motion";
 import {
   BLOG_BASE,
   formatPostDate,
-  getAllPosts,
-  getPostBySlug,
-  getRelatedPosts,
   type BlogBlock,
   type BlogPost,
 } from "@/lib/blog";
+import {
+  getPublishedSitePost,
+  getPublishedSitePosts,
+  getRelatedFromList,
+} from "@/lib/ranked/map-post";
 import { SITE } from "@/lib/navigation";
+
+export const revalidate = 3600;
+export const dynamicParams = true;
 
 const SITE_URL = "https://ascensionhealthnv.com";
 
 type RouteParams = { slug: string };
 
-export function generateStaticParams(): RouteParams[] {
-  return getAllPosts().map((p) => ({ slug: p.slug }));
+export async function generateStaticParams(): Promise<RouteParams[]> {
+  const posts = await getPublishedSitePosts().catch(() => []);
+  return posts.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
@@ -43,7 +49,7 @@ export async function generateMetadata({
   params: Promise<RouteParams>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const post = await getPublishedSitePost(slug);
   if (!post) return { title: "Article not found" };
 
   const canonical = `${BLOG_BASE}/${post.slug}/`;
@@ -82,10 +88,11 @@ export default async function BlogPostPage({
   params: Promise<RouteParams>;
 }) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const posts = await getPublishedSitePosts();
+  const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
 
-  const related = getRelatedPosts(post, 3);
+  const related = getRelatedFromList(post, posts, 3);
   const canonical = `${SITE_URL}${BLOG_BASE}/${post.slug}/`;
   const coverPath =
     typeof post.cover.src === "string" ? post.cover.src : post.cover.src.src;
@@ -293,6 +300,42 @@ function slugify(s: string): string {
     .replace(/(^-|-$)+/g, "");
 }
 
+function LinkedText({ text }: { text: string }) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return (
+    <>
+      {parts.map((part, i) => {
+        const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (!match) return <span key={i}>{part}</span>;
+        const [, label, href] = match;
+        const internal = href.startsWith("/");
+        if (internal) {
+          return (
+            <Link
+              key={i}
+              href={href}
+              className="font-semibold text-brand-700 underline decoration-brand-200 underline-offset-2 hover:text-brand-800"
+            >
+              {label}
+            </Link>
+          );
+        }
+        return (
+          <a
+            key={i}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-brand-700 underline decoration-brand-200 underline-offset-2 hover:text-brand-800"
+          >
+            {label}
+          </a>
+        );
+      })}
+    </>
+  );
+}
+
 function PostBody({ blocks }: { blocks: BlogBlock[] }) {
   return (
     <div className="space-y-6 text-[16.5px] leading-[1.75] text-slate-700">
@@ -306,7 +349,11 @@ function PostBody({ blocks }: { blocks: BlogBlock[] }) {
 function BlockRenderer({ block }: { block: BlogBlock }) {
   switch (block.type) {
     case "paragraph":
-      return <p>{block.text}</p>;
+      return (
+        <p>
+          <LinkedText text={block.text} />
+        </p>
+      );
     case "heading": {
       const id = block.id ?? slugify(block.text);
       const cls =

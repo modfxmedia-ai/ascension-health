@@ -7,10 +7,11 @@ import { Reveal } from "@/components/Motion";
 import {
   BLOG_BASE,
   formatPostDate,
-  getAllCategories,
-  getAllPosts,
-  getFeaturedPost,
+  type BlogPost,
 } from "@/lib/blog";
+import { getPublishedSitePosts } from "@/lib/ranked/map-post";
+
+export const revalidate = 3600;
 
 const BLOG_DESCRIPTION =
   "Insights from Ascension Health on chiropractic care, hormone health, weight loss, and pain-free living in Fernley, NV and Northern Nevada.";
@@ -32,11 +33,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogIndexPage() {
-  const posts = getAllPosts();
-  const featured = getFeaturedPost();
+export default async function BlogIndexPage() {
+  const posts = await getPublishedSitePosts();
+  const featured = posts[0];
   const rest = featured ? posts.filter((p) => p.slug !== featured.slug) : posts;
-  const categories = getAllCategories();
+  const categories = [...new Set(posts.map((p) => p.category))].sort();
 
   return (
     <main className="bg-slate-50">
@@ -126,7 +127,7 @@ export default function BlogIndexPage() {
 /* Featured card                                                       */
 /* ------------------------------------------------------------------ */
 
-function FeaturedCard({ post }: { post: ReturnType<typeof getFeaturedPost> }) {
+function FeaturedCard({ post }: { post: BlogPost | undefined }) {
   if (!post) return null;
   return (
     <Link
@@ -182,7 +183,7 @@ function FeaturedCard({ post }: { post: ReturnType<typeof getFeaturedPost> }) {
 /* Grid card                                                           */
 /* ------------------------------------------------------------------ */
 
-function PostCard({ post }: { post: ReturnType<typeof getAllPosts>[number] }) {
+function PostCard({ post }: { post: BlogPost }) {
   return (
     <Link
       href={`${BLOG_BASE}/${post.slug}/`}

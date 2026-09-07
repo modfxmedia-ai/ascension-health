@@ -22,9 +22,15 @@ const CONDITION_REDIRECTS = [
 const nextConfig: NextConfig = {
   // Match the live site's URL structure (e.g. /about/, /services/chiropractic-care/)
   trailingSlash: true,
+  outputFileTracingExcludes: {
+    "*": ["./public/images/**", "./public/**/*.mp4", "./public/**/*.webm"],
+  },
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "picsum.photos" },
+      { protocol: "https", hostname: "*.public.blob.vercel-storage.com" },
+      { protocol: "https", hostname: "*.blob.vercel-storage.com" },
     ],
   },
   async redirects() {
