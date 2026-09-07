@@ -1,5 +1,5 @@
 import { BlobNotFoundError, head, put } from "@vercel/blob"
-import { COMMITTED_COVER_SLUGS, coverPrompt } from "./config"
+import { COMMITTED_COVER_SLUGS, COMMITTED_COVER_URLS, coverPrompt } from "./config"
 
 /** Topic-keyed Unsplash IDs so fallback covers match the article title. */
 const TOPIC_UNSPLASH: Record<string, readonly string[]> = {
@@ -7,7 +7,7 @@ const TOPIC_UNSPLASH: Record<string, readonly string[]> = {
     "photo-1519824145371-296894a0daa9",
     "photo-1571019613454-1cb2f99b2d8b",
     "photo-1544367567-0f2fcb009e0b",
-    "photo-1434682881345-7d6e06f0d5c4",
+    "photo-1559757175-0eb30cd8c063",
   ],
   back: [
     "photo-1559757175-0eb30cd8c063",
@@ -24,7 +24,7 @@ const TOPIC_UNSPLASH: Record<string, readonly string[]> = {
   neck: [
     "photo-1515378791036-0648a3ef77b2",
     "photo-1544168190-79c17527004f",
-    "photo-1518611013918-baad583adc05",
+    "photo-1545205597-3d9d02c29597",
   ],
   shoulder: [
     "photo-1517836357463-d25dfeac3438",
@@ -33,7 +33,7 @@ const TOPIC_UNSPLASH: Record<string, readonly string[]> = {
   ],
   knee: [
     "photo-1571019614242-c5c5dee9f50b",
-    "photo-1461896836934-ffe607ba6851",
+    "photo-1551836022-d5d88e9218df",
     "photo-1552674605-db6ffd4facb5",
   ],
   joint: [
@@ -91,7 +91,7 @@ const TOPIC_UNSPLASH: Record<string, readonly string[]> = {
     "photo-1544367567-0f2fcb009e0b",
     "photo-1506126613408-eca07ce68773",
     "photo-1545205597-3d9d02c29597",
-    "photo-1518611013918-baad583adc05",
+    "photo-1545205597-3d9d02c29597",
   ],
   pain: [
     "photo-1571019613454-1cb2f99b2d8b",
@@ -101,7 +101,7 @@ const TOPIC_UNSPLASH: Record<string, readonly string[]> = {
   sleep: [
     "photo-1541781774459-bb2af2f05b55",
     "photo-1506126613408-eca07ce68773",
-    "photo-1515894203073-3e0b1d7c2288",
+    "photo-1544367567-0f2fcb009e0b",
   ],
 }
 
@@ -115,7 +115,7 @@ const FALLBACK_UNSPLASH = [
   "photo-1544367567-0f2fcb009e0b",
   "photo-1506126613408-eca07ce68773",
   "photo-1571019613454-1cb2f99b2d8b",
-  "photo-1518611013918-baad583adc05",
+  "photo-1545205597-3d9d02c29597",
   "photo-1490645935967-10de6ba17061",
   "photo-1582750433449-648ed127bb54",
   "photo-1631815588090-d4bfec5b1ccb",
@@ -153,6 +153,7 @@ function coverJpgPath(contentId: string): string {
 
 function committedCoverUrl(slug?: string): string | null {
   if (!slug) return null
+  if (COMMITTED_COVER_URLS[slug]) return COMMITTED_COVER_URLS[slug]
   return COMMITTED_COVER_SLUGS.includes(slug) ? `/images/blog/covers/${slug}.png` : null
 }
 

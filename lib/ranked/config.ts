@@ -29,3 +29,9 @@ export function coverPrompt(title: string): string {
  * List only. Do not fs.stat public/ — that packs images into the cron bundle.
  */
 export const COMMITTED_COVER_SLUGS: readonly string[] = []
+
+/** Explicit public URL map. Do not fs.stat public/. */
+export const COMMITTED_COVER_URLS: Record<string, string> = {
+  "questioning-your-chronic-neck-pain-doctor-in-fernley-nv":
+    "/images/blog/gmb-fitness-Rtczb9jxBtk-unsplash.jpg",
+}
