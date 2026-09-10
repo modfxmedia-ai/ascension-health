@@ -1,5 +1,7 @@
 import type { StaticImageData } from "next/image";
-import coverMedicalVsChiro from "@/images/blogs-images/medical-or-chiropractic-care-for-chronic-pain.jpeg";
+import coverSportsInjuryRecovery from "@/images/blogs-images/physical-therapy-for-faster-sports-injury-recovery.webp";
+import coverNeckPainDoctor from "@/images/blogs-images/find-the-right-neck-pain-doctor-in-fernley-today.jpg";
+import coverMedicalVsChiro from "@/images/blogs-images/medical-or-chiropractic-care-for-chronic-pain.jpg";
 import coverSciaticaTimeline from "@/images/blogs-images/sciatica-recovery-timeline-what-to-expect-in-fernley.webp";
 import coverSciaticaPiriformis from "@/images/blogs-images/sciatica-or-piriformis-get-the-right-diagnosis.png";
 import coverSpinalDecompression from "@/images/blogs-images/spinal-decompression-therapy-in-fernley-for-back-pain.jpg";
@@ -91,6 +93,392 @@ export const DEFAULT_AUTHOR: BlogAuthor = {
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "physical-therapy-sports-injury-recovery-fernley",
+    title: "Can Physical Therapy in Fernley Speed Up Sports Injury Recovery?",
+    excerpt:
+      "Recover sooner with expert sports injury treatment in Fernley plus personalized physical therapy and advanced care to get you back to pain-free movement",
+    category: "Sports Injuries",
+    tags: [
+      "sports injury treatment",
+      "physical therapy",
+      "chiropractic care",
+      "Fernley NV",
+    ],
+    publishedAt: "2026-09-11",
+    readingMinutes: 8,
+    cover: {
+      src: coverSportsInjuryRecovery,
+      alt: "Physical therapist guiding an athlete through a sports injury recovery exercise at Ascension Health in Fernley, NV",
+    },
+    author: DEFAULT_AUTHOR,
+    lede: "Sidelined by a sports injury? Here is how physical therapy and chiropractic care work together to speed up recovery and get Fernley athletes back in the game.",
+    content: [
+      {
+        type: "heading",
+        text: "Faster Recovery for Fernley Athletes Starts Here",
+      },
+      {
+        type: "paragraph",
+        text: "Sports are a big part of life for many people in Fernley. From school teams to adult leagues, staying active feels good, right up until something pulls, twists, or pops and you are stuck on the sidelines. Sitting out, watching your team practice or play without you, can be frustrating and a little scary if you are not sure how long healing will take.",
+      },
+      {
+        type: "paragraph",
+        text: "Physical therapy for sports injuries focuses on helping your body move the way it is meant to move again. It works on strength, flexibility, balance, and control so you can get back to your sport with less pain and better performance. Instead of just waiting for an injury to calm down, you follow a clear plan that supports each stage of healing.",
+      },
+      {
+        type: "paragraph",
+        text: "Working with a skilled physical therapist in Fernley can often shorten recovery time, lower the chance of re-injury, and help you return with more confidence. For active people, that can make a big difference in how much of a season you miss and how you feel when you return to the field, court, or gym. At Ascension Health, we blend chiropractic and physical therapy to give local athletes a more complete approach to sports injury treatment in Fernley.",
+      },
+
+      {
+        type: "heading",
+        text: "How Physical Therapy Speeds Up Sports Healing",
+      },
+      {
+        type: "paragraph",
+        text: "When you get hurt, your body goes through natural stages of healing. Understanding those stages helps make sense of why guided movement can be so helpful. In simple terms, tissue repair usually follows three main phases:",
+      },
+      {
+        type: "list",
+        items: [
+          "Inflammation: things swell and feel sore as your body protects the area",
+          "Repair: your body starts building new tissue",
+          "Remodeling: the new tissue learns to handle real-life stress and movement",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you only rest and avoid movement for too long, the injured area can get stiff and weak. Muscles can shrink, joints can lose motion, and your body may start to move in odd ways to avoid pain. Those changes often slow recovery and set you up for future problems. Early, appropriate physical therapy aims to:",
+      },
+      {
+        type: "list",
+        items: [
+          "Keep joints moving safely so they do not lock up",
+          "Maintain as much strength and balance as possible",
+          "Teach your body healthy movement patterns from the start",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Hands-on techniques like gentle joint mobilization and soft tissue work can help improve blood flow, reduce tension, and ease pain. Targeted exercises then build on that by restoring strength and control. Compared to rest alone, this active approach often helps each healing phase move along more smoothly and can get you back to your sport feeling more prepared.",
+      },
+
+      {
+        type: "heading",
+        text: "Common Fall Sports Injuries Fernley Athletes Face",
+      },
+      {
+        type: "paragraph",
+        text: "As practices pick up and games or races come more often, we tend to see many of the same injuries. Some of the most common include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Ankle sprains from cutting, jumping, or landing on uneven ground",
+          "Knee ligament strains from quick stops, twists, or awkward landings",
+          "Shoulder pain from throwing, tackling, or overhead motions",
+          "Pulled hamstrings from sprinting or sudden accelerations",
+          "Low back pain from repeated bending, twisting, or heavy lifting",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Many of these problems respond well to conservative care like physical therapy and chiropractic treatment. A careful exam can help sort out which injuries are likely to heal with a focused rehab plan and which may need imaging or a specialist referral first.",
+      },
+      {
+        type: "paragraph",
+        text: "It is also important to remember that sports injury treatment in Fernley is not only for big, dramatic injuries. Even a \u201csimple\u201d ankle roll or mild muscle strain can cause trouble if it is ignored. Without structure, you might return to play before you are ready, move differently to avoid pain, and then end up with a new injury somewhere else. A guided plan can help you stay active as safely as possible through a busy season.",
+      },
+
+      {
+        type: "heading",
+        text: "What to Expect From Sports Injury Treatment in Fernley",
+      },
+      {
+        type: "paragraph",
+        text: "If you come in for a sports injury, your first visit is all about understanding what is going on and what your goals are. You can usually expect:",
+      },
+      {
+        type: "list",
+        items: [
+          "A detailed history of how the injury happened and what makes it better or worse",
+          "A functional movement assessment to see how you walk, squat, jump, or twist",
+          "Testing of strength, flexibility, balance, and range of motion",
+          "A clear explanation, in simple language, of your findings and plan",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "From there, a typical sports injury treatment in Fernley might include a blend of:",
+      },
+      {
+        type: "list",
+        items: [
+          "Hands-on care to improve joint motion and ease tight muscles",
+          "Corrective exercises to target weak or overloaded areas",
+          "Neuromuscular re-education to retrain balance and movement control",
+          "A home exercise program that fits your schedule and sport demands",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Your plan should match what you actually do. A pitcher needs different shoulder goals than a lineman. A runner has different needs than a goalie. We look at your sport, position, upcoming competitions, and personal goals so you can return to play at the right time, not just the fastest time. The aim is to get you back doing what you love while lowering the chance of setbacks.",
+      },
+
+      {
+        type: "heading",
+        text: "Integrating Chiropractic and Advanced Therapies for Faster Return",
+      },
+      {
+        type: "paragraph",
+        text: "Sports injuries are rarely just about one muscle or one joint. How your body is aligned and how it moves as a whole matters. This is where combining chiropractic care with physical therapy can help. Chiropractic adjustments can support:",
+      },
+      {
+        type: "list",
+        items: [
+          "Better joint alignment and motion",
+          "More efficient body mechanics during running, jumping, and lifting",
+          "Clearer communication along the nervous system that coordinates movement",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Physical therapy exercises then build strength and control around that improved motion. At Ascension Health, we also use additional tools and rehab equipment as needed to support healing. These might help with:",
+      },
+      {
+        type: "list",
+        items: [
+          "Easing muscle tension and soreness",
+          "Supporting circulation and tissue recovery",
+          "Gradually loading injured areas in a safe, controlled way",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "We focus on whole-person care, not just the injured spot. That can include working on posture, core strength, hip and shoulder mobility, and how you move during your sport. The goal is that when you finish sports injury treatment in Fernley, you are not only healed, you move better than before and feel more ready for the demands of your game.",
+      },
+
+      {
+        type: "heading",
+        text: "Get Back in the Game with Local, Expert Care",
+      },
+      {
+        type: "paragraph",
+        text: "When pain first shows up, it can be tempting to wait a while and hope it just goes away. Sometimes it does, but other times a small issue turns into a bigger injury that steals more games or workouts than it needed to. Early care often means easier care.",
+      },
+      {
+        type: "paragraph",
+        text: "At Ascension Health in Fernley, we understand how important your sport and activities are to you. We offer sports-focused chiropractic and physical therapy support to help you understand your injury, follow a clear plan, and work toward a safe return to play. With the right physical therapy in Fernley, you can move back into your sport with more strength, more control, and more confidence in what your body can do.",
+      },
+      {
+        type: "cta",
+        heading: "Get Back in the Game with Expert Local Care",
+        body: "Our tailored approach to sports injury treatment in Fernley focuses on restoring strength, preventing re-injury, and supporting your long-term performance. Ready to take the next step toward feeling and moving better? Contact us to schedule your visit.",
+        buttonLabel: "Contact Ascension Health",
+        buttonHref: "/contact/",
+      },
+    ],
+  },
+
+  {
+    slug: "neck-pain-doctor-fernley-questions-to-ask",
+    title: "Questioning Your Chronic Neck Pain Doctor in Fernley, NV",
+    excerpt:
+      "Learn what to ask and what to expect when choosing a neck pain doctor in Fernley for lasting relief, improved mobility, and care options",
+    category: "Neck Pain",
+    tags: [
+      "neck pain",
+      "chiropractic care",
+      "chronic pain",
+      "Fernley NV",
+    ],
+    publishedAt: "2026-09-04",
+    readingMinutes: 8,
+    cover: {
+      src: coverNeckPainDoctor,
+      alt: "Patient consulting with a neck pain doctor at Ascension Health in Fernley, NV",
+    },
+    author: DEFAULT_AUTHOR,
+    lede: "Tired of neck pain that keeps coming back? Here are the questions to ask your neck pain doctor in Fernley and how integrative chiropractic care can help for good.",
+    content: [
+      {
+        type: "heading",
+        text: "Stop Settling for Endless Neck Pain in Fernley",
+      },
+      {
+        type: "paragraph",
+        text: "Chronic neck pain can wear you down. It makes it hard to sleep, hard to turn your head to merge onto the freeway, hard to sit through a work shift or a long drive to Reno without feeling stiff and sore. Many people are told to rely on pain pills, muscle relaxers, or quick visits that only seem to help for a day or two.",
+      },
+      {
+        type: "paragraph",
+        text: "When that keeps happening, it is natural to start questioning your neck pain doctor in Fernley. That is not negative, and it does not mean you are a bad patient. It means you care about your health and you want real answers, not just another refill. Neck pain is often a sign of deeper problems in the spine, muscles, and nervous system that need more than surface-level care.",
+      },
+      {
+        type: "paragraph",
+        text: "Our goal here is to help you feel confident asking better questions, spotting red flags, and understanding how a whole-body chiropractic and wellness approach can change your long-term outlook with your neck.",
+      },
+
+      {
+        type: "heading",
+        text: "Hidden Reasons Your Neck Pain Keeps Coming Back",
+      },
+      {
+        type: "paragraph",
+        text: "Life in and around Fernley can be tough on the neck. Many people spend long hours commuting, sitting at a computer, or doing ranch, construction, or warehouse work. Others are on phones and tablets many hours a day. All of this adds up to constant strain on the neck, shoulders, and upper back. Common underlying causes of chronic neck pain include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Spinal misalignments that put pressure on joints and nerves",
+          "Old whiplash or sports injuries that never healed quite right",
+          "Muscle imbalances from slouching, forward head posture, or one-sided lifting",
+          "Weakness in the deep stabilizing muscles of the neck and upper back",
+          "Stress-related tension that keeps muscles tight all day and night",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If a neck pain doctor in Fernley only gives medications or a short manual treatment without asking deeper questions, they might be missing what is really going on. Short-term relief can be helpful, but if the root cause is never explored, the same pain keeps coming back when life gets busy again.",
+      },
+      {
+        type: "paragraph",
+        text: "As schedules ramp up in the fall with school, work projects, and yard tasks, those old issues often flare. When raking, carrying boxes, or sitting in bleachers suddenly brings your pain roaring back, that can be a sign the original dysfunction was never fully addressed.",
+      },
+
+      {
+        type: "heading",
+        text: "Smart Questions to Ask Your Neck Pain Doctor in Fernley",
+      },
+      {
+        type: "paragraph",
+        text: "Walking into an appointment with a list of questions can change the whole visit. It shows that you are involved and serious about getting better. Here are some powerful questions you can bring:",
+      },
+      {
+        type: "list",
+        items: [
+          "What do you believe is causing my neck pain, beyond \u201cmuscle strain\u201d?",
+          "How are you evaluating my posture, spine, and movement patterns?",
+          "What is your plan to prevent this from returning, not just quiet it down?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "It is also fair to ask about testing and assessment:",
+      },
+      {
+        type: "list",
+        items: [
+          "When are X-rays or other imaging actually helpful for my case?",
+          "Do I need any movement screening or neurological exams?",
+          "If not, how will you track my progress over time?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "You can also ask about the timeline so your expectations are clear:",
+      },
+      {
+        type: "list",
+        items: [
+          "How long until I should see meaningful changes?",
+          "What will we change if I am not improving as expected?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A trustworthy neck pain doctor in Fernley should welcome these questions. They should be able to explain what they find in plain language, show you what they are seeing in your posture and movement, and involve you in each step of the plan instead of rushing through the visit.",
+      },
+
+      {
+        type: "heading",
+        text: "Red Flags Your Neck Care May Be Missing the Mark",
+      },
+      {
+        type: "paragraph",
+        text: "Sometimes the problem is not you, it is the care plan. There are warning signs that your neck treatment might be too shallow or too generic for what you need. Watch for red flags like:",
+      },
+      {
+        type: "list",
+        items: [
+          "No real physical exam, just a quick look or a short chat",
+          "No questions about your work, hobbies, sleep, or daily habits",
+          "A \u201csee you when it hurts again\u201d attitude with no long-term plan",
+          "The exact same adjustment or the same prescription every visit",
+          "No suggestions for strength, mobility, or posture changes",
+        ],
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        title: "Clinical red flags that should not be brushed off",
+        body: "Pain that keeps getting worse without further investigation, recurring headaches, dizziness, or tingling in your arms or hands, or being told your only option is long-term medication with no other tools.",
+      },
+      {
+        type: "paragraph",
+        text: "When the weather cools and your activity shifts, untreated neck problems can show up as more frequent flare-ups. You may start guarding your neck, which can throw off your shoulders, mid-back, or even your balance. This is why it matters to catch poor care early before it leads to bigger issues elsewhere in your body.",
+      },
+
+      {
+        type: "heading",
+        text: "How Integrative Chiropractic Care Changes the Story",
+      },
+      {
+        type: "paragraph",
+        text: "This is where a more integrative, whole-body approach can make a real difference. At Ascension Health in Fernley, we look beyond the single sore spot to see how your neck is working with the rest of your spine and body. That starts with a careful assessment. We look at:",
+      },
+      {
+        type: "list",
+        items: [
+          "Spine alignment and how each segment is moving",
+          "Muscle balance, tightness, and weakness in the neck and upper back",
+          "Posture from head-to-toe, including how you sit, stand, and walk",
+          "Movement patterns that show how you lift, twist, and reach",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "From there, chiropractic adjustments can help restore motion and relieve joint irritation. Soft tissue therapy can calm tight, overworked muscles and help stubborn knots release. Targeted rehab exercises then train your stabilizing muscles to support your neck so it is not always on the edge of another flare up.",
+      },
+      {
+        type: "paragraph",
+        text: "We also bring in simple, real-life tools like ergonomic coaching for your workspace and home, stretching and strengthening plans that fit your schedule, and stress-management ideas that support your nervous system. This kind of root-cause strategy can help you enjoy your normal routines, like driving, raking, or watching games under the lights, without always worrying that your neck will pay for it later.",
+      },
+
+      {
+        type: "heading",
+        text: "Take the Next Step Toward a Pain-Free Neck",
+      },
+      {
+        type: "paragraph",
+        text: "This is a good moment to pause and ask yourself some honest questions. Is your current neck care focused only on calming symptoms, or is there a clear plan to correct the underlying issues? Do you feel heard and understood, or do you feel like just another quick visit on a long list?",
+      },
+      {
+        type: "paragraph",
+        text: "Before your next appointment with any neck pain doctor in Fernley, take a few minutes to write down what you are really dealing with. List your symptoms, what makes them worse or better, and your true goals, such as:",
+      },
+      {
+        type: "list",
+        items: [
+          "Sleeping through the night without waking from pain",
+          "Turning your head fully when driving without fear or stiffness",
+          "Getting through a full day of work or chores without a flare",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Bring that list, ask the questions we shared, and notice how your provider responds. By speaking up and seeking care that looks at your whole body, you give yourself a much better chance to move past \u201cmanaging\u201d neck pain and toward feeling comfortable, mobile, and confident again.",
+      },
+      {
+        type: "cta",
+        heading: "Take the First Step Toward Lasting Neck Pain Relief",
+        body: "If neck pain is limiting your work, sleep, or daily activities, our team at Ascension Health is ready to help you move comfortably again. Schedule a visit so we can pinpoint the cause of your pain and create a personalized treatment plan.",
+        buttonLabel: "Contact Ascension Health",
+        buttonHref: "/contact/",
+      },
+    ],
+  },
+
+  {
     slug: "medical-or-chiropractic-care-for-chronic-pain",
     title: "Medical or Chiropractic Care for Chronic Pain?",
     excerpt:
@@ -102,7 +490,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "pain management",
       "Fernley NV",
     ],
-    publishedAt: "2026-08-27",
+    publishedAt: "2026-08-28",
     readingMinutes: 8,
     cover: {
       src: coverMedicalVsChiro,
@@ -304,7 +692,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "nerve pain",
       "Fernley NV",
     ],
-    publishedAt: "2026-08-20",
+    publishedAt: "2026-08-21",
     readingMinutes: 8,
     cover: {
       src: coverSciaticaTimeline,
@@ -588,7 +976,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "sciatica treatment",
       "Fernley NV",
     ],
-    publishedAt: "2026-08-13",
+    publishedAt: "2026-08-14",
     readingMinutes: 8,
     cover: {
       src: coverSciaticaPiriformis,
@@ -816,7 +1204,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "mobility",
       "Fernley NV",
     ],
-    publishedAt: "2026-08-06",
+    publishedAt: "2026-08-07",
     readingMinutes: 8,
     cover: {
       src: coverChiroAdjustment,
@@ -1082,7 +1470,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "chiropractic care",
       "Fernley NV",
     ],
-    publishedAt: "2026-07-30",
+    publishedAt: "2026-07-31",
     readingMinutes: 8,
     cover: {
       src: coverSciatica,
@@ -1542,7 +1930,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "chiropractic care",
       "Fernley NV",
     ],
-    publishedAt: "2026-07-22",
+    publishedAt: "2026-07-17",
     readingMinutes: 8,
     cover: {
       src: coverHeadaches,
@@ -1769,7 +2157,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "chiropractic care",
       "Fernley NV",
     ],
-    publishedAt: "2026-07-10",
+    publishedAt: "2026-07-03",
     readingMinutes: 7,
     cover: {
       src: coverSpinalDecompression,
@@ -2013,7 +2401,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "chiropractic care",
       "Fernley NV",
     ],
-    publishedAt: "2026-07-17",
+    publishedAt: "2026-07-10",
     readingMinutes: 7,
     cover: {
       src: coverShoulderPain,

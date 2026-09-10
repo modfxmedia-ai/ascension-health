@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowRight, Calendar, Clock, Search, Tag } from "lucide-react";
 import { PageHero, BottomCTA } from "@/components/InteriorPage";
 import { Reveal } from "@/components/Motion";
+import { BlogFilterGrid } from "@/components/BlogFilterGrid";
 import {
   BLOG_BASE,
   formatPostDate,
@@ -94,23 +95,7 @@ export default async function BlogIndexPage() {
       {/* Grid of remaining posts */}
       {rest.length > 0 && (
         <section className="mx-auto max-w-7xl px-6 py-16 sm:py-20">
-          <div className="mb-8 flex items-end justify-between gap-4">
-            <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-700">
-                Latest articles
-              </p>
-              <h3 className="mt-2 font-display text-2xl sm:text-3xl font-semibold text-slate-900">
-                Read the latest from our team
-              </h3>
-            </div>
-          </div>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {rest.map((post, i) => (
-              <Reveal key={post.slug} delay={i * 0.05}>
-                <PostCard post={post} />
-              </Reveal>
-            ))}
-          </div>
+          <BlogFilterGrid posts={rest} categories={categories} />
         </section>
       )}
 
@@ -180,6 +165,7 @@ function FeaturedCard({ post }: { post: BlogPost | undefined }) {
 }
 
 /* ------------------------------------------------------------------ */
+<<<<<<< HEAD
 /* Grid card                                                           */
 /* ------------------------------------------------------------------ */
 
@@ -232,6 +218,8 @@ function PostCard({ post }: { post: BlogPost }) {
 }
 
 /* ------------------------------------------------------------------ */
+=======
+>>>>>>> 2c398bd (blogs audit and fixes)
 /* Empty state, shown while no posts are published yet                */
 /* ------------------------------------------------------------------ */
 
