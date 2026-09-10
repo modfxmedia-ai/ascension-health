@@ -144,20 +144,9 @@ export async function getPublishedBlogPost(slug: string): Promise<BlogPostData |
 }
 
 export async function getPublishedBlogPosts(): Promise<BlogPostData[]> {
+  // Ranked CMS merge disabled — the site only publishes locally authored posts (lib/blog.ts).
   const local = getLocalBlogPosts()
-  const ranked = await getLiveRankedBlogPosts()
-  const taken = new Set(local.map((p) => p.slug))
-  const takenTitles = new Set(local.map((p) => normalizeTitle(p.title)))
-  const merged = [
-    ...local,
-    ...ranked.filter((p) => {
-      const titleKey = normalizeTitle(p.title)
-      if (taken.has(p.slug) || takenTitles.has(titleKey)) return false
-      takenTitles.add(titleKey)
-      return true
-    }),
-  ]
-  return ensureUniquePublishDates(ensureUniqueCoverImages(merged))
+  return ensureUniquePublishDates(ensureUniqueCoverImages(local))
 }
 
 export async function getPublishedBlogSlugs(): Promise<string[]> {
