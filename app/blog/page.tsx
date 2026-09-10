@@ -165,61 +165,6 @@ function FeaturedCard({ post }: { post: BlogPost | undefined }) {
 }
 
 /* ------------------------------------------------------------------ */
-<<<<<<< HEAD
-/* Grid card                                                           */
-/* ------------------------------------------------------------------ */
-
-function PostCard({ post }: { post: BlogPost }) {
-  return (
-    <Link
-      href={`${BLOG_BASE}/${post.slug}/`}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-900/10"
-    >
-      <div className="relative aspect-[16/10] overflow-hidden">
-        <Image
-          src={post.cover.src}
-          alt={post.cover.alt}
-          fill
-          sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 90vw"
-          className="object-cover transition-transform duration-[900ms] group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-950/35 via-transparent to-transparent" />
-        <span className="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-brand-800 shadow-sm">
-          {post.category}
-        </span>
-      </div>
-      <div className="flex flex-1 flex-col gap-3 p-6">
-        <div className="flex items-center gap-3 text-[11px] uppercase tracking-widest text-slate-500">
-          <span className="inline-flex items-center gap-1">
-            <Calendar className="h-3 w-3" aria-hidden />
-            {formatPostDate(post.publishedAt)}
-          </span>
-          <span aria-hidden>·</span>
-          <span className="inline-flex items-center gap-1">
-            <Clock className="h-3 w-3" aria-hidden /> {post.readingMinutes} min
-          </span>
-        </div>
-        <h3 className="font-display text-xl font-semibold leading-snug text-slate-900 group-hover:text-brand-800 transition-colors">
-          {post.title}
-        </h3>
-        <p className="line-clamp-3 text-sm leading-relaxed text-slate-600">
-          {post.excerpt}
-        </p>
-        <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-semibold text-brand-700">
-          Read more
-          <ArrowRight
-            className="h-4 w-4 transition-transform group-hover:translate-x-1"
-            aria-hidden
-          />
-        </span>
-      </div>
-    </Link>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-=======
->>>>>>> 2c398bd (blogs audit and fixes)
 /* Empty state, shown while no posts are published yet                */
 /* ------------------------------------------------------------------ */
 
